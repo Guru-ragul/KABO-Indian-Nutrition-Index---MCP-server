@@ -151,7 +151,14 @@ def extract_foods(arts):
                              "unit": unit})
         # Rows naming the page's own food first, so the headline value for
         # "almonds" is almonds and not the peanut row at the top of a table.
-        vals.sort(key=lambda v: 0 if food_words & {stem(w) for w in re.findall(r"[a-z]+", v["item"].lower())} else 1)
+        # "Per 100 g (full-fat)" is the page's own food too, even though it
+        # does not repeat the food's name - without this, paneer led with its
+        # low-fat row (20-22 g) instead of regular paneer.
+        def own(v):
+            item = v["item"].lower()
+            named = food_words & {stem(w) for w in re.findall(r"[a-z]+", item)}
+            return bool(named) or bool(re.match(r"\s*per\s+100", item))
+        vals.sort(key=lambda v: 0 if own(v) else 1)
         if vals:
             foods.append({"food": food, "nutrient": nutrient, "title": title,
                           "source_url": f"https://kabo.co.in/blogs/news/{h}",

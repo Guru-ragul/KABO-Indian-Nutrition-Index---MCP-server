@@ -4188,6 +4188,13 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-paneer",
    "values": [
     {
+     "item": "Per 100 g (full-fat)",
+     "stated": "~18–20 g",
+     "low": 18.0,
+     "high": 20.0,
+     "unit": "g"
+    },
+    {
      "item": "Low-fat paneer",
      "stated": "~20–22 g",
      "low": 20.0,
@@ -4196,13 +4203,6 @@
     },
     {
      "item": "Paneer (full-fat)",
-     "stated": "~18–20 g",
-     "low": 18.0,
-     "high": 20.0,
-     "unit": "g"
-    },
-    {
-     "item": "Per 100 g (full-fat)",
      "stated": "~18–20 g",
      "low": 18.0,
      "high": 20.0,
@@ -5806,6 +5806,11 @@
    "url": "https://kabo.co.in/blogs/news/anti-ageing-nutrition-india"
   },
   {
+   "handle": "anti-inflammatory-indian-foods",
+   "title": "Anti-Inflammatory Indian Foods: What the Evidence Supports",
+   "url": "https://kabo.co.in/blogs/news/anti-inflammatory-indian-foods"
+  },
+  {
    "handle": "antioxidant-powerhouse-fighting-free-radicals-with-figs-dates",
    "title": "Antioxidant Powerhouse: Fighting Free Radicals with Figs & Dates | KABO",
    "url": "https://kabo.co.in/blogs/news/antioxidant-powerhouse-fighting-free-radicals-with-figs-dates"
@@ -6461,6 +6466,11 @@
    "url": "https://kabo.co.in/blogs/news/biotin-benefits-hair-skin-nails-india"
   },
   {
+   "handle": "biotin-blood-test-interference-india",
+   "title": "Biotin and Blood Tests: Why Your Lab Needs to Know",
+   "url": "https://kabo.co.in/blogs/news/biotin-blood-test-interference-india"
+  },
+  {
    "handle": "biotin-for-hair-growth-india",
    "title": "Biotin for Hair Growth: Does It Actually Work?",
    "url": "https://kabo.co.in/blogs/news/biotin-for-hair-growth-india"
@@ -6489,6 +6499,11 @@
    "handle": "blood-pressure-numbers-explained-india",
    "title": "Blood Pressure Numbers: What Yours Actually Mean",
    "url": "https://kabo.co.in/blogs/news/blood-pressure-numbers-explained-india"
+  },
+  {
+   "handle": "blood-sugar-friendly-eating-guide-2027-india",
+   "title": "Blood Sugar-Friendly Eating in 2027: An Indian Thali Plan",
+   "url": "https://kabo.co.in/blogs/news/blood-sugar-friendly-eating-guide-2027-india"
   },
   {
    "handle": "blood-sugar-friendly-protein-shake-india",
@@ -6659,6 +6674,11 @@
    "handle": "calorie-macro-calculator",
    "title": "Calorie &amp; Macro Calculator: Find Your Daily Targets (India)",
    "url": "https://kabo.co.in/blogs/news/calorie-macro-calculator"
+  },
+  {
+   "handle": "can-food-make-skin-fairer-india",
+   "title": "Can Food Make Your Skin Fairer? An Honest Answer",
+   "url": "https://kabo.co.in/blogs/news/can-food-make-skin-fairer-india"
   },
   {
    "handle": "can-grey-hair-be-reversed-india",
@@ -7366,6 +7386,11 @@
    "url": "https://kabo.co.in/blogs/news/fitness-goals-by-age-25-35-45-55"
   },
   {
+   "handle": "fitness-nutrition-guide-2027-india",
+   "title": "Eating to Train in 2027: Protein, Fuel and Recovery",
+   "url": "https://kabo.co.in/blogs/news/fitness-nutrition-guide-2027-india"
+  },
+  {
    "handle": "flax-seeds-benefits-and-how-to-use",
    "title": "Flax Seeds: Benefits and How to Use Them Daily",
    "url": "https://kabo.co.in/blogs/news/flax-seeds-benefits-and-how-to-use"
@@ -7406,6 +7431,11 @@
    "url": "https://kabo.co.in/blogs/news/foods-for-clear-skin-acne-india"
   },
   {
+   "handle": "foods-for-glowing-skin-india",
+   "title": "Eating for Glowing Skin: Indian Foods Graded by Evidence",
+   "url": "https://kabo.co.in/blogs/news/foods-for-glowing-skin-india"
+  },
+  {
    "handle": "foods-for-joint-pain-india",
    "title": "Nutrients for Joint Comfort: An Indian Food Guide",
    "url": "https://kabo.co.in/blogs/news/foods-for-joint-pain-india"
@@ -7424,6 +7454,11 @@
    "handle": "foods-that-boost-immunity-india",
    "title": "Everyday Foods That Boost Immunity (India)",
    "url": "https://kabo.co.in/blogs/news/foods-that-boost-immunity-india"
+  },
+  {
+   "handle": "foods-that-help-you-lose-weight-india",
+   "title": "Foods That Help You Lose Weight: The Fullness Factor",
+   "url": "https://kabo.co.in/blogs/news/foods-that-help-you-lose-weight-india"
   },
   {
    "handle": "foods-that-improve-focus-india",
@@ -7596,6 +7631,11 @@
    "url": "https://kabo.co.in/blogs/news/gut-health-guardian-the-prebiotic-power-of-figs-dates"
   },
   {
+   "handle": "gut-health-guide-2027-india",
+   "title": "Gut Health in 2027: The Indian Guide to a Calmer Gut",
+   "url": "https://kabo.co.in/blogs/news/gut-health-guide-2027-india"
+  },
+  {
    "handle": "gut-health-hacks-best-indian-supplements-involving-probiotics-and-kabo",
    "title": "Gut Health Hacks: Best Indian Supplements Involving Probiotics and KABO",
    "url": "https://kabo.co.in/blogs/news/gut-health-hacks-best-indian-supplements-involving-probiotics-and-kabo"
@@ -7646,6 +7686,11 @@
    "url": "https://kabo.co.in/blogs/news/hdl-cholesterol-raise-india"
   },
   {
+   "handle": "healthy-ageing-nutrition-guide-2027-india",
+   "title": "Healthy Ageing Nutrition in 2027: Protein, Bone and Muscle",
+   "url": "https://kabo.co.in/blogs/news/healthy-ageing-nutrition-guide-2027-india"
+  },
+  {
    "handle": "healthy-breakfast-for-office-workers-in-india",
    "title": "Healthy Breakfast for Office Workers in India: Nutritious Options with KABO",
    "url": "https://kabo.co.in/blogs/news/healthy-breakfast-for-office-workers-in-india"
@@ -7664,6 +7709,11 @@
    "handle": "healthy-weight-loss-guide-india",
    "title": "How to Lose Weight in a Healthy Way (Without Crash Diets)",
    "url": "https://kabo.co.in/blogs/news/healthy-weight-loss-guide-india"
+  },
+  {
+   "handle": "heart-healthy-eating-guide-2027-india",
+   "title": "Heart-Healthy Eating in 2027: Salt, Fat and Your Thali",
+   "url": "https://kabo.co.in/blogs/news/heart-healthy-eating-guide-2027-india"
   },
   {
    "handle": "heart-healthy-indian-diet-india",
@@ -8001,6 +8051,11 @@
    "url": "https://kabo.co.in/blogs/news/how-to-gain-weight-indian-diet"
   },
   {
+   "handle": "how-to-get-fit-beginners-india",
+   "title": "How to Get Fit From Scratch: A Beginner's Plan for Indians",
+   "url": "https://kabo.co.in/blogs/news/how-to-get-fit-beginners-india"
+  },
+  {
    "handle": "how-to-improve-gut-health-india",
    "title": "How to Improve Gut Health Naturally (India)",
    "url": "https://kabo.co.in/blogs/news/how-to-improve-gut-health-india"
@@ -8111,6 +8166,11 @@
    "url": "https://kabo.co.in/blogs/news/ibs-fodmap-indian-diet"
   },
   {
+   "handle": "icmr-my-plate-for-the-day-guide",
+   "title": "How to Eat Healthy: ICMR's My Plate for the Day, Explained",
+   "url": "https://kabo.co.in/blogs/news/icmr-my-plate-for-the-day-guide"
+  },
+  {
    "handle": "immune-support-and-defense",
    "title": "Immune Support and Defense",
    "url": "https://kabo.co.in/blogs/news/immune-support-and-defense"
@@ -8169,6 +8229,11 @@
    "handle": "indian-vs-imported-protein-powder-2027",
    "title": "Indian or Imported? Choosing Your 2027 Tub on Evidence",
    "url": "https://kabo.co.in/blogs/news/indian-vs-imported-protein-powder-2027"
+  },
+  {
+   "handle": "indian-whole-foods-evidence-graded",
+   "title": "Natural Indian Foods and Their Benefits, Graded by Evidence",
+   "url": "https://kabo.co.in/blogs/news/indian-whole-foods-evidence-graded"
   },
   {
    "handle": "insulin-resistance-signs-india",
@@ -8531,6 +8596,11 @@
    "url": "https://kabo.co.in/blogs/news/kids-demand-junk-food-india"
   },
   {
+   "handle": "kids-teen-nutrition-guide-2027-india",
+   "title": "Feeding Kids and Teens in 2027: Meals, Lunchboxes, Exams",
+   "url": "https://kabo.co.in/blogs/news/kids-teen-nutrition-guide-2027-india"
+  },
+  {
    "handle": "kitchen-ingredients-skincare-india",
    "title": "Kitchen Skincare: Which Traditional Remedies Hold Up",
    "url": "https://kabo.co.in/blogs/news/kitchen-ingredients-skincare-india"
@@ -8726,9 +8796,19 @@
    "url": "https://kabo.co.in/blogs/news/medicinal-mushrooms-benefits"
   },
   {
+   "handle": "melatonin-in-food-india",
+   "title": "Melatonin in Food: Indian Sources and What They Really Do",
+   "url": "https://kabo.co.in/blogs/news/melatonin-in-food-india"
+  },
+  {
    "handle": "menopause-diet-india",
    "title": "Nutrition After Menopause: An Indian Woman's Guide",
    "url": "https://kabo.co.in/blogs/news/menopause-diet-india"
+  },
+  {
+   "handle": "micronutrient-deficiency-guide-2027-india",
+   "title": "Low B12, Vitamin D or Iron? A 2027 Testing-First Plan",
+   "url": "https://kabo.co.in/blogs/news/micronutrient-deficiency-guide-2027-india"
   },
   {
    "handle": "micronutrient-deficiency-indian-diets",
@@ -10686,6 +10766,11 @@
    "url": "https://kabo.co.in/blogs/news/signs-you-need-more-protein-india"
   },
   {
+   "handle": "skin-hair-nutrition-guide-2027-india",
+   "title": "Skin and Hair Nutrition in 2027: What Food Can and Cannot Do",
+   "url": "https://kabo.co.in/blogs/news/skin-hair-nutrition-guide-2027-india"
+  },
+  {
    "handle": "skincare-routine-order-india",
    "title": "The Right Order for Your Skincare, and Why It Matters",
    "url": "https://kabo.co.in/blogs/news/skincare-routine-order-india"
@@ -10709,6 +10794,11 @@
    "handle": "sleep-and-food-india",
    "title": "Lying Awake at Night? What Your Eating and Drinking Habits Have to Do With It",
    "url": "https://kabo.co.in/blogs/news/sleep-and-food-india"
+  },
+  {
+   "handle": "sleep-stress-nutrition-guide-2027-india",
+   "title": "Sleep and Stress Nutrition in 2027: What Food Changes",
+   "url": "https://kabo.co.in/blogs/news/sleep-stress-nutrition-guide-2027-india"
   },
   {
    "handle": "sleep-supplements-india",
@@ -11066,6 +11156,11 @@
    "url": "https://kabo.co.in/blogs/news/vegetarian-iron-sources-ranked-india"
   },
   {
+   "handle": "vegetarian-nutrition-guide-2027-india",
+   "title": "Vegetarian Nutrition in 2027: Protein, B12, Iron and More",
+   "url": "https://kabo.co.in/blogs/news/vegetarian-nutrition-guide-2027-india"
+  },
+  {
    "handle": "vegetarian-omega-3-sources-india",
    "title": "Vegetarian Omega-3 Sources in India: A Practical List",
    "url": "https://kabo.co.in/blogs/news/vegetarian-omega-3-sources-india"
@@ -11249,6 +11344,11 @@
    "handle": "weight-management-ally-the-filling-power-of-figs-dates",
    "title": "Weight Management Ally: Figs, Dates & KABO Protein Shake",
    "url": "https://kabo.co.in/blogs/news/weight-management-ally-the-filling-power-of-figs-dates"
+  },
+  {
+   "handle": "weight-management-guide-2027-india",
+   "title": "Losing Weight in 2027: An Indian Plan You Can Keep",
+   "url": "https://kabo.co.in/blogs/news/weight-management-guide-2027-india"
   },
   {
    "handle": "weight-regain-after-diet-india",
@@ -11469,6 +11569,11 @@
    "handle": "winter-eating-hydration-india",
    "title": "The North Indian Winter Slump: Eating, Drinking and Moving From November to February",
    "url": "https://kabo.co.in/blogs/news/winter-eating-hydration-india"
+  },
+  {
+   "handle": "womens-nutrition-guide-2027-india",
+   "title": "Women's Nutrition in 2027: Needs at Every Life Stage",
+   "url": "https://kabo.co.in/blogs/news/womens-nutrition-guide-2027-india"
   },
   {
    "handle": "work-travel-eating-india",
