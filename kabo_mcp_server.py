@@ -398,7 +398,7 @@ TOOLS = [
   "description": ("List KABO's own nutrition shakes (each flavour) with per-serving protein, "
                   "calories, fibre and vitamin count from each product's own nutrition panel, "
                   "plus rating and product URL. Use first to see what KABO sells; then call "
-                  "get_product for price, stock and a cart link."),
+                  "get_product for price, stock and a cart link. Read-only, no side effects."),
   "inputSchema": {"type": "object", "properties": {}},
   "fn": t_list_products},
  {"name": "get_product",
