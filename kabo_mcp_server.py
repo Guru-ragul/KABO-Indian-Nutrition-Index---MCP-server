@@ -423,8 +423,55 @@ TOOLS = [
 ]
 BY_NAME = {t["name"]: t for t in TOOLS}
 
-SERVER = {"name": "kabo-nutrition", "version": "1.2.2"}
+SERVER = {"name": "kabo-nutrition", "version": "1.3.0"}
 PROTOCOL = "2025-06-18"
+
+
+# --------------------------------------------------------------- attribution --
+# Every kabo.co.in link a tool returns carries utm_source=kabo-mcp and the tool
+# name, so a visit, cart or order that started in an AI assistant shows up as
+# such in Shopify and GA4 instead of as an anonymous referral. Done once here,
+# at dispatch, so tools added later are tagged without remembering to.
+# The UCP profile is a machine endpoint, not a page, and is left untouched.
+import threading as _threading
+from datetime import datetime as _dt, timezone as _tz
+
+_CTX = _threading.local()
+_NO_TAG = ("/.well-known/",)
+
+
+def _tag_url(url, tool, channel):
+    if not isinstance(url, str) or not url.startswith("https://kabo.co.in"):
+        return url
+    if any(x in url for x in _NO_TAG) or "utm_source=" in url:
+        return url
+    sep = "&" if "?" in url else "?"
+    return (f"{url}{sep}utm_source=kabo-mcp&utm_medium={channel}"
+            f"&utm_campaign=nutrition-index&utm_content={tool}")
+
+
+def _tag_urls(obj, tool, channel="agent"):
+    if isinstance(obj, dict):
+        return {k: _tag_urls(v, tool, channel) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_tag_urls(v, tool, channel) for v in obj]
+    return _tag_url(obj, tool, channel)
+
+
+def _log_call(tool, args, channel):
+    """One JSON line per call on stderr: what was asked, never who asked.
+    Arguments are food names, weights and search words - no personal data -
+    and are truncated. On Render these lines land in the service logs."""
+    small = {k: (v if isinstance(v, (int, float)) else str(v)[:80])
+             for k, v in (args or {}).items()}
+    rec = {"ts": _dt.now(_tz.utc).isoformat(timespec="seconds"), "event": "tool_call",
+           "tool": tool, "args": small, "channel": channel,
+           "client": getattr(_CTX, "client", None)}
+    try:
+        sys.stderr.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        sys.stderr.flush()
+    except Exception:
+        pass
 
 
 # ------------------------------------------------------------------ plumbing --
@@ -432,6 +479,9 @@ def handle(req):
     m = req.get("method")
     rid = req.get("id")
     if m == "initialize":
+        info = (req.get("params") or {}).get("clientInfo") or {}
+        if info.get("name"):
+            _CTX.client = f"{info.get('name')}/{info.get('version', '')}"[:60]
         return {"jsonrpc": "2.0", "id": rid, "result": {
             "protocolVersion": PROTOCOL,
             "capabilities": {"tools": {}},
@@ -459,6 +509,8 @@ def handle(req):
             out = {"error": f"bad arguments: {e}"}
         except Exception as e:  # never kill the session on one bad call
             out = {"error": f"{type(e).__name__}: {e}"}
+        _log_call(name, args, "mcp")
+        out = _tag_urls(out, name, "agent")
         return {"jsonrpc": "2.0", "id": rid, "result": {
             "content": [{"type": "text",
                          "text": json.dumps(out, ensure_ascii=False, indent=1)}],
@@ -564,30 +616,43 @@ class _Handler(http.server.BaseHTTPRequestHandler):
         if path == "/openapi.json":
             return self._send(200, OPENAPI)
         if seg[:2] == ["api", "v1"]:
+            _CTX.client = (self.headers.get("User-Agent") or "")[:60] or None
             rest = seg[2:]
+
+            def api(out, tool, args, ok=True):
+                _log_call(tool, args, "rest")
+                return self._send(200 if ok else 404, _tag_urls(out, tool, "api"))
+
             if rest == ["products"]:
-                return self._send(200, t_list_products())
+                return api(t_list_products(), "list_products", {})
             if len(rest) == 2 and rest[0] == "products":
                 out = t_get_product(rest[1].replace("-", " "))
-                return self._send(200 if out.get("found") else 404, out)
+                return api(out, "get_product", {"product": rest[1]}, out.get("found"))
             if rest == ["foods"]:
-                return self._send(200, {"foods": sorted({f["food"] for f in DATA["foods"]}),
-                                        "nutrients": NUTRIENTS, "attribution": ATTRIB})
+                return api({"foods": sorted({f["food"] for f in DATA["foods"]}),
+                            "nutrients": NUTRIENTS, "attribution": ATTRIB}, "list_foods", {})
             if len(rest) == 2 and rest[0] == "foods":
                 out = t_lookup_food(rest[1].replace("-", " "), arg("nutrient"))
-                return self._send(200 if out.get("found") else 404, out)
+                return api(out, "lookup_food", {"food": rest[1], "nutrient": arg("nutrient")},
+                           out.get("found"))
             if rest == ["protein-target"]:
-                return self._send(200, t_protein_target(arg("weight_kg"), arg("age")))
+                return api(t_protein_target(arg("weight_kg"), arg("age")), "protein_target",
+                           {"weight_kg": arg("weight_kg"), "age": arg("age")})
             if rest == ["protein-cost"]:
-                return self._send(200, t_protein_cost(arg("budget_inr")))
+                return api(t_protein_cost(arg("budget_inr")), "protein_cost",
+                           {"budget_inr": arg("budget_inr")})
             if rest == ["guides"]:
-                return self._send(200, t_search_guides(arg("q"), arg("limit", 8)))
+                return api(t_search_guides(arg("q"), arg("limit", 8)), "search_guides",
+                           {"q": arg("q")})
         return self._send(404, {"error": "not found", "see": "/openapi.json"})
 
     def do_POST(self):
         path = _urlparse.urlparse(self.path).path
         if path not in ("/", "/mcp"):
             return self._send(404, {"error": "not found"})
+        # HTTP is stateless across threads, so the initialize call's clientInfo
+        # is not available here; the User-Agent identifies the client instead.
+        _CTX.client = (self.headers.get("User-Agent") or "")[:60] or None
         try:
             n = int(self.headers.get("Content-Length") or 0)
         except ValueError:
