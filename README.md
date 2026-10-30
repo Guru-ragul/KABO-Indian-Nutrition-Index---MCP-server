@@ -1,158 +1,126 @@
-# MCP Registry
+# KABO Indian Nutrition Index — MCP server
 
-The MCP registry provides MCP clients with a list of MCP servers, like an app store for MCP servers.
+An MCP server exposing the Indian food nutrition data behind kabo.co.in as
+tools an AI agent can call directly. Every response carries a source URL, so
+an agent answering a nutrition question gets a citable answer and the reader
+gets a link back.
 
-[**📤 Publish my MCP server**](docs/modelcontextprotocol-io/quickstart.mdx) | [**⚡️ Live API docs**](https://registry.modelcontextprotocol.io/docs) | [**👀 Ecosystem vision**](docs/design/ecosystem-vision.md) | 📖 **[Full documentation](./docs)**
+**Why this rather than more articles.** A blog post can be copied in an
+afternoon. A maintained data service that agents connect to cannot. This is
+the one asset in the SEO programme that competitors cannot replicate by
+rewriting content.
 
-## Development Status
+## What it does
 
-**2025-10-24 update**: The Registry API has entered an **API freeze (v0.1)** 🎉. For the next month or more, the API will remain stable with no breaking changes, allowing integrators to confidently implement support. This freeze applies to v0.1 while development continues on v0. We'll use this period to validate the API in real-world integrations and gather feedback to shape v1 for general availability. Thank you to everyone for your contributions and patience—your involvement has been key to getting us here!
+| Tool | Returns |
+|---|---|
+| `lookup_food(food)` | Nutrition for an Indian food, per 100 g and per katori, with source URL |
+| `compare_foods(foods[])` | 2–8 foods side by side |
+| `protein_target(weight_kg, age)` | Daily protein target in grams, plus the per-meal threshold |
+| `protein_cost(budget_inr)` | Cost per 10 g of protein, ranked cheapest first |
+| `search_guides(query, limit)` | Searches 1,075 nutrition guides, returns titles and URLs |
 
-**2025-09-08 update**: The registry has launched in preview 🎉 ([announcement blog post](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/)). While the system is now more stable, this is still a preview release and breaking changes or data resets may occur. A general availability (GA) release will follow later. We'd love your feedback in [GitHub discussions](https://github.com/modelcontextprotocol/registry/discussions/new?category=ideas) or in the [#registry-dev Discord](https://discord.com/channels/1358869848138059966/1369487942862504016) ([joining details here](https://modelcontextprotocol.io/community/communication)).
+Data: **52 foods, 456 nutrition values, 1,075 guides**, from ICMR-NIN
+composition tables and the PROT-AGE/ESPEN protein recommendations.
 
-Registry Working Group:
-- **Radoslav (Rado) Dimitrov** (Stacklok) [@rdimitrov](https://github.com/rdimitrov) - WG Lead
-- **Tadas Antanavicius** (PulseMCP) [@tadasant](https://github.com/tadasant)
-- **Bob Dickinson** (TeamSpark) [@BobDickinson](https://github.com/BobDickinson)
-- **Preeti (Pree) Dewani** (Ravenmail) [@pree-dew](https://github.com/pree-dew)
+## Running it
 
-## Contributing
-
-We use multiple channels for collaboration - see [modelcontextprotocol.io/community/communication](https://modelcontextprotocol.io/community/communication).
-
-Often (but not always) ideas flow through this pipeline:
-
-- **[Discord](https://modelcontextprotocol.io/community/communication)** - Real-time community discussions
-- **[Discussions](https://github.com/modelcontextprotocol/registry/discussions)** - Propose and discuss product/technical requirements
-- **[Issues](https://github.com/modelcontextprotocol/registry/issues)** - Track well-scoped technical work  
-- **[Pull Requests](https://github.com/modelcontextprotocol/registry/pulls)** - Contribute work towards issues
-
-### Quick start:
-
-#### Pre-requisites
-
-- **Docker**
-- **Go** - version per the `go` directive in [go.mod](./go.mod); the Go toolchain fetches it for you
-- **ko** - Container image builder for Go ([installation instructions](https://ko.build/install/))
-- **golangci-lint** - version per the `golangci-lint-action` pin in [ci.yml](./.github/workflows/ci.yml), so local lint matches CI
-
-#### Running the server
+No dependencies. Standard library only, Python 3.8+.
 
 ```bash
-# Start full development environment
-make dev-compose
+python3 kabo_mcp_server.py
 ```
 
-This starts the registry at [`localhost:8080`](http://localhost:8080) with PostgreSQL. The database uses ephemeral storage and is reset each time you restart the containers, ensuring a clean state for development and testing.
+### Claude Desktop
 
-**Note:** The registry uses [ko](https://ko.build) to build container images. The `make dev-compose` command automatically builds the registry image with ko and loads it into your local Docker daemon before starting the services.
+Add to `claude_desktop_config.json`:
 
-By default, the registry seeds from the production API with a filtered subset of servers (to keep startup fast). This ensures your local environment mirrors production behavior and all seed data passes validation. For offline development you can seed from a file without validation with `MCP_REGISTRY_SEED_FROM=data/seed.json MCP_REGISTRY_ENABLE_REGISTRY_VALIDATION=false make dev-compose`.
+```json
+{
+  "mcpServers": {
+    "kabo-nutrition": {
+      "command": "python3",
+      "args": ["/absolute/path/to/mcp/kabo_mcp_server.py"]
+    }
+  }
+}
+```
 
-The setup can be configured with environment variables in [docker-compose.yml](./docker-compose.yml) - see [.env.example](./.env.example) for a reference.
+Cursor, Cline and other MCP clients use the same `command`/`args` shape.
 
-<details>
-<summary>Alternative: Running a pre-built Docker image</summary>
-
-Pre-built Docker images are automatically published to GitHub Container Registry. Note that the image does not bundle PostgreSQL, so you need to run your own and point the registry at it via `MCP_REGISTRY_DATABASE_URL` (see [docker-compose.yml](./docker-compose.yml) for a working example):
+### Test it without a client
 
 ```bash
-# Run latest stable release
-docker run -p 8080:8080 ghcr.io/modelcontextprotocol/registry:latest
-
-# Run latest from main branch (continuous deployment)
-docker run -p 8080:8080 ghcr.io/modelcontextprotocol/registry:main
-
-# Run specific release version
-docker run -p 8080:8080 ghcr.io/modelcontextprotocol/registry:v1.0.0
-
-# Run development build from main branch
-docker run -p 8080:8080 ghcr.io/modelcontextprotocol/registry:main-20250906-abc123d
+printf '%s\n' \
+  '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"t","version":"1"}}}' \
+  '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' \
+  '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"lookup_food","arguments":{"food":"rajma"}}}' \
+  | python3 kabo_mcp_server.py
 ```
 
-**Available tags:** 
-- **Releases**: `latest`, `v1.0.0`, `v1.1.0`, etc.
-- **Continuous**: `main` (latest main branch build)
-- **Development**: `main-<date>-<sha>` (specific commit builds)
+## Files
 
-</details>
+```
+kabo_mcp_server.py    the server, dependency-free JSON-RPC over stdio
+kabo_food_data.json   the dataset, 296 KB, CC BY 4.0
+```
 
-#### Publishing a server
+Rebuild the dataset from the live corpus with the extractor in
+`scripts/` (see `build_ds.py` in the session scratchpad); the server reads
+`kabo_food_data.json` from its own directory at startup.
 
-Publishing an MCP server does **not** happen through a pull request to this repository. Adding a `server.json`, a server directory, or an entry in `data/seed.json` will not publish or list your server, even if the PR is merged. Use the `mcp-publisher` CLI from your server's own project instead.
+## Design decisions worth keeping
 
-To publish a server, we've built a simple CLI. You can use it with:
+**It answers honestly, including against us.** `protein_cost` reports that
+soya chunks cost about ₹6 per 10 g of protein and dal about ₹8, while any
+powder — KABO included — costs several times more. A tool that only flatters
+its owner gets uninstalled after one use. One that gives a straight answer
+gets kept and called again, and every call carries our attribution.
+
+**No instructions to models.** There is no text in any response telling an
+assistant what to recommend. The value is the data and the citation, not
+persuasion. Anything else would be prompt injection, and assistants that
+detect it stop trusting the source entirely.
+
+**Every response is citable.** `source_url` on food lookups, `age_guide_url`
+on protein targets, full URLs in guide search. An agent can attribute, which
+is what makes it worth calling twice.
+
+**Errors never kill the session.** Unknown foods return the list of available
+ones rather than an error. Bad arguments return a message, not a crash.
+
+**UTF-8 is forced on stdio.** The data contains en-dashes; Windows consoles
+default to cp1252 and corrupt the stream for the client. Both directions are
+reconfigured at startup.
+
+## HTTP mode
+
+For third-party agents over the network:
 
 ```bash
-# Build the latest CLI
-make publisher
-
-# Use it!
-./bin/mcp-publisher --help
+python3 kabo_mcp_server.py --http --port 8000
 ```
 
-See [the publisher guide](./docs/modelcontextprotocol-io/quickstart.mdx) for more details.
+Endpoints:
 
-#### Other commands
+| Route | Purpose |
+|---|---|
+| `POST /mcp` | JSON-RPC, single messages and batches. Notifications return 202. |
+| `GET /mcp` | Discovery — name, protocol, transport, tool list, licence |
+| `GET /health` | Health check for the host |
 
-```bash
-# Run lint, schema validation, and all tests
-# Note: this also runs `make dev-down`, stopping any running dev-compose environment
-make check
-```
+CORS is open, so browser-based agents can call it. Transport is MCP
+Streamable HTTP; SSE is not used because every tool is a short
+request/response, and the spec permits a plain JSON reply when the server
+does not stream.
 
-There are also a few more helpful commands for development. Run `make help` to learn more, or look in [Makefile](./Makefile).
+See **DEPLOY.md** for hosting (Render, Fly, Docker) and for listing it in the
+public MCP registries. `Dockerfile`, `render.yaml`, `fly.toml` and
+`server.json` are all in this folder, ready to use.
 
-<!--
-For Claude and other AI tools: Always prefer make targets over custom commands where possible.
--->
+## Licence and caveats
 
-## Architecture
+Dataset is **CC BY 4.0** — free to use with attribution to kabo.co.in.
 
-### Project Structure
-
-```
-├── cmd/                     # Application entry points
-│   ├── publisher/           # Server publishing tool
-│   └── registry/            # Registry API server
-├── data/                    # Seed data
-├── deploy/                  # Deployment configuration (Pulumi)
-├── docs/                    # Documentation
-├── internal/                # Private application code
-│   ├── api/                 # HTTP handlers and routing
-│   ├── auth/                # Authentication (GitHub OAuth, JWT, namespace blocking)
-│   ├── config/              # Configuration management
-│   ├── database/            # Data persistence (PostgreSQL)
-│   ├── importer/            # Seed data import
-│   ├── service/             # Business logic
-│   ├── telemetry/           # Metrics and monitoring
-│   └── validators/          # Input validation
-├── pkg/                     # Public packages
-│   ├── api/                 # API types and structures
-│   │   └── v0/              # Version 0 API types
-│   └── model/               # Data models for server.json
-├── scripts/                 # Development and testing scripts
-├── tests/                   # Integration tests
-└── tools/                   # CLI tools and utilities
-    └── validate-*.sh        # Schema validation tools
-```
-
-### Authentication
-
-Publishing supports multiple authentication methods:
-- **GitHub OAuth** - For publishing by logging into GitHub
-- **GitHub OIDC** - For publishing from GitHub Actions
-- **DNS verification** - For proving ownership of a domain and its subdomains
-- **HTTP verification** - For proving ownership of a domain
-
-The registry validates namespace ownership when publishing. E.g. to publish...:
-- `io.github.domdomegg/my-cool-mcp` you must login to GitHub as `domdomegg`, or be in a GitHub Action on domdomegg's repos
-- `me.adamjones/my-cool-mcp` you must prove ownership of `adamjones.me` via DNS or HTTP challenge
-
-## Community Projects
-
-Check out [community projects](docs/community-projects.md) to explore notable registry-related work created by the community.
-
-## More documentation
-
-See the [documentation](./docs) for more details if your question has not been answered here!
+Values are approximate and vary by variety, preparation and brand. This is
+nutrition information, not medical advice.
