@@ -5566,15 +5566,19 @@
   },
   {
    "situation": "Pregnancy, 2nd trimester (add to base)",
-   "add_g_per_day": 9
+   "add_g_per_day": 9.5
   },
   {
    "situation": "Pregnancy, 3rd trimester (add to base)",
-   "add_g_per_day": 22
+   "add_g_per_day": 22.0
   },
   {
    "situation": "Breastfeeding, 0-6 months (add to base)",
-   "add_g_per_day": 17
+   "add_g_per_day": 16.9
+  },
+  {
+   "situation": "Breastfeeding, 6-12 months (add to base)",
+   "add_g_per_day": 13.2
   },
   {
    "situation": "Chronic kidney disease",
@@ -5846,6 +5850,11 @@
    "url": "https://kabo.co.in/blogs/news/apple-cinnamon-vs-chocolate-protein-india"
   },
   {
+   "handle": "archery-nutrition-india",
+   "title": "Archery Nutrition: Food and Water for a Steady Bow Arm",
+   "url": "https://kabo.co.in/blogs/news/archery-nutrition-india"
+  },
+  {
    "handle": "are-green-powders-worth-it-india",
    "title": "Are Green Powders Worth It? (India)",
    "url": "https://kabo.co.in/blogs/news/are-green-powders-worth-it-india"
@@ -5864,6 +5873,11 @@
    "handle": "ashwagandha-benefits-stress-energy",
    "title": "Ashwagandha Benefits for Stress, Energy and Sleep",
    "url": "https://kabo.co.in/blogs/news/ashwagandha-benefits-stress-energy"
+  },
+  {
+   "handle": "avocado-nutrition-india",
+   "title": "Avocado in India: Nutrition, Price and Better-Value Swaps",
+   "url": "https://kabo.co.in/blogs/news/avocado-nutrition-india"
   },
   {
    "handle": "b-complex-vitamins-explained-india",
@@ -5886,6 +5900,11 @@
    "url": "https://kabo.co.in/blogs/news/b12-vitamin-d-iron-vegetarian-india"
   },
   {
+   "handle": "badminton-nutrition-india",
+   "title": "Badminton Nutrition: Fuel for Rallies and Tournament Days",
+   "url": "https://kabo.co.in/blogs/news/badminton-nutrition-india"
+  },
+  {
    "handle": "balanced-diet-chart-indian-adults",
    "title": "Balanced Diet Chart for Indian Adults (Simple &amp; Realistic)",
    "url": "https://kabo.co.in/blogs/news/balanced-diet-chart-indian-adults"
@@ -5904,6 +5923,11 @@
    "handle": "banned-substances-protein-powder-athletes-india",
    "title": "Banned Substances in Protein Powder: The 5 Checks Competing Athletes in India Should Run Before Buying",
    "url": "https://kabo.co.in/blogs/news/banned-substances-protein-powder-athletes-india"
+  },
+  {
+   "handle": "basketball-nutrition-india",
+   "title": "Basketball Nutrition: Jumps, Quarters and Tournament Days",
+   "url": "https://kabo.co.in/blogs/news/basketball-nutrition-india"
   },
   {
    "handle": "beetroot-benefits-energy-stamina",
@@ -6396,6 +6420,11 @@
    "url": "https://kabo.co.in/blogs/news/best-time-to-eat-fruits-india"
   },
   {
+   "handle": "best-time-to-eat-meals-india",
+   "title": "What Is the Best Time to Eat Breakfast, Lunch and Dinner?",
+   "url": "https://kabo.co.in/blogs/news/best-time-to-eat-meals-india"
+  },
+  {
    "handle": "best-time-to-take-protein-india",
    "title": "Best Time to Take Protein (Indian Routines)",
    "url": "https://kabo.co.in/blogs/news/best-time-to-take-protein-india"
@@ -6566,6 +6595,11 @@
    "url": "https://kabo.co.in/blogs/news/bored-of-eating-healthy-same-food-india"
   },
   {
+   "handle": "boxing-nutrition-india",
+   "title": "Boxing Diet: Fuelling Rounds, Sparring and Weigh-In Day",
+   "url": "https://kabo.co.in/blogs/news/boxing-nutrition-india"
+  },
+  {
    "handle": "brain-booster-enhancing-cognitive-function-with-figs-dates",
    "title": "Brain Booster: Enhancing Cognitive Function with Figs & Dates",
    "url": "https://kabo.co.in/blogs/news/brain-booster-enhancing-cognitive-function-with-figs-dates"
@@ -6589,6 +6623,11 @@
    "handle": "breakfast-replacement-shakes-in-india",
    "title": "Best Breakfast Replacement Shakes in India | KABO Weight Loss",
    "url": "https://kabo.co.in/blogs/news/breakfast-replacement-shakes-in-india"
+  },
+  {
+   "handle": "breathing-exercises-for-anxiety-india",
+   "title": "Breathing Exercises for Anxiety: Four Techniques to Try",
+   "url": "https://kabo.co.in/blogs/news/breathing-exercises-for-anxiety-india"
   },
   {
    "handle": "bridal-weight-loss-timeline-india",
@@ -6676,6 +6715,11 @@
    "url": "https://kabo.co.in/blogs/news/calorie-macro-calculator"
   },
   {
+   "handle": "calories-in-indian-foods-chart",
+   "title": "Calories in Indian Foods: A Chart of Everyday Servings",
+   "url": "https://kabo.co.in/blogs/news/calories-in-indian-foods-chart"
+  },
+  {
    "handle": "can-food-make-skin-fairer-india",
    "title": "Can Food Make Your Skin Fairer? An Honest Answer",
    "url": "https://kabo.co.in/blogs/news/can-food-make-skin-fairer-india"
@@ -6694,6 +6738,11 @@
    "handle": "can-i-eat-curd-at-night-india",
    "title": "Curd at Night: Does Dahi After Dinner Cause Colds?",
    "url": "https://kabo.co.in/blogs/news/can-i-eat-curd-at-night-india"
+  },
+  {
+   "handle": "can-i-exercise-on-an-empty-stomach-india",
+   "title": "Can I Exercise on an Empty Stomach?",
+   "url": "https://kabo.co.in/blogs/news/can-i-exercise-on-an-empty-stomach-india"
   },
   {
    "handle": "can-you-have-too-much-protein",
@@ -6719,6 +6768,11 @@
    "handle": "caregiver-nutrition-india",
    "title": "Caring for a Parent or Ill Family Member? Simple Nutrition for the Caregiver",
    "url": "https://kabo.co.in/blogs/news/caregiver-nutrition-india"
+  },
+  {
+   "handle": "carnitine-vegetarians-india",
+   "title": "L-Carnitine and Vegetarians: Does Your Body Make Enough?",
+   "url": "https://kabo.co.in/blogs/news/carnitine-vegetarians-india"
   },
   {
    "handle": "carrot-tomato-antioxidants-india",
@@ -6756,6 +6810,11 @@
    "url": "https://kabo.co.in/blogs/news/chai-with-meals-iron-absorption-india"
   },
   {
+   "handle": "chair-yoga-for-seniors-india",
+   "title": "Chair Yoga for Seniors: Safe Seated Poses for Balance",
+   "url": "https://kabo.co.in/blogs/news/chair-yoga-for-seniors-india"
+  },
+  {
    "handle": "cheapest-protein-foods-india",
    "title": "Cheapest High-Protein Foods in India (Budget Guide)",
    "url": "https://kabo.co.in/blogs/news/cheapest-protein-foods-india"
@@ -6764,6 +6823,11 @@
    "handle": "cheat-meals-indian-diet",
    "title": "Cheat Meals on an Indian Diet: Do They Help or Hurt?",
    "url": "https://kabo.co.in/blogs/news/cheat-meals-indian-diet"
+  },
+  {
+   "handle": "chess-player-diet-india",
+   "title": "Chess Player Diet: Food for Focus Through Five-Hour Games",
+   "url": "https://kabo.co.in/blogs/news/chess-player-diet-india"
   },
   {
    "handle": "chia-seeds-benefits-nutrition",
@@ -6824,6 +6888,11 @@
    "handle": "coconut-milk-powder-benefits-india",
    "title": "Coconut Milk Powder: Nutrition & Uses (India)",
    "url": "https://kabo.co.in/blogs/news/coconut-milk-powder-benefits-india"
+  },
+  {
+   "handle": "coconut-water-benefits-india",
+   "title": "Coconut Water Benefits: What It Does and Who Should Limit It",
+   "url": "https://kabo.co.in/blogs/news/coconut-water-benefits-india"
   },
   {
    "handle": "coffee-on-empty-stomach-india",
@@ -6901,6 +6970,11 @@
    "url": "https://kabo.co.in/blogs/news/copper-manganese-benefits-india"
   },
   {
+   "handle": "coq10-statins-age-india",
+   "title": "CoQ10: Why Your Body's Supply Falls With Age and Statins",
+   "url": "https://kabo.co.in/blogs/news/coq10-statins-age-india"
+  },
+  {
    "handle": "corporate-wellness-nutrition-india-2027",
    "title": "Corporate Wellness in 2027: Feeding Teams Better at Work",
    "url": "https://kabo.co.in/blogs/news/corporate-wellness-nutrition-india-2027"
@@ -6919,6 +6993,16 @@
    "handle": "creatine-for-vegetarians-india",
    "title": "Creatine for Vegetarians in India: What to Know",
    "url": "https://kabo.co.in/blogs/news/creatine-for-vegetarians-india"
+  },
+  {
+   "handle": "cricket-batting-nutrition-india",
+   "title": "Batting Nutrition: Staying Sharp Through a Long Innings",
+   "url": "https://kabo.co.in/blogs/news/cricket-batting-nutrition-india"
+  },
+  {
+   "handle": "curd-vs-milk-which-is-better-india",
+   "title": "Curd or Milk: Which Is Better for You, and When?",
+   "url": "https://kabo.co.in/blogs/news/curd-vs-milk-which-is-better-india"
   },
   {
    "handle": "curd-vs-yogurt-vs-greek-yogurt-india",
@@ -6986,6 +7070,11 @@
    "url": "https://kabo.co.in/blogs/news/desk-job-sitting-health-india"
   },
   {
+   "handle": "desk-stretches-office-workers-india",
+   "title": "10-Minute Desk Stretches for Neck, Shoulders and Back",
+   "url": "https://kabo.co.in/blogs/news/desk-stretches-office-workers-india"
+  },
+  {
    "handle": "detox-cleanse-truth-india",
    "title": "The Truth About Detox &amp; Cleanses (India)",
    "url": "https://kabo.co.in/blogs/news/detox-cleanse-truth-india"
@@ -7041,6 +7130,11 @@
    "url": "https://kabo.co.in/blogs/news/do-i-need-protein-or-an-all-in-one-shake-india"
   },
   {
+   "handle": "do-i-need-to-go-to-the-gym-india",
+   "title": "Do I Need to Go to the Gym to Be Fit?",
+   "url": "https://kabo.co.in/blogs/news/do-i-need-to-go-to-the-gym-india"
+  },
+  {
    "handle": "do-indian-vegetarians-get-enough-protein",
    "title": "Do Indian Vegetarians Get Enough Protein? The Data",
    "url": "https://kabo.co.in/blogs/news/do-indian-vegetarians-get-enough-protein"
@@ -7084,6 +7178,11 @@
    "handle": "does-cooking-destroy-protein-india",
    "title": "Does Cooking Destroy Protein? Dal, Sprouts and Paneer",
    "url": "https://kabo.co.in/blogs/news/does-cooking-destroy-protein-india"
+  },
+  {
+   "handle": "does-meditation-reduce-stress-india",
+   "title": "Does Meditation Lower Stress and Cortisol? The Evidence",
+   "url": "https://kabo.co.in/blogs/news/does-meditation-reduce-stress-india"
   },
   {
    "handle": "does-plant-protein-cause-bloating",
@@ -7221,6 +7320,11 @@
    "url": "https://kabo.co.in/blogs/news/farmers-field-work-nutrition-india"
   },
   {
+   "handle": "fast-bowler-nutrition-india",
+   "title": "Fast Bowler Nutrition: Fuel for Long Spells and a Healthy Back",
+   "url": "https://kabo.co.in/blogs/news/fast-bowler-nutrition-india"
+  },
+  {
    "handle": "fat-burner-supplements-india",
    "title": "Fat Burners in India: What They Do and Do Not",
    "url": "https://kabo.co.in/blogs/news/fat-burner-supplements-india"
@@ -7344,6 +7448,16 @@
    "handle": "fibre-intake-calculator",
    "title": "Fibre Intake Calculator: How Much Dietary Fibre Do You Need Per Day?",
    "url": "https://kabo.co.in/blogs/news/fibre-intake-calculator"
+  },
+  {
+   "handle": "fibre-vs-protein-weight-loss-india",
+   "title": "Fibre vs Protein for Weight Loss: Which Keeps Hunger Lower?",
+   "url": "https://kabo.co.in/blogs/news/fibre-vs-protein-weight-loss-india"
+  },
+  {
+   "handle": "field-hockey-nutrition-india",
+   "title": "Field Hockey Nutrition: Four Quarters on Hot Astroturf",
+   "url": "https://kabo.co.in/blogs/news/field-hockey-nutrition-india"
   },
   {
    "handle": "field-sales-jobs-on-the-road-india",
@@ -7471,6 +7585,11 @@
    "url": "https://kabo.co.in/blogs/news/foods-to-avoid-high-uric-acid-india"
   },
   {
+   "handle": "football-nutrition-india",
+   "title": "Football Diet Plan: Eating for 90 Minutes and Busy Fixtures",
+   "url": "https://kabo.co.in/blogs/news/football-nutrition-india"
+  },
+  {
    "handle": "fortified-food-meaning-india",
    "title": "What Does 'Fortified' Mean on Food Labels? (India)",
    "url": "https://kabo.co.in/blogs/news/fortified-food-meaning-india"
@@ -7514,6 +7633,11 @@
    "handle": "functional-nutrition-india",
    "title": "Functional Nutrition Explained (India)",
    "url": "https://kabo.co.in/blogs/news/functional-nutrition-india"
+  },
+  {
+   "handle": "futsal-five-a-side-nutrition-india",
+   "title": "Futsal and 5-a-Side Turf Nutrition: Fuel for 40 Fast Minutes",
+   "url": "https://kabo.co.in/blogs/news/futsal-five-a-side-nutrition-india"
   },
   {
    "handle": "future-of-nutrition-india",
@@ -7576,6 +7700,16 @@
    "url": "https://kabo.co.in/blogs/news/glp1-protein-muscle-india"
   },
   {
+   "handle": "glutamine-body-makes-it-india",
+   "title": "Glutamine: The Amino Acid Your Muscles Already Make",
+   "url": "https://kabo.co.in/blogs/news/glutamine-body-makes-it-india"
+  },
+  {
+   "handle": "glutathione-skin-claims-india",
+   "title": "Glutathione: How Your Body Makes It, and the Skin Claims",
+   "url": "https://kabo.co.in/blogs/news/glutathione-skin-claims-india"
+  },
+  {
    "handle": "gluten-free-protein-sources-india",
    "title": "Gluten-Free Protein Sources for Indians",
    "url": "https://kabo.co.in/blogs/news/gluten-free-protein-sources-india"
@@ -7604,6 +7738,11 @@
    "handle": "goji-berry-benefits-india",
    "title": "Goji Berry Benefits (India Guide)",
    "url": "https://kabo.co.in/blogs/news/goji-berry-benefits-india"
+  },
+  {
+   "handle": "golf-nutrition-india",
+   "title": "Golf Nutrition: What to Eat Over an 18-Hole Round",
+   "url": "https://kabo.co.in/blogs/news/golf-nutrition-india"
   },
   {
    "handle": "green-protein-smoothie-recipe",
@@ -7669,6 +7808,16 @@
    "handle": "gym-workout-plan-for-beginners-india",
    "title": "Gym Workout Plan for Beginners in India: Free 7-Day Split",
    "url": "https://kabo.co.in/blogs/news/gym-workout-plan-for-beginners-india"
+  },
+  {
+   "handle": "gymnastics-nutrition-india",
+   "title": "Gymnastics Nutrition: Eating Enough for Strength and Growth",
+   "url": "https://kabo.co.in/blogs/news/gymnastics-nutrition-india"
+  },
+  {
+   "handle": "handball-nutrition-india",
+   "title": "Handball Nutrition: Sprints, Contact and Jump Shots",
+   "url": "https://kabo.co.in/blogs/news/handball-nutrition-india"
   },
   {
    "handle": "hangover-recovery-india",
@@ -7739,6 +7888,11 @@
    "handle": "hidden-supplement-myths-indians-believe",
    "title": "Hidden Supplement Myths Indians Believe",
    "url": "https://kabo.co.in/blogs/news/hidden-supplement-myths-indians-believe"
+  },
+  {
+   "handle": "high-fibre-indian-breakfast-ideas",
+   "title": "Fibre at Breakfast: Ten Indian Dishes That Fill the Gap",
+   "url": "https://kabo.co.in/blogs/news/high-fibre-indian-breakfast-ideas"
   },
   {
    "handle": "high-protein-breakfast-recipes-india",
@@ -7826,6 +7980,11 @@
    "url": "https://kabo.co.in/blogs/news/high-protein-masala-oats-recipe"
   },
   {
+   "handle": "high-protein-meals-indian-plates",
+   "title": "Protein-Rich Lunch and Dinner Plates: 15 Indian Combinations",
+   "url": "https://kabo.co.in/blogs/news/high-protein-meals-indian-plates"
+  },
+  {
    "handle": "high-protein-packaged-foods-india-2027",
    "title": "High-Protein Label Claims in 2027: Packaged Foods Tested",
    "url": "https://kabo.co.in/blogs/news/high-protein-packaged-foods-india-2027"
@@ -7901,6 +8060,21 @@
    "url": "https://kabo.co.in/blogs/news/hosting-guests-healthy-indian-food"
   },
   {
+   "handle": "how-body-makes-collagen-india",
+   "title": "Collagen Synthesis: The Nutrients Your Skin Needs to Make It",
+   "url": "https://kabo.co.in/blogs/news/how-body-makes-collagen-india"
+  },
+  {
+   "handle": "how-body-makes-creatine-india",
+   "title": "How Your Body Makes Creatine, and Why Food Can't Match It",
+   "url": "https://kabo.co.in/blogs/news/how-body-makes-creatine-india"
+  },
+  {
+   "handle": "how-body-makes-melatonin-india",
+   "title": "Your Body's Own Melatonin: Light, Tryptophan and Timing",
+   "url": "https://kabo.co.in/blogs/news/how-body-makes-melatonin-india"
+  },
+  {
    "handle": "how-kabo-helps-in-boosting-gut-enzymes",
    "title": "shake for gut enzymes",
    "url": "https://kabo.co.in/blogs/news/how-kabo-helps-in-boosting-gut-enzymes"
@@ -7909,6 +8083,16 @@
    "handle": "how-kabo-is-made-sourcing-india",
    "title": "How KABO Is Made: Sourcing, Manufacturing and What's Actually in the Scoop",
    "url": "https://kabo.co.in/blogs/news/how-kabo-is-made-sourcing-india"
+  },
+  {
+   "handle": "how-long-after-eating-yoga-india",
+   "title": "Yoga After Eating: How Many Hours to Wait",
+   "url": "https://kabo.co.in/blogs/news/how-long-after-eating-yoga-india"
+  },
+  {
+   "handle": "how-long-between-meals-india",
+   "title": "How Long Should You Wait Between Meals?",
+   "url": "https://kabo.co.in/blogs/news/how-long-between-meals-india"
   },
   {
    "handle": "how-long-for-protein-to-show-results-india",
@@ -7926,6 +8110,11 @@
    "url": "https://kabo.co.in/blogs/news/how-long-to-lose-10-kg-india"
   },
   {
+   "handle": "how-long-to-see-exercise-results-india",
+   "title": "When Will I Notice Changes From Working Out?",
+   "url": "https://kabo.co.in/blogs/news/how-long-to-see-exercise-results-india"
+  },
+  {
    "handle": "how-many-calories-in-an-all-in-one-nutrition-shake",
    "title": "How Many Calories Are in an All-in-One Nutrition Shake?",
    "url": "https://kabo.co.in/blogs/news/how-many-calories-in-an-all-in-one-nutrition-shake"
@@ -7934,6 +8123,21 @@
    "handle": "how-many-calories-per-day-india",
    "title": "How Many Calories Do You Need Per Day? (Indian Guide)",
    "url": "https://kabo.co.in/blogs/news/how-many-calories-per-day-india"
+  },
+  {
+   "handle": "how-many-cups-of-chai-a-day-india",
+   "title": "How Many Cups of Chai a Day Is Safe?",
+   "url": "https://kabo.co.in/blogs/news/how-many-cups-of-chai-a-day-india"
+  },
+  {
+   "handle": "how-many-dry-fruits-per-day-india",
+   "title": "How Many Dry Fruits a Day? Portions, Calories and Benefits",
+   "url": "https://kabo.co.in/blogs/news/how-many-dry-fruits-per-day-india"
+  },
+  {
+   "handle": "how-many-eggs-a-day-india",
+   "title": "How Many Eggs Is It Safe to Eat Daily?",
+   "url": "https://kabo.co.in/blogs/news/how-many-eggs-a-day-india"
   },
   {
    "handle": "how-many-eggs-equal-one-scoop-protein-india",
@@ -7946,6 +8150,11 @@
    "url": "https://kabo.co.in/blogs/news/how-many-goji-berries-a-day-india"
   },
   {
+   "handle": "how-many-meals-a-day-india",
+   "title": "Three Meals or Six: How Often Should You Eat?",
+   "url": "https://kabo.co.in/blogs/news/how-many-meals-a-day-india"
+  },
+  {
    "handle": "how-many-scoops-of-protein-per-day",
    "title": "How Many Scoops of Protein Per Day Is Right for You?",
    "url": "https://kabo.co.in/blogs/news/how-many-scoops-of-protein-per-day"
@@ -7954,6 +8163,16 @@
    "handle": "how-many-superfoods-do-you-actually-need",
    "title": "How Many Superfoods Do You Actually Need in a Day?",
    "url": "https://kabo.co.in/blogs/news/how-many-superfoods-do-you-actually-need"
+  },
+  {
+   "handle": "how-much-exercise-per-week-india",
+   "title": "How Much Exercise Do I Need a Week, by Age?",
+   "url": "https://kabo.co.in/blogs/news/how-much-exercise-per-week-india"
+  },
+  {
+   "handle": "how-much-fruit-a-day-india",
+   "title": "How Much Fruit Should You Eat in a Day?",
+   "url": "https://kabo.co.in/blogs/news/how-much-fruit-a-day-india"
   },
   {
    "handle": "how-much-plant-protein-per-scoop-do-you-need",
@@ -7994,6 +8213,21 @@
    "handle": "how-much-protein-vegetarians-need-india",
    "title": "How Much Protein Do Indian Vegetarians Really Need?",
    "url": "https://kabo.co.in/blogs/news/how-much-protein-vegetarians-need-india"
+  },
+  {
+   "handle": "how-much-salt-per-day-india",
+   "title": "How Much Salt a Day? The 5 g Limit in Indian Kitchens",
+   "url": "https://kabo.co.in/blogs/news/how-much-salt-per-day-india"
+  },
+  {
+   "handle": "how-much-sleep-do-i-need-india",
+   "title": "How Much Sleep Do I Need? Hours by Age",
+   "url": "https://kabo.co.in/blogs/news/how-much-sleep-do-i-need-india"
+  },
+  {
+   "handle": "how-much-sugar-per-day-india",
+   "title": "How Much Sugar Per Day Is Too Much?",
+   "url": "https://kabo.co.in/blogs/news/how-much-sugar-per-day-india"
   },
   {
    "handle": "how-much-water-high-protein-diet-india",
@@ -8139,6 +8373,11 @@
    "handle": "how-to-start-protein-beginner-india",
    "title": "How to Start Protein as a Total Beginner (India)",
    "url": "https://kabo.co.in/blogs/news/how-to-start-protein-beginner-india"
+  },
+  {
+   "handle": "how-to-stop-overeating-india",
+   "title": "How Do I Stop Overeating? Practical Fixes",
+   "url": "https://kabo.co.in/blogs/news/how-to-stop-overeating-india"
   },
   {
    "handle": "how-to-stop-sugar-cravings-india",
@@ -8351,6 +8590,21 @@
    "url": "https://kabo.co.in/blogs/news/is-expensive-protein-worth-it-india"
   },
   {
+   "handle": "is-it-bad-to-drink-water-with-meals-india",
+   "title": "Is It Bad to Drink Water With Meals?",
+   "url": "https://kabo.co.in/blogs/news/is-it-bad-to-drink-water-with-meals-india"
+  },
+  {
+   "handle": "is-it-okay-to-nap-after-lunch-india",
+   "title": "Is It Okay to Nap After Lunch?",
+   "url": "https://kabo.co.in/blogs/news/is-it-okay-to-nap-after-lunch-india"
+  },
+  {
+   "handle": "is-it-okay-to-work-out-every-day-india",
+   "title": "Is It Okay to Work Out Every Day?",
+   "url": "https://kabo.co.in/blogs/news/is-it-okay-to-work-out-every-day-india"
+  },
+  {
    "handle": "is-kabo-best-all-in-one-protein-india",
    "title": "Is KABO the Best All-in-One Protein in India? An Honest Look",
    "url": "https://kabo.co.in/blogs/news/is-kabo-best-all-in-one-protein-india"
@@ -8436,9 +8690,19 @@
    "url": "https://kabo.co.in/blogs/news/is-protein-powder-veg-or-non-veg-india"
   },
   {
+   "handle": "is-rice-bad-for-weight-loss-india",
+   "title": "Is Rice Bad for Weight Loss? The Honest Answer",
+   "url": "https://kabo.co.in/blogs/news/is-rice-bad-for-weight-loss-india"
+  },
+  {
    "handle": "is-soya-protein-good-or-bad-india",
    "title": "Is Soya Protein Good or Bad? India Myths Cleared",
    "url": "https://kabo.co.in/blogs/news/is-soya-protein-good-or-bad-india"
+  },
+  {
+   "handle": "is-walking-enough-exercise-india",
+   "title": "Is Walking Enough Exercise on Its Own?",
+   "url": "https://kabo.co.in/blogs/news/is-walking-enough-exercise-india"
   },
   {
    "handle": "is-whey-making-you-bloat-india",
@@ -8461,9 +8725,24 @@
    "url": "https://kabo.co.in/blogs/news/jaggery-vs-sugar-india"
   },
   {
+   "handle": "javelin-throwers-nutrition-india",
+   "title": "Javelin and Throwing Events: Nutrition for Power Athletes",
+   "url": "https://kabo.co.in/blogs/news/javelin-throwers-nutrition-india"
+  },
+  {
+   "handle": "jeera-methi-ajwain-water-india",
+   "title": "Jeera, Methi and Ajwain Water: What the Evidence Says",
+   "url": "https://kabo.co.in/blogs/news/jeera-methi-ajwain-water-india"
+  },
+  {
    "handle": "junk-food-side-effects-india",
    "title": "Side Effects of Junk Food: What Happens to Your Body, Short Term and Long Term",
    "url": "https://kabo.co.in/blogs/news/junk-food-side-effects-india"
+  },
+  {
+   "handle": "kabaddi-match-day-diet-india",
+   "title": "Kabaddi Match-Day Diet for Raiders and Defenders",
+   "url": "https://kabo.co.in/blogs/news/kabaddi-match-day-diet-india"
   },
   {
    "handle": "kabo-26-vitamins-and-minerals",
@@ -8586,6 +8865,11 @@
    "url": "https://kabo.co.in/blogs/news/keto-diet-india-what-works"
   },
   {
+   "handle": "kho-kho-nutrition-india",
+   "title": "Kho-Kho Diet: Eating for Chasers, Dodgers and Pole Dives",
+   "url": "https://kabo.co.in/blogs/news/kho-kho-nutrition-india"
+  },
+  {
    "handle": "kidney-stones-diet-india",
    "title": "Kidney Stones: Diet Dos and Don'ts in India",
    "url": "https://kabo.co.in/blogs/news/kidney-stones-diet-india"
@@ -8634,6 +8918,11 @@
    "handle": "late-night-dinner-india",
    "title": "Dinner at 11 PM: How to Eat Late Without Wrecking Your Sleep and Digestion",
    "url": "https://kabo.co.in/blogs/news/late-night-dinner-india"
+  },
+  {
+   "handle": "leucine-bcaa-per-meal-india",
+   "title": "BCAAs and Leucine: Why You Must Eat Them, and How Much",
+   "url": "https://kabo.co.in/blogs/news/leucine-bcaa-per-meal-india"
   },
   {
    "handle": "lipid-profile-test-explained-india",
@@ -8721,6 +9010,11 @@
    "url": "https://kabo.co.in/blogs/news/make-protein-daily-routine-india"
   },
   {
+   "handle": "makhana-benefits-india",
+   "title": "Makhana Benefits: How Much a Day, and What It Really Does",
+   "url": "https://kabo.co.in/blogs/news/makhana-benefits-india"
+  },
+  {
    "handle": "male-hair-loss-nutrition-india",
    "title": "Male Hair Loss and Nutrition in India: What Actually Helps",
    "url": "https://kabo.co.in/blogs/news/male-hair-loss-nutrition-india"
@@ -8739,6 +9033,11 @@
    "handle": "mango-protein-shake-recipe",
    "title": "Mango Protein Shake Recipe for Summer: 3 Easy High-Protein Blends",
    "url": "https://kabo.co.in/blogs/news/mango-protein-shake-recipe"
+  },
+  {
+   "handle": "martial-arts-nutrition-india",
+   "title": "Karate, Judo and Taekwondo: Nutrition for Martial Artists",
+   "url": "https://kabo.co.in/blogs/news/martial-arts-nutrition-india"
   },
   {
    "handle": "mass-gainers-india-worth-it",
@@ -8796,6 +9095,11 @@
    "url": "https://kabo.co.in/blogs/news/medicinal-mushrooms-benefits"
   },
   {
+   "handle": "meditation-for-beginners-india",
+   "title": "Meditation for Beginners: A Simple 10-Minute Practice",
+   "url": "https://kabo.co.in/blogs/news/meditation-for-beginners-india"
+  },
+  {
    "handle": "melatonin-in-food-india",
    "title": "Melatonin in Food: Indian Sources and What They Really Do",
    "url": "https://kabo.co.in/blogs/news/melatonin-in-food-india"
@@ -8831,6 +9135,11 @@
    "url": "https://kabo.co.in/blogs/news/millets-vs-rice-wheat-nutrition-data"
   },
   {
+   "handle": "mindful-eating-how-to-india",
+   "title": "Mindful Eating: How to Practise It at Indian Meals",
+   "url": "https://kabo.co.in/blogs/news/mindful-eating-how-to-india"
+  },
+  {
    "handle": "mixing-protein-powder-milk-or-water-india",
    "title": "Protein Powder With Milk or Water: What Changes (Protein, Calories, Thickness, Digestion)",
    "url": "https://kabo.co.in/blogs/news/mixing-protein-powder-milk-or-water-india"
@@ -8851,6 +9160,16 @@
    "url": "https://kabo.co.in/blogs/news/moringa-vs-spinach-nutrition"
   },
   {
+   "handle": "morning-routine-for-energy-india",
+   "title": "A Morning Routine for Natural Energy, Step by Step",
+   "url": "https://kabo.co.in/blogs/news/morning-routine-for-energy-india"
+  },
+  {
+   "handle": "most-nutritious-indian-vegetables",
+   "title": "The Most Nutritious Indian Vegetables, and What Each Gives",
+   "url": "https://kabo.co.in/blogs/news/most-nutritious-indian-vegetables"
+  },
+  {
    "handle": "multivitamin-vs-all-in-one-nutrition-india",
    "title": "Do You Need a Multivitamin in India? Multivitamins vs All-in-One Nutrition",
    "url": "https://kabo.co.in/blogs/news/multivitamin-vs-all-in-one-nutrition-india"
@@ -8861,6 +9180,11 @@
    "url": "https://kabo.co.in/blogs/news/multivitamin-vs-food-vitamins-india"
   },
   {
+   "handle": "multivitamins-men-women-india",
+   "title": "Multivitamins for Men and Women: What Actually Differs",
+   "url": "https://kabo.co.in/blogs/news/multivitamins-men-women-india"
+  },
+  {
    "handle": "muscle-loss-after-40-india",
    "title": "Muscle Loss After 40: Why It Happens &amp; What Indians Can Do",
    "url": "https://kabo.co.in/blogs/news/muscle-loss-after-40-india"
@@ -8869,6 +9193,11 @@
    "handle": "muscle-soreness-after-workout-doms-india",
    "title": "Sore After a Workout? What DOMS Is, and What Actually Helps",
    "url": "https://kabo.co.in/blogs/news/muscle-soreness-after-workout-doms-india"
+  },
+  {
+   "handle": "nad-niacin-body-makes-india",
+   "title": "NAD+: What Your Body Makes It From, and the Ageing Hype",
+   "url": "https://kabo.co.in/blogs/news/nad-niacin-body-makes-india"
   },
   {
    "handle": "natural-blood-sugar-management-a-sweet-treat-for-diabetics",
@@ -8896,6 +9225,11 @@
    "url": "https://kabo.co.in/blogs/news/navigating-busy-days-discover-the-benefits-of-plant-protein-for-office-workers"
   },
   {
+   "handle": "netball-nutrition-india",
+   "title": "Netball Nutrition: Centre Pass to Final Whistle, by Position",
+   "url": "https://kabo.co.in/blogs/news/netball-nutrition-india"
+  },
+  {
    "handle": "new-parents-nutrition-india",
    "title": "Eating Well as New Parents: Nutrition on Four Hours' Sleep",
    "url": "https://kabo.co.in/blogs/news/new-parents-nutrition-india"
@@ -8914,6 +9248,11 @@
    "handle": "night-shift-diet-india",
    "title": "Night Shift Nutrition: An Indian Survival Guide",
    "url": "https://kabo.co.in/blogs/news/night-shift-diet-india"
+  },
+  {
+   "handle": "nitric-oxide-arginine-nitrate-india",
+   "title": "Nitric Oxide: How Your Body Makes It, and Foods That Help",
+   "url": "https://kabo.co.in/blogs/news/nitric-oxide-arginine-nitrate-india"
   },
   {
    "handle": "no-added-sugar-vs-total-sugar-india",
@@ -8954,6 +9293,31 @@
    "handle": "nutrition-and-productivity-in-india",
    "title": "Nutrition and Productivity in India: Boost Focus with KABO",
    "url": "https://kabo.co.in/blogs/news/nutrition-and-productivity-in-india"
+  },
+  {
+   "handle": "nutrition-at-13-india",
+   "title": "Nutrition at 13: Feeding the Growth Spurt",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-13-india"
+  },
+  {
+   "handle": "nutrition-at-14-india",
+   "title": "Nutrition at 14: Iron for Girls Once Periods Begin",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-14-india"
+  },
+  {
+   "handle": "nutrition-at-15-india",
+   "title": "Nutrition at 15: Sport, Training and Protein From Real Food",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-15-india"
+  },
+  {
+   "handle": "nutrition-at-16-india",
+   "title": "Nutrition at 16: Exam Stress, Sleep and the Breakfast Habit",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-16-india"
+  },
+  {
+   "handle": "nutrition-at-17-india",
+   "title": "Nutrition at 17: Body Image, Diet Culture and Eating Safely",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-17-india"
   },
   {
    "handle": "nutrition-at-18-india",
@@ -9194,6 +9558,81 @@
    "handle": "nutrition-at-65-india",
    "title": "Nutrition at 65: Frailty, Falls and Staying Independent",
    "url": "https://kabo.co.in/blogs/news/nutrition-at-65-india"
+  },
+  {
+   "handle": "nutrition-at-66-india",
+   "title": "Nutrition at 66: When Retirement Breaks Your Eating Routine",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-66-india"
+  },
+  {
+   "handle": "nutrition-at-67-india",
+   "title": "Nutrition at 67: Eating Less? Make Every Spoonful Count",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-67-india"
+  },
+  {
+   "handle": "nutrition-at-68-india",
+   "title": "Nutrition at 68: Sarcopenia and Muscle You Can Measure",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-68-india"
+  },
+  {
+   "handle": "nutrition-at-69-india",
+   "title": "Nutrition at 69: Soft High-Protein Food for Denture Wearers",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-69-india"
+  },
+  {
+   "handle": "nutrition-at-70-india",
+   "title": "Nutrition at 70: The PROT-AGE Numbers, Meal by Meal",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-70-india"
+  },
+  {
+   "handle": "nutrition-at-71-india",
+   "title": "Nutrition at 71: Falls, Vitamin D and Why Exercise Wins",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-71-india"
+  },
+  {
+   "handle": "nutrition-at-72-india",
+   "title": "Nutrition at 72: Many Medicines and Food Interactions",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-72-india"
+  },
+  {
+   "handle": "nutrition-at-73-india",
+   "title": "Nutrition at 73: Thirst Fades, So Drink to a Schedule",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-73-india"
+  },
+  {
+   "handle": "nutrition-at-74-india",
+   "title": "Nutrition at 74: Constipation, Fibre and Enough Water",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-74-india"
+  },
+  {
+   "handle": "nutrition-at-75-india",
+   "title": "Nutrition at 75: Why B12 Absorption Falls and What to Do",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-75-india"
+  },
+  {
+   "handle": "nutrition-at-76-india",
+   "title": "Nutrition at 76: Rebuilding Strength After a Hospital Stay",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-76-india"
+  },
+  {
+   "handle": "nutrition-at-77-india",
+   "title": "Nutrition at 77: Memory and Diet, With Honest Evidence",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-77-india"
+  },
+  {
+   "handle": "nutrition-at-78-india",
+   "title": "Nutrition at 78: Cooking for One When You Live Alone",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-78-india"
+  },
+  {
+   "handle": "nutrition-at-79-india",
+   "title": "Nutrition at 79: Helping a Parent Eat Well, for Caregivers",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-79-india"
+  },
+  {
+   "handle": "nutrition-at-80-india",
+   "title": "Nutrition at 80: Frailty and Small, Frequent Meals",
+   "url": "https://kabo.co.in/blogs/news/nutrition-at-80-india"
   },
   {
    "handle": "nutrition-daily-energy-how-to-predict-your-biological-hunger-clock",
@@ -9516,6 +9955,11 @@
    "url": "https://kabo.co.in/blogs/news/photoshoot-prep-week-india"
   },
   {
+   "handle": "pickleball-nutrition-india",
+   "title": "Pickleball After 35: Protein, Hydration and Joint Care",
+   "url": "https://kabo.co.in/blogs/news/pickleball-nutrition-india"
+  },
+  {
    "handle": "plant-based-complete-nutrition-for-post-workout-recovery",
    "title": "Plant-Based Complete Nutrition for Post-Workout Recovery with KABO",
    "url": "https://kabo.co.in/blogs/news/plant-based-complete-nutrition-for-post-workout-recovery"
@@ -9726,9 +10170,19 @@
    "url": "https://kabo.co.in/blogs/news/postpartum-diet-india"
   },
   {
+   "handle": "potassium-rich-foods-india",
+   "title": "Potassium-Rich Indian Foods and How Much You Need",
+   "url": "https://kabo.co.in/blogs/news/potassium-rich-foods-india"
+  },
+  {
    "handle": "power-through-tired-afternoons-vitamins-that-enhance-productivity",
    "title": "Power Through Tired Afternoons: Vitamins That Enhance Productivity",
    "url": "https://kabo.co.in/blogs/news/power-through-tired-afternoons-vitamins-that-enhance-productivity"
+  },
+  {
+   "handle": "pranayama-types-how-to-india",
+   "title": "Pranayama Types: Anulom Vilom, Bhramari, Kapalbhati",
+   "url": "https://kabo.co.in/blogs/news/pranayama-types-how-to-india"
   },
   {
    "handle": "pre-workout-food-india",
@@ -9794,6 +10248,11 @@
    "handle": "protein-bars-vs-shakes-india",
    "title": "Protein Bars vs Protein Shakes in India: Which &amp; When",
    "url": "https://kabo.co.in/blogs/news/protein-bars-vs-shakes-india"
+  },
+  {
+   "handle": "protein-bars-what-to-check-india",
+   "title": "Protein Bars: How to Pick One Worth Eating",
+   "url": "https://kabo.co.in/blogs/news/protein-bars-what-to-check-india"
   },
   {
    "handle": "protein-by-age-and-weight-table-india",
@@ -10661,6 +11120,11 @@
    "url": "https://kabo.co.in/blogs/news/roasted-chana-snack-protein"
   },
   {
+   "handle": "rugby-sevens-nutrition-india",
+   "title": "Rugby Sevens Nutrition: Eating Between Tournament Games",
+   "url": "https://kabo.co.in/blogs/news/rugby-sevens-nutrition-india"
+  },
+  {
    "handle": "running-nutrition-india",
    "title": "Nutrition for Runners in India: Fuelling in Heat and Humidity",
    "url": "https://kabo.co.in/blogs/news/running-nutrition-india"
@@ -10731,6 +11195,11 @@
    "url": "https://kabo.co.in/blogs/news/shiitake-mushroom-benefits-india"
   },
   {
+   "handle": "shooting-sport-nutrition-india",
+   "title": "Rifle and Pistol Shooting: Food, Caffeine and Steady Nerves",
+   "url": "https://kabo.co.in/blogs/news/shooting-sport-nutrition-india"
+  },
+  {
    "handle": "shopkeepers-small-business-owners-eating-india",
    "title": "Eating at the Counter: A Nutrition Guide for Shopkeepers and Small Business Owners",
    "url": "https://kabo.co.in/blogs/news/shopkeepers-small-business-owners-eating-india"
@@ -10739,6 +11208,11 @@
    "handle": "should-you-take-protein-on-rest-days-india",
    "title": "Should You Take Protein on Rest Days?",
    "url": "https://kabo.co.in/blogs/news/should-you-take-protein-on-rest-days-india"
+  },
+  {
+   "handle": "should-you-walk-after-eating-india",
+   "title": "Should You Walk After Eating? How Long and When",
+   "url": "https://kabo.co.in/blogs/news/should-you-walk-after-eating-india"
   },
   {
    "handle": "signs-not-enough-protein-gen-z-india",
@@ -10821,6 +11295,11 @@
    "url": "https://kabo.co.in/blogs/news/soaking-nuts-and-dals-overnight-india"
   },
   {
+   "handle": "softball-baseball-nutrition-india",
+   "title": "Softball and Baseball Nutrition for Pitchers and Fielders",
+   "url": "https://kabo.co.in/blogs/news/softball-baseball-nutrition-india"
+  },
+  {
    "handle": "south-asian-heart-risk-india",
    "title": "Why South Asians Get Heart Disease Earlier",
    "url": "https://kabo.co.in/blogs/news/south-asian-heart-risk-india"
@@ -10851,9 +11330,19 @@
    "url": "https://kabo.co.in/blogs/news/soya-chunks-curry-recipe"
   },
   {
+   "handle": "soybean-sprouts-edamame-nutrition-india",
+   "title": "Soybean Sprouts and Edamame: Nutrition and How to Cook Them",
+   "url": "https://kabo.co.in/blogs/news/soybean-sprouts-edamame-nutrition-india"
+  },
+  {
    "handle": "spinach-powder-benefits-india",
    "title": "Spinach Powder &amp; Leafy Greens: Nutrition Facts (India)",
    "url": "https://kabo.co.in/blogs/news/spinach-powder-benefits-india"
+  },
+  {
+   "handle": "sprinter-diet-india",
+   "title": "Sprinter's Diet: Eating for 100 m to 400 m Speed",
+   "url": "https://kabo.co.in/blogs/news/sprinter-diet-india"
   },
   {
    "handle": "sprouting-at-home-india",
@@ -10976,14 +11465,29 @@
    "url": "https://kabo.co.in/blogs/news/switching-from-whey-to-plant-protein-india"
   },
   {
+   "handle": "table-tennis-nutrition-india",
+   "title": "Table Tennis Nutrition: Staying Sharp Match After Match",
+   "url": "https://kabo.co.in/blogs/news/table-tennis-nutrition-india"
+  },
+  {
    "handle": "taking-too-many-supplements-india",
    "title": "Taking Six Supplements a Day? What's Redundant and What's Worth Your Money",
    "url": "https://kabo.co.in/blogs/news/taking-too-many-supplements-india"
   },
   {
+   "handle": "taurine-body-makes-india",
+   "title": "Taurine: How Your Body Makes It, and Energy Drink Claims",
+   "url": "https://kabo.co.in/blogs/news/taurine-body-makes-india"
+  },
+  {
    "handle": "teen-sports-nutrition-india",
    "title": "Fuelling a Teenage Athlete: Food, Water and Recovery for School and College Sport",
    "url": "https://kabo.co.in/blogs/news/teen-sports-nutrition-india"
+  },
+  {
+   "handle": "tennis-nutrition-india",
+   "title": "Tennis Diet Plan: Eating Through Three-Hour Matches",
+   "url": "https://kabo.co.in/blogs/news/tennis-nutrition-india"
   },
   {
    "handle": "testosterone-boosters-india-evidence",
@@ -11041,6 +11545,11 @@
    "url": "https://kabo.co.in/blogs/news/third-party-lab-report-protein-powder-india"
   },
   {
+   "handle": "throwball-nutrition-india",
+   "title": "Throwball Nutrition for School, College and Office Teams",
+   "url": "https://kabo.co.in/blogs/news/throwball-nutrition-india"
+  },
+  {
    "handle": "thyroid-friendly-diet-india",
    "title": "Thyroid-Friendly Diet in India: What to Eat &amp; Avoid",
    "url": "https://kabo.co.in/blogs/news/thyroid-friendly-diet-india"
@@ -11091,9 +11600,19 @@
    "url": "https://kabo.co.in/blogs/news/turmeric-benefits-curcumin-explained"
   },
   {
+   "handle": "types-of-millets-benefits-india",
+   "title": "Types of Millets in India and What Each One Is Good For",
+   "url": "https://kabo.co.in/blogs/news/types-of-millets-benefits-india"
+  },
+  {
    "handle": "types-of-protein-supplements-india",
    "title": "Protein Supplements Explained: The Types and Who Needs One",
    "url": "https://kabo.co.in/blogs/news/types-of-protein-supplements-india"
+  },
+  {
+   "handle": "ultimate-frisbee-tournament-nutrition-india",
+   "title": "Ultimate Frisbee Nutrition: Fuel for Multi-Game Weekends",
+   "url": "https://kabo.co.in/blogs/news/ultimate-frisbee-tournament-nutrition-india"
   },
   {
    "handle": "ultra-processed-food-india",
@@ -11226,6 +11745,11 @@
    "url": "https://kabo.co.in/blogs/news/vitamin-c-benefits-india"
   },
   {
+   "handle": "vitamin-c-rich-foods-india",
+   "title": "Which Foods Have the Most Vitamin C? Amla, Guava and More",
+   "url": "https://kabo.co.in/blogs/news/vitamin-c-rich-foods-india"
+  },
+  {
    "handle": "vitamin-d-deficiency-india",
    "title": "Vitamin D Deficiency in India: Signs, Causes &amp; Foods",
    "url": "https://kabo.co.in/blogs/news/vitamin-d-deficiency-india"
@@ -11271,9 +11795,19 @@
    "url": "https://kabo.co.in/blogs/news/vitamins-vs-fatigue-strategies-for-unleashing-your-full-potential-at-work"
   },
   {
+   "handle": "volleyball-nutrition-india",
+   "title": "Volleyball Nutrition: Jump Load, Five Sets and Beach Heat",
+   "url": "https://kabo.co.in/blogs/news/volleyball-nutrition-india"
+  },
+  {
    "handle": "walking-10000-steps-india",
    "title": "10,000 Steps: Where the Number Came From and What to Aim For",
    "url": "https://kabo.co.in/blogs/news/walking-10000-steps-india"
+  },
+  {
+   "handle": "walking-vs-yoga-india",
+   "title": "Walking or Yoga: Which Is Better for Everyday Health?",
+   "url": "https://kabo.co.in/blogs/news/walking-vs-yoga-india"
   },
   {
    "handle": "warm-protein-drink-winter-india",
@@ -11356,6 +11890,11 @@
    "url": "https://kabo.co.in/blogs/news/weight-regain-after-diet-india"
   },
   {
+   "handle": "weightlifting-nutrition-india",
+   "title": "Olympic Weightlifting: Eating for Snatch, Clean and Jerk",
+   "url": "https://kabo.co.in/blogs/news/weightlifting-nutrition-india"
+  },
+  {
    "handle": "what-are-essential-amino-acids",
    "title": "What Are Essential Amino Acids and Why They Matter",
    "url": "https://kabo.co.in/blogs/news/what-are-essential-amino-acids"
@@ -11389,6 +11928,16 @@
    "handle": "what-is-kabo-complete-facts",
    "title": "What Is KABO? Complete Facts, Ingredients &amp; FAQ",
    "url": "https://kabo.co.in/blogs/news/what-is-kabo-complete-facts"
+  },
+  {
+   "handle": "what-is-nutrition-indian-plate",
+   "title": "What Is Nutrition? The Six Nutrient Groups on an Indian Plate",
+   "url": "https://kabo.co.in/blogs/news/what-is-nutrition-indian-plate"
+  },
+  {
+   "handle": "what-is-protein-india",
+   "title": "What Is Protein? The Nutrient Your Body Builds With",
+   "url": "https://kabo.co.in/blogs/news/what-is-protein-india"
   },
   {
    "handle": "what-is-whole-body-nutrition",
@@ -11586,9 +12135,39 @@
    "url": "https://kabo.co.in/blogs/news/working-mothers-no-time-to-eat-india"
   },
   {
+   "handle": "wrestling-making-weight-india",
+   "title": "Making Weight in Wrestling Without Crash Cutting",
+   "url": "https://kabo.co.in/blogs/news/wrestling-making-weight-india"
+  },
+  {
    "handle": "yatra-pilgrimage-nutrition-india",
    "title": "Yatra Nutrition: How to Eat and Drink Well on Vaishno Devi, Sabarimala and Char Dham",
    "url": "https://kabo.co.in/blogs/news/yatra-pilgrimage-nutrition-india"
+  },
+  {
+   "handle": "yoga-during-periods-india",
+   "title": "Yoga During Periods: Gentle Poses and What to Skip",
+   "url": "https://kabo.co.in/blogs/news/yoga-during-periods-india"
+  },
+  {
+   "handle": "yoga-for-beginners-at-home-india",
+   "title": "Yoga for Beginners at Home: A 20-Minute Routine",
+   "url": "https://kabo.co.in/blogs/news/yoga-for-beginners-at-home-india"
+  },
+  {
+   "handle": "yoga-for-better-sleep-india",
+   "title": "Yoga for Better Sleep: A 15-Minute Bedtime Routine",
+   "url": "https://kabo.co.in/blogs/news/yoga-for-better-sleep-india"
+  },
+  {
+   "handle": "yoga-for-lower-back-pain-india",
+   "title": "Yoga for Lower Back Pain: Gentle Poses and Limits",
+   "url": "https://kabo.co.in/blogs/news/yoga-for-lower-back-pain-india"
+  },
+  {
+   "handle": "yoga-nidra-how-to-india",
+   "title": "Yoga Nidra: What It Is and How to Practise It",
+   "url": "https://kabo.co.in/blogs/news/yoga-nidra-how-to-india"
   },
   {
    "handle": "zinc-benefits-india",

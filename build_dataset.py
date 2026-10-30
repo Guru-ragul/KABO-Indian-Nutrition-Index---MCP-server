@@ -236,9 +236,11 @@ TARGETS = [
  {"situation": "In a calorie deficit", "g_per_kg_low": 1.6, "g_per_kg_high": 1.6},
  {"situation": "Older adult, healthy (PROT-AGE)", "g_per_kg_low": 1.0, "g_per_kg_high": 1.2},
  {"situation": "Older adult, illness/recovery/training", "g_per_kg_low": 1.2, "g_per_kg_high": 1.5},
- {"situation": "Pregnancy, 2nd trimester (add to base)", "add_g_per_day": 9},
- {"situation": "Pregnancy, 3rd trimester (add to base)", "add_g_per_day": 22},
- {"situation": "Breastfeeding, 0-6 months (add to base)", "add_g_per_day": 17},
+ # ICMR-NIN 2020 RDA brief note, Table 2a (checked 31 Oct 2026)
+ {"situation": "Pregnancy, 2nd trimester (add to base)", "add_g_per_day": 9.5},
+ {"situation": "Pregnancy, 3rd trimester (add to base)", "add_g_per_day": 22.0},
+ {"situation": "Breastfeeding, 0-6 months (add to base)", "add_g_per_day": 16.9},
+ {"situation": "Breastfeeding, 6-12 months (add to base)", "add_g_per_day": 13.2},
  {"situation": "Chronic kidney disease",
   "note": "Set by a nephrologist. General targets do not apply."},
 ]
