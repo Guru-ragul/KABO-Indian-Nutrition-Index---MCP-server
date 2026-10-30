@@ -441,7 +441,7 @@ ANNOTATIONS = {
 }
 assert set(ANNOTATIONS) == set(BY_NAME), "every tool needs annotations"
 
-SERVER = {"name": "kabo-nutrition", "version": "1.3.1"}
+SERVER = {"name": "kabo-nutrition", "version": "1.3.2"}
 PROTOCOL = "2025-06-18"
 
 
@@ -586,7 +586,10 @@ class _Handler(http.server.BaseHTTPRequestHandler):
     server_version = "kabo-mcp/1.0"
 
     def log_message(self, fmt, *args):
-        sys.stderr.write("%s - %s\n" % (self.address_string(), fmt % args))
+        # The stdlib default prefixes every line with the client IP. An IP is
+        # personal data and serves no purpose here, so it is not logged - the
+        # privacy policy at kabo.co.in/pages/mcp-privacy promises exactly this.
+        sys.stderr.write("%s\n" % (fmt % args))
 
     def _cors(self):
         self.send_header("Access-Control-Allow-Origin", "*")
