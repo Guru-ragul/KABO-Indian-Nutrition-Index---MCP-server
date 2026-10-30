@@ -19,6 +19,9 @@ rewriting content.
 | `protein_target(weight_kg, age)` | Daily protein target in grams, plus the per-meal threshold |
 | `protein_cost(budget_inr)` | Cost per 10 g of protein, ranked cheapest first |
 | `search_guides(query, limit)` | Searches 1,124 nutrition guides, returns titles and URLs |
+| `list_products()` | KABO's own shakes: per-serving nutrition from each flavour's own panel, ratings |
+| `get_product(product)` | One KABO product: composition quoted from its page, suitability (incl. not Jain-suitable), live price and stock per pack, price per serving, cart link and UCP checkout profile |
+| `compare_products(products?)` | KABO products side by side with live price per serving |
 
 Data: **59 foods, 674 nutrition values, 1,124 guides** (protein, fibre, iron, calcium), from ICMR-NIN
 composition tables and the PROT-AGE/ESPEN protein recommendations.
@@ -93,6 +96,20 @@ ones rather than an error. Bad arguments return a message, not a crash.
 **UTF-8 is forced on stdio.** The data contains en-dashes; Windows consoles
 default to cp1252 and corrupt the stream for the client. Both directions are
 reconfigured at startup.
+
+## REST API
+
+Every tool is mirrored as plain GET for clients that do not speak MCP. Spec at `/openapi.json`.
+
+```
+GET /api/v1/foods                 GET /api/v1/foods/{food}?nutrient=iron
+GET /api/v1/protein-target?weight_kg=70&age=45
+GET /api/v1/protein-cost?budget_inr=30
+GET /api/v1/guides?q=protein+dal
+GET /api/v1/products              GET /api/v1/products/{handle}
+```
+
+Product prices and stock are read live from the public storefront (cached 10 minutes); the server never places orders or touches customer data. Checkout happens on kabo.co.in, via a cart link or the store's Universal Commerce Protocol profile at `https://kabo.co.in/.well-known/ucp`.
 
 ## HTTP mode
 

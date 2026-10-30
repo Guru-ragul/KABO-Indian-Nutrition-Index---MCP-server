@@ -8,6 +8,192 @@
   "PROT-AGE / ESPEN expert group recommendations"
  ],
  "disclaimer": "Nutrition information, not medical advice. Values are approximate and vary by variety, preparation and brand.",
+ "products": [
+  {
+   "handle": "assorted-pack",
+   "name": "Assorted pack",
+   "full_title": "Assorted pack - The Ultimate All-in-One-Nutrition",
+   "url": "https://kabo.co.in/products/assorted-pack",
+   "image": "https://cdn.shopify.com/s/files/1/0872/1422/7649/files/assorted-rebuilt.jpg?v=1787035433",
+   "nutrition_per_serving": {
+    "servingSize": "51-54 g",
+    "protein": "23-25 g",
+    "calories": "198 kcal",
+    "fibre": "4 g",
+    "superfoods": "60+",
+    "vitaminsMinerals": "26"
+   },
+   "nutrition_source": "https://kabo.co.in/products/assorted-pack (product nutrition panel)",
+   "protein_sources": "23-25g Clean Plant Protein from Premium Sources : Formulated using a high-quality plant protein blend that includes pea protein, brown rice protein, and yeast protein—delivering 23-25g of smooth, easy-to-digest protein to support strength, recovery, and everyday nutrition.",
+   "dietary_statement": "Clean, High-Quality Ingredients: Made without artificial fillers or preservatives, and crafted using real superfoods and plant-based ingredients—ideal for vegans, lactose-free users, and anyone seeking reliable daily nutrition.",
+   "functional_ingredients": "60+ Superfoods, Vitamins, Minerals & Fibre: Includes functional mushrooms, adaptogens, antioxidant-rich fruits and vegetables, and dietary fibre to support digestion, immunity, metabolism, and everyday vitality.",
+   "also_contains": "Nutrition per 51-54g serving: 23-25g plant protein · ~198 kcal · 4g fibre · 60+ superfoods, 26 vitamins & minerals, probiotics & digestive enzymes.",
+   "suitability": {
+    "vegan": "yes - the product page states it is ideal for vegans",
+    "lactose_free": "yes - the product page states it suits lactose-free users",
+    "jain": "no - contains functional mushrooms and yeast protein, which most Jain observances exclude",
+    "medical": "not a substitute for medical treatment; people with kidney disease, pregnant or breastfeeding, or on prescribed diets should check with their doctor first"
+   },
+   "rating": {
+    "average": "4.99",
+    "count": 455,
+    "source": "Judge.me reviews on kabo.co.in"
+   },
+   "variants": [
+    {
+     "id": 50486223634625,
+     "title": "15 Shakes",
+     "sku": "KABO-AST-15S",
+     "price_inr_snapshot": 2999.0,
+     "servings": 15,
+     "cart_url": "https://kabo.co.in/cart/50486223634625:1"
+    },
+    {
+     "id": 50486223667393,
+     "title": "30 Shakes",
+     "sku": "KABO-AST-30S",
+     "price_inr_snapshot": 4830.0,
+     "servings": 30,
+     "cart_url": "https://kabo.co.in/cart/50486223667393:1"
+    },
+    {
+     "id": 50486223700161,
+     "title": "60 Shakes",
+     "sku": "KABO-AST-60S",
+     "price_inr_snapshot": 9499.0,
+     "servings": 60,
+     "cart_url": "https://kabo.co.in/cart/50486223700161:1"
+    }
+   ]
+  },
+  {
+   "handle": "butter-coffee",
+   "name": "Butter Coffee",
+   "full_title": "Butter Coffee - The Ultimate All-In-One Nutrition",
+   "url": "https://kabo.co.in/products/butter-coffee",
+   "image": "https://cdn.shopify.com/s/files/1/0872/1422/7649/files/4_a300cac6-1e4d-4d1e-8be7-6adedf890327.png?v=1786472204",
+   "nutrition_per_serving": {
+    "servingSize": "54 g",
+    "protein": "23-25 g",
+    "calories": "198 kcal",
+    "fibre": "4 g",
+    "superfoods": "60+",
+    "vitaminsMinerals": "26"
+   },
+   "nutrition_source": "https://kabo.co.in/products/butter-coffee (product nutrition panel)",
+   "protein_sources": "23-25g Clean Plant Protein from Premium Sources : Formulated using a high-quality plant protein blend that includes pea protein, brown rice protein, and yeast protein—delivering 23-25g of smooth, easy-to-digest protein to support strength, recovery, and everyday nutrition.",
+   "dietary_statement": "Clean, High-Quality Ingredients: Made without artificial fillers or preservatives, and crafted using real superfoods and plant-based ingredients—ideal for vegans, lactose-free users, and anyone seeking reliable daily nutrition.",
+   "functional_ingredients": "60+ Superfoods, Vitamins, Minerals & Fibre: Includes functional mushrooms, adaptogens, antioxidant-rich fruits and vegetables, and dietary fibre to support digestion, immunity, metabolism, and everyday vitality.",
+   "also_contains": "Nutrition per 54g serving: 23-25g plant protein · ~198 kcal · 4g fibre · 60+ superfoods, 26 vitamins & minerals, probiotics & digestive enzymes.",
+   "suitability": {
+    "vegan": "yes - the product page states it is ideal for vegans",
+    "lactose_free": "yes - the product page states it suits lactose-free users",
+    "jain": "no - contains functional mushrooms and yeast protein, which most Jain observances exclude",
+    "medical": "not a substitute for medical treatment; people with kidney disease, pregnant or breastfeeding, or on prescribed diets should check with their doctor first"
+   },
+   "rating": {
+    "average": "4.68",
+    "count": 275,
+    "source": "Judge.me reviews on kabo.co.in"
+   },
+   "variants": [
+    {
+     "id": 50486223929537,
+     "title": "500g",
+     "sku": "KABO-BC-500G",
+     "price_inr_snapshot": 2249.0,
+     "servings": null,
+     "cart_url": "https://kabo.co.in/cart/50486223929537:1"
+    },
+    {
+     "id": 50486223962305,
+     "title": "15 Shakes",
+     "sku": "KABO-BC-15S",
+     "price_inr_snapshot": 2999.0,
+     "servings": 15,
+     "cart_url": "https://kabo.co.in/cart/50486223962305:1"
+    },
+    {
+     "id": 50486223995073,
+     "title": "30 Shakes",
+     "sku": "KABO-BC-30S",
+     "price_inr_snapshot": 4830.0,
+     "servings": 30,
+     "cart_url": "https://kabo.co.in/cart/50486223995073:1"
+    },
+    {
+     "id": 50486224027841,
+     "title": "60 Shakes",
+     "sku": "KABO-BC-60S",
+     "price_inr_snapshot": 9499.0,
+     "servings": 60,
+     "cart_url": "https://kabo.co.in/cart/50486224027841:1"
+    }
+   ]
+  },
+  {
+   "handle": "whitechocolateblueberry",
+   "name": "White Chocolate Blueberry",
+   "full_title": "White Chocolate Blueberry - The Ultimate All-In-One Nutrition Shake",
+   "url": "https://kabo.co.in/products/whitechocolateblueberry",
+   "image": "https://cdn.shopify.com/s/files/1/0872/1422/7649/files/2_98523878-5561-440c-9032-31de1d22f8c2.png?v=1786472185",
+   "nutrition_per_serving": {
+    "servingSize": "51 g",
+    "protein": "23-25 g",
+    "calories": "198 kcal",
+    "fibre": "4 g",
+    "superfoods": "60+",
+    "vitaminsMinerals": "26"
+   },
+   "nutrition_source": "https://kabo.co.in/products/whitechocolateblueberry (product nutrition panel)",
+   "protein_sources": "23-25g Clean Plant Protein from Premium Sources : Formulated using a high-quality plant protein blend that includes pea protein, brown rice protein, and yeast protein—delivering 23-25g of smooth, easy-to-digest protein to support strength, recovery, and everyday nutrition.",
+   "dietary_statement": "Clean, High-Quality Ingredients: Made without artificial fillers or preservatives, and crafted using real superfoods and plant-based ingredients—ideal for vegans, lactose-free users, and anyone seeking reliable daily nutrition.",
+   "functional_ingredients": "60+ Superfoods, Vitamins, Minerals & Fibre: Includes functional mushrooms, adaptogens, antioxidant-rich fruits and vegetables, and dietary fibre to support digestion, immunity, metabolism, and everyday vitality.",
+   "also_contains": "Nutrition per 51g serving: 23-25g plant protein · ~198 kcal · 4g fibre · 60+ superfoods, 26 vitamins & minerals, probiotics & digestive enzymes.",
+   "suitability": {
+    "vegan": "yes - the product page states it is ideal for vegans",
+    "lactose_free": "yes - the product page states it suits lactose-free users",
+    "jain": "no - contains functional mushrooms and yeast protein, which most Jain observances exclude",
+    "medical": "not a substitute for medical treatment; people with kidney disease, pregnant or breastfeeding, or on prescribed diets should check with their doctor first"
+   },
+   "rating": {
+    "average": "4.95",
+    "count": 65,
+    "source": "Judge.me reviews on kabo.co.in"
+   },
+   "variants": [
+    {
+     "id": 50486223732929,
+     "title": "15 Shakes",
+     "sku": "KABO-WCB-15S",
+     "price_inr_snapshot": 2999.0,
+     "servings": 15,
+     "cart_url": "https://kabo.co.in/cart/50486223732929:1"
+    },
+    {
+     "id": 50486223765697,
+     "title": "30 Shakes",
+     "sku": "KABO-WCB-30S",
+     "price_inr_snapshot": 4830.0,
+     "servings": 30,
+     "cart_url": "https://kabo.co.in/cart/50486223765697:1"
+    },
+    {
+     "id": 50486223798465,
+     "title": "60 Shakes",
+     "sku": "KABO-WCB-60S",
+     "price_inr_snapshot": 9499.0,
+     "servings": 60,
+     "cart_url": "https://kabo.co.in/cart/50486223798465:1"
+    }
+   ]
+  }
+ ],
+ "commerce": {
+  "store": "https://kabo.co.in",
+  "ucp_profile": "https://kabo.co.in/.well-known/ucp",
+  "note": "Checkout runs on the store's own Shopify checkout. Agents that speak the Universal Commerce Protocol can discover carts and checkout via the UCP profile; others can hand the user a cart_url."
+ },
  "foods": [
   {
    "food": "til",
@@ -5422,6 +5608,11 @@
    "url": "https://kabo.co.in/blogs/news/5-daily-nutrition-habits-for-indians"
   },
   {
+   "handle": "absorbed-iron-vegetarian-day-india-data",
+   "title": "Iron in a Vegetarian Day: Eaten vs Actually Absorbed",
+   "url": "https://kabo.co.in/blogs/news/absorbed-iron-vegetarian-day-india-data"
+  },
+  {
    "handle": "ac-office-tired-dehydrated-india",
    "title": "Drained in an AC Office All Day? Why It Happens and How to Feel Better by 5 pm",
    "url": "https://kabo.co.in/blogs/news/ac-office-tired-dehydrated-india"
@@ -6357,6 +6548,11 @@
    "url": "https://kabo.co.in/blogs/news/budget-high-protein-foods-india"
   },
   {
+   "handle": "budget-protein-powder-india-2027",
+   "title": "Spending Less on Protein in 2027: A Buying Method",
+   "url": "https://kabo.co.in/blogs/news/budget-protein-powder-india-2027"
+  },
+  {
    "handle": "build-muscle-vegetarian-diet",
    "title": "How to Build Muscle on a Vegetarian Diet",
    "url": "https://kabo.co.in/blogs/news/build-muscle-vegetarian-diet"
@@ -6367,9 +6563,19 @@
    "url": "https://kabo.co.in/blogs/news/buying-protein-powder-for-parents-india"
   },
   {
+   "handle": "buying-protein-quick-commerce-india-2027",
+   "title": "Buying Protein on Quick-Commerce Apps in 2027",
+   "url": "https://kabo.co.in/blogs/news/buying-protein-quick-commerce-india-2027"
+  },
+  {
    "handle": "cabin-crew-pilots-nutrition-india",
    "title": "Eating Well at 35,000 Feet: A Nutrition Guide for Indian Cabin Crew and Pilots",
    "url": "https://kabo.co.in/blogs/news/cabin-crew-pilots-nutrition-india"
+  },
+  {
+   "handle": "cafe-menu-protein-drinks-india-2027",
+   "title": "Adding Protein Drinks to a Cafe Menu in 2027",
+   "url": "https://kabo.co.in/blogs/news/cafe-menu-protein-drinks-india-2027"
   },
   {
    "handle": "calcium-for-vegetarians-india",
@@ -6420,6 +6626,11 @@
    "handle": "can-you-have-too-much-protein",
    "title": "Can You Have Too Much Protein? Safe Limits &amp; Side Effects Explained",
    "url": "https://kabo.co.in/blogs/news/can-you-have-too-much-protein"
+  },
+  {
+   "handle": "can-you-take-yeast-protein-with-milk-india",
+   "title": "Can Yeast Protein Be Mixed With Milk?",
+   "url": "https://kabo.co.in/blogs/news/can-you-take-yeast-protein-with-milk-india"
   },
   {
    "handle": "cardiovascular-champion-a-heart-healthy-duo",
@@ -6612,6 +6823,11 @@
    "url": "https://kabo.co.in/blogs/news/copper-manganese-benefits-india"
   },
   {
+   "handle": "corporate-wellness-nutrition-india-2027",
+   "title": "Corporate Wellness in 2027: Feeding Teams Better at Work",
+   "url": "https://kabo.co.in/blogs/news/corporate-wellness-nutrition-india-2027"
+  },
+  {
    "handle": "cortisol-and-diet-india",
    "title": "Cortisol and Diet in India: What Actually Helps a Stressed Body",
    "url": "https://kabo.co.in/blogs/news/cortisol-and-diet-india"
@@ -6782,6 +6998,11 @@
    "url": "https://kabo.co.in/blogs/news/doctors-residents-long-shifts-nutrition-india"
   },
   {
+   "handle": "does-cooking-destroy-protein-india",
+   "title": "Does Cooking Destroy Protein? Dal, Sprouts and Paneer",
+   "url": "https://kabo.co.in/blogs/news/does-cooking-destroy-protein-india"
+  },
+  {
    "handle": "does-plant-protein-cause-bloating",
    "title": "Does Plant Protein Cause Bloating? The Truth",
    "url": "https://kabo.co.in/blogs/news/does-plant-protein-cause-bloating"
@@ -6800,6 +7021,11 @@
    "handle": "does-protein-help-weight-loss",
    "title": "Does Protein Really Help You Lose Weight?",
    "url": "https://kabo.co.in/blogs/news/does-protein-help-weight-loss"
+  },
+  {
+   "handle": "does-protein-powder-expire-india",
+   "title": "Does Protein Powder Expire? What the Date Really Means",
+   "url": "https://kabo.co.in/blogs/news/does-protein-powder-expire-india"
   },
   {
    "handle": "double-chin-face-fat-india",
@@ -6975,6 +7201,11 @@
    "handle": "fibre-benefits-sources-india",
    "title": "Fibre: How Much You Need &amp; Best Sources (India)",
    "url": "https://kabo.co.in/blogs/news/fibre-benefits-sources-india"
+  },
+  {
+   "handle": "fibre-gap-indian-diet-data",
+   "title": "The Fibre Gap in a Typical Indian Day, Worked Out",
+   "url": "https://kabo.co.in/blogs/news/fibre-gap-indian-diet-data"
   },
   {
    "handle": "fibre-in-bajra-india",
@@ -7482,6 +7713,11 @@
    "url": "https://kabo.co.in/blogs/news/high-protein-masala-oats-recipe"
   },
   {
+   "handle": "high-protein-packaged-foods-india-2027",
+   "title": "High-Protein Label Claims in 2027: Packaged Foods Tested",
+   "url": "https://kabo.co.in/blogs/news/high-protein-packaged-foods-india-2027"
+  },
+  {
    "handle": "high-protein-smoothie-recipes-india",
    "title": "5 High-Protein Smoothie Recipes for Indians (Vegetarian-Friendly, Easy to Make)",
    "url": "https://kabo.co.in/blogs/news/high-protein-smoothie-recipes-india"
@@ -7505,6 +7741,11 @@
    "handle": "high-uric-acid-symptoms-india",
    "title": "High Uric Acid: Symptoms and Warning Signs",
    "url": "https://kabo.co.in/blogs/news/high-uric-acid-symptoms-india"
+  },
+  {
+   "handle": "highest-fibre-indian-foods-ranked",
+   "title": "Indian Foods Ranked by Fibre: Per 100 g and Per Serving",
+   "url": "https://kabo.co.in/blogs/news/highest-fibre-indian-foods-ranked"
   },
   {
    "handle": "highest-protein-vegetarian-foods-india",
@@ -7575,6 +7816,11 @@
    "handle": "how-many-calories-per-day-india",
    "title": "How Many Calories Do You Need Per Day? (Indian Guide)",
    "url": "https://kabo.co.in/blogs/news/how-many-calories-per-day-india"
+  },
+  {
+   "handle": "how-many-goji-berries-a-day-india",
+   "title": "How Many Goji Berries Should You Eat a Day?",
+   "url": "https://kabo.co.in/blogs/news/how-many-goji-berries-a-day-india"
   },
   {
    "handle": "how-many-scoops-of-protein-per-day",
@@ -7842,6 +8088,11 @@
    "url": "https://kabo.co.in/blogs/news/indian-vegetarian-micronutrient-gap"
   },
   {
+   "handle": "indian-vs-imported-protein-powder-2027",
+   "title": "Indian or Imported? Choosing Your 2027 Tub on Evidence",
+   "url": "https://kabo.co.in/blogs/news/indian-vs-imported-protein-powder-2027"
+  },
+  {
    "handle": "insulin-resistance-signs-india",
    "title": "Insulin Resistance: The Signs Before Diabetes",
    "url": "https://kabo.co.in/blogs/news/insulin-resistance-signs-india"
@@ -7942,6 +8193,11 @@
    "url": "https://kabo.co.in/blogs/news/is-butter-coffee-protein-good-idea-india"
   },
   {
+   "handle": "is-dal-chawal-a-complete-protein-india",
+   "title": "Is Dal Chawal Really a Complete Protein? The Lysine Answer",
+   "url": "https://kabo.co.in/blogs/news/is-dal-chawal-a-complete-protein-india"
+  },
+  {
    "handle": "is-expensive-protein-powder-worth-it-india",
    "title": "Is Expensive Protein Powder Worth It in India? A Price Reality Check",
    "url": "https://kabo.co.in/blogs/news/is-expensive-protein-powder-worth-it-india"
@@ -7975,6 +8231,11 @@
    "handle": "is-one-scoop-a-day-enough-india",
    "title": "Is One Scoop a Day Enough? (India Protein Guide)",
    "url": "https://kabo.co.in/blogs/news/is-one-scoop-a-day-enough-india"
+  },
+  {
+   "handle": "is-paneer-ultra-processed-india",
+   "title": "Is Paneer Ultra-Processed? Paneer, Cheese and Tofu",
+   "url": "https://kabo.co.in/blogs/news/is-paneer-ultra-processed-india"
   },
   {
    "handle": "is-plant-protein-a-complete-protein",
@@ -8390,6 +8651,11 @@
    "handle": "migraine-diet-triggers-india",
    "title": "Migraine and Diet: Which Triggers Hold Up",
    "url": "https://kabo.co.in/blogs/news/migraine-diet-triggers-india"
+  },
+  {
+   "handle": "millets-vs-rice-wheat-nutrition-data",
+   "title": "Millets vs Rice vs Wheat: Protein, Fibre and Iron Compared",
+   "url": "https://kabo.co.in/blogs/news/millets-vs-rice-wheat-nutrition-data"
   },
   {
    "handle": "mixing-protein-powder-milk-or-water-india",
@@ -8872,6 +9138,11 @@
    "url": "https://kabo.co.in/blogs/news/nutrition-for-work-from-home-life"
   },
   {
+   "handle": "nutrition-gifts-india-2027",
+   "title": "Nutrition Gifts for 2027: Better Than Another Mithai Box",
+   "url": "https://kabo.co.in/blogs/news/nutrition-gifts-india-2027"
+  },
+  {
    "handle": "nutrition-myths-india",
    "title": "Nutrition Myths Indians Still Believe",
    "url": "https://kabo.co.in/blogs/news/nutrition-myths-india"
@@ -9342,6 +9613,11 @@
    "url": "https://kabo.co.in/blogs/news/protein-bars-vs-shakes-india"
   },
   {
+   "handle": "protein-by-age-and-weight-table-india",
+   "title": "Daily Protein by Age and Weight: The Full Table",
+   "url": "https://kabo.co.in/blogs/news/protein-by-age-and-weight-table-india"
+  },
+  {
    "handle": "protein-chilla-besan-recipe",
    "title": "High-Protein Besan Chilla Recipe",
    "url": "https://kabo.co.in/blogs/news/protein-chilla-besan-recipe"
@@ -9350,6 +9626,11 @@
    "handle": "protein-coffee-shake-recipe",
    "title": "Protein Coffee Shake (Proffee) Recipe",
    "url": "https://kabo.co.in/blogs/news/protein-coffee-shake-recipe"
+  },
+  {
+   "handle": "protein-coffee-trend-india-2027",
+   "title": "Protein Coffee in 2027: Cafe Trend or Daily Habit?",
+   "url": "https://kabo.co.in/blogs/news/protein-coffee-trend-india-2027"
   },
   {
    "handle": "protein-deficiency-in-india",
@@ -9575,6 +9856,11 @@
    "handle": "protein-for-weight-loss-indian-diet",
    "title": "Protein for Weight Loss on an Indian Diet",
    "url": "https://kabo.co.in/blogs/news/protein-for-weight-loss-indian-diet"
+  },
+  {
+   "handle": "protein-for-whole-family-india-2027",
+   "title": "One Household, Five Protein Needs: A 2027 Family Plan",
+   "url": "https://kabo.co.in/blogs/news/protein-for-whole-family-india-2027"
   },
   {
    "handle": "protein-for-working-out-twice-a-week-india",
@@ -9890,6 +10176,11 @@
    "handle": "protein-pancakes-recipe-india",
    "title": "Protein Pancakes, Indian Style: 4 Recipes That Actually Hit 20g",
    "url": "https://kabo.co.in/blogs/news/protein-pancakes-recipe-india"
+  },
+  {
+   "handle": "protein-per-katori-table-india",
+   "title": "Protein Per Katori: 30 Everyday Indian Foods in One Table",
+   "url": "https://kabo.co.in/blogs/news/protein-per-katori-table-india"
   },
   {
    "handle": "protein-per-meal-limit-india",
@@ -10240,6 +10531,11 @@
    "handle": "shopkeepers-small-business-owners-eating-india",
    "title": "Eating at the Counter: A Nutrition Guide for Shopkeepers and Small Business Owners",
    "url": "https://kabo.co.in/blogs/news/shopkeepers-small-business-owners-eating-india"
+  },
+  {
+   "handle": "should-you-take-protein-on-rest-days-india",
+   "title": "Should You Take Protein on Rest Days?",
+   "url": "https://kabo.co.in/blogs/news/should-you-take-protein-on-rest-days-india"
   },
   {
    "handle": "signs-not-enough-protein-gen-z-india",
@@ -10637,9 +10933,19 @@
    "url": "https://kabo.co.in/blogs/news/vegetarian-in-non-vegetarian-family-india"
   },
   {
+   "handle": "vegetarian-iron-sources-ranked-india",
+   "title": "Vegetarian Iron Sources Ranked, With the Palak Myth Measured",
+   "url": "https://kabo.co.in/blogs/news/vegetarian-iron-sources-ranked-india"
+  },
+  {
    "handle": "vegetarian-omega-3-sources-india",
    "title": "Vegetarian Omega-3 Sources in India: A Practical List",
    "url": "https://kabo.co.in/blogs/news/vegetarian-omega-3-sources-india"
+  },
+  {
+   "handle": "vegetarian-protein-gap-india-2027",
+   "title": "How Short a Vegetarian Thali Falls on Protein in 2027",
+   "url": "https://kabo.co.in/blogs/news/vegetarian-protein-gap-india-2027"
   },
   {
    "handle": "vegetarian-protein-india-complete-guide-to-whole-body-nutrition",
@@ -10832,6 +11138,11 @@
    "url": "https://kabo.co.in/blogs/news/what-is-a-complete-meal-shake"
   },
   {
+   "handle": "what-is-a-protein-shake-india",
+   "title": "What Is a Protein Shake? Ingredients, Types and Uses",
+   "url": "https://kabo.co.in/blogs/news/what-is-a-protein-shake-india"
+  },
+  {
    "handle": "what-is-all-in-one-nutrition-shake",
    "title": "What Is an All-in-One Nutrition Shake? A Definition",
    "url": "https://kabo.co.in/blogs/news/what-is-all-in-one-nutrition-shake"
@@ -10882,6 +11193,11 @@
    "url": "https://kabo.co.in/blogs/news/what-to-eat-during-periods-india"
   },
   {
+   "handle": "what-to-eat-in-fever-and-weakness-india",
+   "title": "What Should You Eat During Fever and Weakness?",
+   "url": "https://kabo.co.in/blogs/news/what-to-eat-in-fever-and-weakness-india"
+  },
+  {
    "handle": "what-to-look-for-vegan-protein-india",
    "title": "What to Look for in a Protein if You're Vegan (India)",
    "url": "https://kabo.co.in/blogs/news/what-to-look-for-vegan-protein-india"
@@ -10902,6 +11218,11 @@
    "url": "https://kabo.co.in/blogs/news/wheatgrass-benefits-explained"
   },
   {
+   "handle": "when-to-buy-protein-sales-india-2027",
+   "title": "When to Buy Protein in 2027: Sales, Stock and Freshness",
+   "url": "https://kabo.co.in/blogs/news/when-to-buy-protein-sales-india-2027"
+  },
+  {
    "handle": "when-to-drink-nutrition-shake",
    "title": "When to Drink a Nutrition Shake for Best Results",
    "url": "https://kabo.co.in/blogs/news/when-to-drink-nutrition-shake"
@@ -10915,6 +11236,11 @@
    "handle": "whey-vs-plant-protein-digestion-india",
    "title": "Whey vs Plant Protein Digestion for Indians",
    "url": "https://kabo.co.in/blogs/news/whey-vs-plant-protein-digestion-india"
+  },
+  {
+   "handle": "which-dal-causes-least-gas-india",
+   "title": "Which Dal Causes the Least Gas? Every Dal, Ranked",
+   "url": "https://kabo.co.in/blogs/news/which-dal-causes-least-gas-india"
   },
   {
    "handle": "which-protein-powder-should-you-buy-india",

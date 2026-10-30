@@ -210,6 +210,116 @@ def t_search_guides(query=None, limit=8, **_):
             "attribution": ATTRIB}
 
 
+# ----------------------------------------------------------- KABO products --
+# The food tools above are neutral data. These three describe KABO's own
+# products, so they are held to a stricter rule: per-flavour values come from
+# each product's own nutrition panel, composition statements are quoted from
+# the product page, and price and stock are read live from the public
+# storefront at request time (the snapshot is only a fallback). An agent can
+# hand the user a cart link or use the store's UCP profile to check out; this
+# server never places orders or touches customer data.
+import time as _time
+import urllib.request as _urlreq
+
+PRODUCTS = DATA.get("products", [])
+COMMERCE = DATA.get("commerce", {})
+_LIVE = {}            # handle -> (fetched_at, payload)
+_LIVE_TTL = 600
+
+
+def _live(handle):
+    hit = _LIVE.get(handle)
+    if hit and _time.time() - hit[0] < _LIVE_TTL:
+        return hit[1]
+    try:
+        r = _urlreq.urlopen(_urlreq.Request(f"https://kabo.co.in/products/{handle}.js",
+                                            headers={"User-Agent": "kabo-mcp/1.2"}), timeout=6)
+        payload = json.loads(r.read().decode("utf-8"))
+        _LIVE[handle] = (_time.time(), payload)
+        return payload
+    except Exception:
+        return None
+
+
+def _find_product(name):
+    if not name:
+        return None
+    q = str(name).lower().strip()
+    for p in PRODUCTS:
+        if q in (p["handle"], p["name"].lower()):
+            return p
+    best, score = None, 0.0
+    for p in PRODUCTS:
+        sc = _score(q, p["name"] + " " + p["handle"].replace("-", " "))
+        if sc > score:
+            best, score = p, sc
+    return best if score >= 0.34 else None
+
+
+def _variants(p):
+    live = _live(p["handle"])
+    by_id = {v["id"]: v for v in (live or {}).get("variants", [])}
+    out = []
+    for v in p["variants"]:
+        lv = by_id.get(v["id"])
+        price = (lv["price"] / 100) if lv else v["price_inr_snapshot"]
+        row = {"title": v["title"], "price_inr": price,
+               "available": (lv.get("available") if lv else None),
+               "price_source": "live" if lv else "snapshot",
+               "cart_url": v["cart_url"]}
+        if lv and lv.get("compare_at_price"):
+            row["mrp_inr"] = lv["compare_at_price"] / 100
+        if v.get("servings"):
+            row["servings"] = v["servings"]
+            row["price_per_serving_inr"] = round(price / v["servings"])
+        out.append(row)
+    return out
+
+
+def _summary(p):
+    n = p.get("nutrition_per_serving", {})
+    return {"product": p["name"], "handle": p["handle"], "url": p["url"],
+            "serving_size": n.get("servingSize"), "protein": n.get("protein"),
+            "calories": n.get("calories"), "fibre": n.get("fibre"),
+            "vitamins_minerals": n.get("vitaminsMinerals"),
+            "rating": p.get("rating", {}).get("average"),
+            "review_count": p.get("rating", {}).get("count")}
+
+
+def t_list_products(**_):
+    return {"brand": "KABO", "store": COMMERCE.get("store"),
+            "products": [_summary(p) for p in PRODUCTS],
+            "note": ("Per-serving values are each product's own nutrition panel; serving size "
+                     "differs by flavour. Use get_product for live price, stock and a cart link."),
+            "attribution": ATTRIB}
+
+
+def t_get_product(product=None, **_):
+    p = _find_product(product)
+    if not p:
+        return {"found": False, "query": product,
+                "available_products": [x["name"] for x in PRODUCTS]}
+    return {"found": True, **_summary(p),
+            "nutrition_per_serving": p.get("nutrition_per_serving"),
+            "nutrition_source": p.get("nutrition_source"),
+            "from_the_product_page": {k: p.get(k) for k in
+                                      ("protein_sources", "dietary_statement",
+                                       "functional_ingredients", "also_contains")},
+            "suitability": p.get("suitability"),
+            "variants": _variants(p),
+            "buy": {"product_url": p["url"], "ucp_profile": COMMERCE.get("ucp_profile"),
+                    "how": COMMERCE.get("note")},
+            "honest_context": ("Whole foods such as dal and soya chunks are cheaper per gram of "
+                               "protein than any powder, including this one; see protein_cost."),
+            "attribution": ATTRIB}
+
+
+def t_compare_products(products=None, **_):
+    ps = [x for x in (_find_product(n) for n in (products or [])) if x] or PRODUCTS
+    return {"compared": [{**_summary(p), "variants": _variants(p)} for p in ps],
+            "attribution": ATTRIB}
+
+
 TOOLS = [
  {"name": "lookup_food",
   # The nutrient list and counts are read from the dataset at startup, so the
@@ -259,10 +369,30 @@ TOOLS = [
                                  "limit": {"type": "integer"}},
                   "required": ["query"]},
   "fn": t_search_guides},
+ {"name": "list_products",
+  "description": ("KABO's own nutrition shakes: per-serving protein, calories, fibre and "
+                  "vitamins for each flavour, with ratings and product URLs."),
+  "inputSchema": {"type": "object", "properties": {}},
+  "fn": t_list_products},
+ {"name": "get_product",
+  "description": ("One KABO product in full: per-serving nutrition from its own panel, "
+                  "composition quoted from the product page, dietary suitability, live "
+                  "price and stock per pack size, price per serving, and a cart link or "
+                  "UCP checkout profile."),
+  "inputSchema": {"type": "object",
+                  "properties": {"product": {"type": "string",
+                                             "description": "e.g. butter coffee, white chocolate blueberry, assorted"}},
+                  "required": ["product"]},
+  "fn": t_get_product},
+ {"name": "compare_products",
+  "description": "KABO products side by side with live price per serving. Omit products to compare all.",
+  "inputSchema": {"type": "object",
+                  "properties": {"products": {"type": "array", "items": {"type": "string"}}}},
+  "fn": t_compare_products},
 ]
 BY_NAME = {t["name"]: t for t in TOOLS}
 
-SERVER = {"name": "kabo-nutrition", "version": "1.0.0"}
+SERVER = {"name": "kabo-nutrition", "version": "1.2.0"}
 PROTOCOL = "2025-06-18"
 
 
@@ -321,6 +451,33 @@ import http.server
 import socketserver
 import urllib.parse as _urlparse
 
+_P = lambda name, desc, req=False, typ="string": {
+    "name": name, "in": "query", "required": req, "description": desc, "schema": {"type": typ}}
+OPENAPI = {
+    "openapi": "3.1.0",
+    "info": {"title": "KABO Indian Nutrition Index API", "version": SERVER["version"],
+             "description": ("REST mirror of the kabo-nutrition MCP server. Indian food nutrition "
+                             "from ICMR-NIN sources plus KABO's own product catalogue with live "
+                             "price. Dataset CC BY 4.0, attribution to kabo.co.in. No key needed."),
+             "license": {"name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/"}},
+    "servers": [{"url": "https://kabo-nutrition-mcp.onrender.com"}],
+    "paths": {
+        "/api/v1/foods": {"get": {"summary": "List foods and nutrients covered"}},
+        "/api/v1/foods/{food}": {"get": {"summary": "Nutrition for one food, every nutrient, with sources",
+            "parameters": [{"name": "food", "in": "path", "required": True, "schema": {"type": "string"}},
+                           _P("nutrient", "protein | fibre | iron | calcium")]}},
+        "/api/v1/protein-target": {"get": {"summary": "Daily protein target",
+            "parameters": [_P("weight_kg", "body weight", True, "number"), _P("age", "years", False, "integer")]}},
+        "/api/v1/protein-cost": {"get": {"summary": "Rupees per 10 g protein, cheapest first",
+            "parameters": [_P("budget_inr", "max INR per 10 g", False, "number")]}},
+        "/api/v1/guides": {"get": {"summary": "Search nutrition guides",
+            "parameters": [_P("q", "search terms", True), _P("limit", "max results", False, "integer")]}},
+        "/api/v1/products": {"get": {"summary": "KABO products with per-serving nutrition"}},
+        "/api/v1/products/{handle}": {"get": {"summary": "One KABO product with live price, stock and cart link",
+            "parameters": [{"name": "handle", "in": "path", "required": True, "schema": {"type": "string"}}]}},
+    },
+}
+
 
 class _Handler(http.server.BaseHTTPRequestHandler):
     server_version = "kabo-mcp/1.0"
@@ -366,8 +523,35 @@ class _Handler(http.server.BaseHTTPRequestHandler):
                           for t in TOOLS],
                 "dataset": DATA.get("dataset"),
                 "licence": DATA.get("licence"),
-                "docs": "https://kabo.co.in"})
-        return self._send(404, {"error": "not found"})
+                "rest_api": "/api/v1",
+                "openapi": "/openapi.json",
+                "docs": "https://kabo.co.in/pages/mcp"})
+        # REST mirror of the tools, for clients that do not speak MCP.
+        qs = _urlparse.parse_qs(_urlparse.urlparse(self.path).query)
+        arg = lambda k, d=None: (qs.get(k) or [d])[0]
+        seg = [_urlparse.unquote(x) for x in path.strip("/").split("/")]
+        if path == "/openapi.json":
+            return self._send(200, OPENAPI)
+        if seg[:2] == ["api", "v1"]:
+            rest = seg[2:]
+            if rest == ["products"]:
+                return self._send(200, t_list_products())
+            if len(rest) == 2 and rest[0] == "products":
+                out = t_get_product(rest[1].replace("-", " "))
+                return self._send(200 if out.get("found") else 404, out)
+            if rest == ["foods"]:
+                return self._send(200, {"foods": sorted({f["food"] for f in DATA["foods"]}),
+                                        "nutrients": NUTRIENTS, "attribution": ATTRIB})
+            if len(rest) == 2 and rest[0] == "foods":
+                out = t_lookup_food(rest[1].replace("-", " "), arg("nutrient"))
+                return self._send(200 if out.get("found") else 404, out)
+            if rest == ["protein-target"]:
+                return self._send(200, t_protein_target(arg("weight_kg"), arg("age")))
+            if rest == ["protein-cost"]:
+                return self._send(200, t_protein_cost(arg("budget_inr")))
+            if rest == ["guides"]:
+                return self._send(200, t_search_guides(arg("q"), arg("limit", 8)))
+        return self._send(404, {"error": "not found", "see": "/openapi.json"})
 
     def do_POST(self):
         path = _urlparse.urlparse(self.path).path
