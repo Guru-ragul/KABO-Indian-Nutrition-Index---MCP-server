@@ -1,6 +1,6 @@
 {
  "dataset": "KABO Indian Nutrition Index",
- "version": "2026-10-29",
+ "version": "2026-10-30",
  "licence": "CC BY 4.0 - free to use with attribution to kabo.co.in",
  "primary_sources": [
   "ICMR-NIN Indian Food Composition Tables",
@@ -41,6 +41,2000 @@
      "stated": "about 120 mg",
      "low": 120.0,
      "high": null,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "bajra",
+   "nutrient": "fibre",
+   "title": "Fibre in Bajra: The Winter Roti That Out-Fibres Wheat",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-bajra-india",
+   "values": [
+    {
+     "item": "Bajra (pearl millet) flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Ragi (finger millet) flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Jowar (sorghum) flour",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Wheat atta (whole)",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Makki (maize) flour",
+     "stated": "~7–9 g",
+     "low": 7.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Besan",
+     "stated": "~9–11 g",
+     "low": 9.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "White rice (polished), raw",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Maida",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 bajra roti (~30 g flour)",
+     "stated": "~3.5 g",
+     "low": 3.5,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 bajra rotis",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 bowl bajra khichdi (~40 g bajra)",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass bajra raab (~20 g flour)",
+     "stated": "~2–2.5 g",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "g"
+    },
+    {
+     "item": "1 bajra thepla (~25 g flour)",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "brown rice",
+   "nutrient": "fibre",
+   "title": "Fibre in Brown Rice: Honest Numbers Against White Rice and Millets",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-brown-rice-india",
+   "values": [
+    {
+     "item": "Brown rice, raw",
+     "stated": "~3.5–4.5 g",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "g"
+    },
+    {
+     "item": "White rice (polished), raw",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Hand-pounded / parboiled rice, raw",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Red rice (matta), raw",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "Ragi flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Bajra flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Wheat atta (whole)",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Oats (rolled)",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked brown rice (~40 g raw)",
+     "stated": "~1.5 g",
+     "low": 1.5,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked white rice (~40 g raw)",
+     "stated": "~1 g",
+     "low": 1.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked red rice (~40 g raw)",
+     "stated": "~1.5–2 g",
+     "low": 1.5,
+     "high": 2.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 ragi mudde (~60 g flour)",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 bajra rotis (~60 g flour)",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "chana",
+   "nutrient": "fibre",
+   "title": "Fibre in Chana: Kala vs Kabuli vs Dal, Compared Properly",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-chana-india",
+   "values": [
+    {
+     "item": "Kala chana (whole, with husk), raw",
+     "stated": "~16–18 g",
+     "low": 16.0,
+     "high": 18.0,
+     "unit": "g"
+    },
+    {
+     "item": "Kabuli chana (chickpea), raw",
+     "stated": "~11–13 g",
+     "low": 11.0,
+     "high": 13.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chana dal (split, dehusked), raw",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Roasted chana (bhuna chana)",
+     "stated": "~15–17 g",
+     "low": 15.0,
+     "high": 17.0,
+     "unit": "g"
+    },
+    {
+     "item": "Besan (gram flour)",
+     "stated": "~9–11 g",
+     "low": 9.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "Moong dal (split), raw",
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Green peas, fresh",
+     "stated": "~5–6 g",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked kala chana (~30 g raw)",
+     "stated": "~5 g",
+     "low": 5.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori chole / kabuli chana (~30 g raw)",
+     "stated": "~3.5–4 g",
+     "low": 3.5,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori chana dal (~30 g raw)",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "30 g roasted chana (one handful)",
+     "stated": "~5 g",
+     "low": 5.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 besan cheelas (~50 g besan)",
+     "stated": "~5 g",
+     "low": 5.0,
+     "high": null,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "flaxseed",
+   "nutrient": "fibre",
+   "title": "Fibre in Flaxseed: Why Grinding Changes Everything",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-flaxseed-india",
+   "values": [
+    {
+     "item": "Flaxseed (alsi), whole",
+     "stated": "~25–27 g",
+     "low": 25.0,
+     "high": 27.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chia seeds",
+     "stated": "~30–34 g",
+     "low": 30.0,
+     "high": 34.0,
+     "unit": "g"
+    },
+    {
+     "item": "Isabgol (psyllium husk)",
+     "stated": "~70–80 g",
+     "low": 70.0,
+     "high": 80.0,
+     "unit": "g"
+    },
+    {
+     "item": "Til (sesame seeds)",
+     "stated": "~11–13 g",
+     "low": 11.0,
+     "high": 13.0,
+     "unit": "g"
+    },
+    {
+     "item": "Almonds",
+     "stated": "~12–13 g",
+     "low": 12.0,
+     "high": 13.0,
+     "unit": "g"
+    },
+    {
+     "item": "Peanuts",
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Methi seeds",
+     "stated": "~24–26 g",
+     "low": 24.0,
+     "high": 26.0,
+     "unit": "g"
+    },
+    {
+     "item": "Sunflower seeds",
+     "stated": "~8–10 g",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 tablespoon ground flaxseed (~10 g)",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "2 tablespoons ground flaxseed (~20 g)",
+     "stated": "~5–5.5 g",
+     "low": 5.0,
+     "high": 5.5,
+     "unit": "g"
+    },
+    {
+     "item": "1 tablespoon alsi chutney (~10 g)",
+     "stated": "~2–2.5 g",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "guava",
+   "nutrient": "fibre",
+   "title": "Fibre in Guava: The Cheapest High-Fibre Fruit in the Country",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-guava-india",
+   "values": [
+    {
+     "item": "Guava (amrood), ripe, with skin and seeds",
+     "stated": "~5–8 g",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "Pear, with skin",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Apple, with skin",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Banana",
+     "stated": "~2–2.5 g",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "g"
+    },
+    {
+     "item": "Papaya",
+     "stated": "~1.5–2.5 g",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "g"
+    },
+    {
+     "item": "Orange",
+     "stated": "~2–2.5 g",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "g"
+    },
+    {
+     "item": "Pomegranate (arils)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Sapota (chikoo)",
+     "stated": "~5–6 g",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 medium guava, whole (~150 g)",
+     "stated": "~8–10 g",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 medium guava, peeled and deseeded",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 cup guava slices (~120 g)",
+     "stated": "~6–8 g",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass guava juice, strained",
+     "stated": "under 1 g",
+     "low": 1.0,
+     "high": null,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "isabgol",
+   "nutrient": "fibre",
+   "title": "Fibre in Isabgol: What a Spoonful Does, and When Food Is Better",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-isabgol-india",
+   "values": [
+    {
+     "item": "Isabgol (psyllium husk)",
+     "stated": "~70–80 g",
+     "low": 70.0,
+     "high": 80.0,
+     "unit": "g"
+    },
+    {
+     "item": "Flaxseed, whole",
+     "stated": "~25–27 g",
+     "low": 25.0,
+     "high": 27.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chia seeds",
+     "stated": "~30–34 g",
+     "low": 30.0,
+     "high": 34.0,
+     "unit": "g"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~16–18 g",
+     "low": 16.0,
+     "high": 18.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma, raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "Oats (rolled)",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Guava, with skin and seeds",
+     "stated": "~5–8 g",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "White rice (polished), raw",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 level teaspoon (~5 g)",
+     "stated": "~3.5–4 g",
+     "low": 3.5,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 heaped teaspoon (~7 g)",
+     "stated": "~5–5.5 g",
+     "low": 5.0,
+     "high": 5.5,
+     "unit": "g"
+    },
+    {
+     "item": "1 tablespoon (~10 g)",
+     "stated": "~7–8 g",
+     "low": 7.0,
+     "high": 8.0,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "moong dal",
+   "nutrient": "fibre",
+   "title": "Fibre in Moong Dal: The Gentle Dal, and Its One Weakness",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-moong-dal-india",
+   "values": [
+    {
+     "item": "Moong dal (split, yellow, dehusked), raw",
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chilkewali moong dal (split, with skin), raw",
+     "stated": "~11–13 g",
+     "low": 11.0,
+     "high": 13.0,
+     "unit": "g"
+    },
+    {
+     "item": "Whole green moong, raw",
+     "stated": "~13–15 g",
+     "low": 13.0,
+     "high": 15.0,
+     "unit": "g"
+    },
+    {
+     "item": "Sprouted moong, fresh weight",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Toor dal, raw",
+     "stated": "~8–10 g",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chana dal, raw",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma, raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked yellow moong dal (~30 g raw)",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked whole moong (~30 g raw)",
+     "stated": "~4–4.5 g",
+     "low": 4.0,
+     "high": 4.5,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori moong dal khichdi",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 cup sprouted moong (~100 g)",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "2 moong dal cheelas",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "oats",
+   "nutrient": "fibre",
+   "title": "Fibre in Oats: What a Bowl Gives You, and How to Get More",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-oats-india",
+   "values": [
+    {
+     "item": "Oats (rolled), raw",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Oats (instant), raw",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Wheat atta (whole), raw",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Ragi flour, raw",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Poha (flattened rice), raw",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Suji (semolina), raw",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "White bread",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Cornflakes",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "40 g (a small bowl, about half a cup)",
+     "stated": "~4 g",
+     "low": 4.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "60 g (a generous bowl)",
+     "stated": "~6 g",
+     "low": 6.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "80 g (two servings)",
+     "stated": "~8 g",
+     "low": 8.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "Masala oats sachet, 40 g",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "ragi",
+   "nutrient": "fibre",
+   "title": "Fibre in Ragi: Per Mudde, Per Roti, and Why It Keeps You Full",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-ragi-india",
+   "values": [
+    {
+     "item": "Ragi (finger millet) flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Bajra (pearl millet) flour",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Jowar (sorghum) flour",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Wheat atta (whole)",
+     "stated": "~11–12 g",
+     "low": 11.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Oats (rolled)",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Brown rice, raw",
+     "stated": "~3.5–4.5 g",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "g"
+    },
+    {
+     "item": "White rice (polished), raw",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Maida",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 ragi mudde (~60 g flour)",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 ragi roti (~30 g flour)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 bowl ragi porridge (~30 g flour)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass ragi malt (~25 g flour)",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 ragi dosas",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "rajma",
+   "nutrient": "fibre",
+   "title": "Fibre in Rajma: Why One Katori Does So Much Work",
+   "source_url": "https://kabo.co.in/blogs/news/fibre-in-rajma-india",
+   "values": [
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "Kala chana (whole), raw",
+     "stated": "~16–18 g",
+     "low": 16.0,
+     "high": 18.0,
+     "unit": "g"
+    },
+    {
+     "item": "Kabuli chana, raw",
+     "stated": "~11–13 g",
+     "low": 11.0,
+     "high": 13.0,
+     "unit": "g"
+    },
+    {
+     "item": "Chana dal, raw",
+     "stated": "~10–11 g",
+     "low": 10.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Moong dal (split), raw",
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Toor dal, raw",
+     "stated": "~8–10 g",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Lobia (black-eyed beans), raw",
+     "stated": "~10–12 g",
+     "low": 10.0,
+     "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked (~30 g raw)",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "A generous rajma chawal plate (~50 g raw)",
+     "stated": "~7–8 g",
+     "low": 7.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma salad, 1 cup boiled",
+     "stated": "~9–11 g",
+     "low": 9.0,
+     "high": 11.0,
+     "unit": "g"
+    }
+   ]
+  },
+  {
+   "food": "bajra",
+   "nutrient": "iron",
+   "title": "Iron in Bajra: A Winter Roti Worth Switching To",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-bajra-india",
+   "values": [
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Ragi (finger millet), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Jowar (sorghum), raw",
+     "stated": "~3–4 mg",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Wheat atta, whole",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rice, raw milled",
+     "stated": "~0.5–1 mg",
+     "low": 0.5,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bajra roti (~35 g flour)",
+     "stated": "~2–2.8 mg",
+     "low": 2.0,
+     "high": 2.8,
+     "unit": "mg"
+    },
+    {
+     "item": "1 wheat roti (~30 g atta)",
+     "stated": "~1–1.3 mg",
+     "low": 1.0,
+     "high": 1.3,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bowl bajra khichdi (~40 g bajra)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 glass bajra rab (fermented, ~25 g)",
+     "stated": "~1.5–2 mg, better absorbed",
+     "low": 1.5,
+     "high": 2.0,
+     "unit": "mg"
+    },
+    {
+     "item": "2 bajra rotis with sabzi",
+     "stated": "~4–5.5 mg, about a fifth of a woman's RD",
+     "low": 4.0,
+     "high": 5.5,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "chana",
+   "nutrient": "iron",
+   "title": "Iron in Chana: Kala, Kabuli and Which Does More",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-chana-india",
+   "values": [
+    {
+     "item": "Kala chana (desi chickpea), raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kabuli chana, raw",
+     "stated": "~4–6 mg",
+     "low": 4.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Chana dal (split), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Roasted chana (bhuna)",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Moong dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori kala chana curry (~40 g dry)",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori chana dal (~30 g dry)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori sprouted chana (~50 g)",
+     "stated": "~2–2.5 mg, better absorbed",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Handful of roasted chana (~30 g)",
+     "stated": "~1.5–1.8 mg",
+     "low": 1.5,
+     "high": 1.8,
+     "unit": "mg"
+    },
+    {
+     "item": "1 plate chole (~60 g dry kabuli)",
+     "stated": "~2.5–3.5 mg",
+     "low": 2.5,
+     "high": 3.5,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "dates",
+   "nutrient": "iron",
+   "title": "Iron in Dates: Fresh, Dried and What a Handful Gives",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-dates-india",
+   "values": [
+    {
+     "item": "Dates, dried (chhuhara, pind khajur)",
+     "stated": "~2–4 mg",
+     "low": 2.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates, fresh (khajur)",
+     "stated": "~0.8–1.2 mg",
+     "low": 0.8,
+     "high": 1.2,
+     "unit": "mg"
+    },
+    {
+     "item": "Dried figs (anjeer)",
+     "stated": "~2.5–4 mg",
+     "low": 2.5,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Raisins (kishmish)",
+     "stated": "~1.5–2.5 mg",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Jaggery (cane)",
+     "stated": "~3–11 mg",
+     "low": 3.0,
+     "high": 11.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "3 dried dates (~25 g)",
+     "stated": "~0.5–1 mg",
+     "low": 0.5,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "3 fresh dates (~25 g)",
+     "stated": "~0.2–0.3 mg",
+     "low": 0.2,
+     "high": 0.3,
+     "unit": "mg"
+    },
+    {
+     "item": "Date and nut laddoo (~30 g)",
+     "stated": "~0.8–1.5 mg, partly from the nuts",
+     "low": 0.8,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates with 1 tbsp til (~35 g)",
+     "stated": "~1.5–2.5 mg, mostly from the til",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Adult women, 19–50",
+     "stated": "29 mg/day",
+     "low": 29.0,
+     "high": null,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "jaggery",
+   "nutrient": "iron",
+   "title": "Iron in Jaggery: The Honest Maths Per Spoon",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-jaggery-india",
+   "values": [
+    {
+     "item": "Jaggery (cane gur)",
+     "stated": "~3–11 mg",
+     "low": 3.0,
+     "high": 11.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Ragi (finger millet), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates, dried",
+     "stated": "~2–4 mg",
+     "low": 2.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Refined sugar",
+     "stated": "~0 mg",
+     "low": 0.0,
+     "high": null,
+     "unit": "mg"
+    },
+    {
+     "item": "1 teaspoon jaggery (~5 g)",
+     "stated": "~0.15–0.5 mg",
+     "low": 0.15,
+     "high": 0.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 small piece after a meal (~10 g)",
+     "stated": "~0.3–1 mg",
+     "low": 0.3,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 cup chai sweetened with gur (~8 g)",
+     "stated": "~0.25–0.9 mg, mostly blocked by the tea",
+     "low": 0.25,
+     "high": 0.9,
+     "unit": "mg"
+    },
+    {
+     "item": "1 til-gur laddoo (~25 g, half til)",
+     "stated": "~1.5–2.5 mg, mostly from the til",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "moong dal",
+   "nutrient": "iron",
+   "title": "Iron in Moong Dal: Sprouting, Soaking and the Difference",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-moong-dal-india",
+   "values": [
+    {
+     "item": "Moong dal (split, yellow), raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Whole moong (green), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Toor (arhar) dal, raw",
+     "stated": "~2.5–3.5 mg",
+     "low": 2.5,
+     "high": 3.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Urad dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori moong dal (~30 g dry)",
+     "stated": "~1–1.3 mg",
+     "low": 1.0,
+     "high": 1.3,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori sprouted moong (~50 g)",
+     "stated": "~1.3–1.8 mg, better absorbed",
+     "low": 1.3,
+     "high": 1.8,
+     "unit": "mg"
+    },
+    {
+     "item": "2 moong dal chillas (~50 g dal)",
+     "stated": "~1.8–2.2 mg",
+     "low": 1.8,
+     "high": 2.2,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bowl moong khichdi (~30 g dal + rice)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori masoor dal, for comparison",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "palak",
+   "nutrient": "iron",
+   "title": "Iron in Palak: Why Spinach Is Not the Fix You Think",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-palak-india",
+   "values": [
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Ragi (finger millet), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Moong dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Rice, raw milled",
+     "stated": "~0.5–1 mg",
+     "low": 0.5,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Adult women, 19–50",
+     "stated": "29 mg/day",
+     "low": 29.0,
+     "high": null,
+     "unit": "mg"
+    },
+    {
+     "item": "Adult men",
+     "stated": "19 mg/day",
+     "low": 19.0,
+     "high": null,
+     "unit": "mg"
+    },
+    {
+     "item": "Pregnancy",
+     "stated": "27 mg/day",
+     "low": 27.0,
+     "high": null,
+     "unit": "mg"
+    },
+    {
+     "item": "Lactation",
+     "stated": "23 mg/day",
+     "low": 23.0,
+     "high": null,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "ragi",
+   "nutrient": "iron",
+   "title": "Iron in Ragi: Making the Millet Count",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-ragi-india",
+   "values": [
+    {
+     "item": "Ragi (finger millet), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Jowar (sorghum), raw",
+     "stated": "~3–4 mg",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Wheat atta, whole",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rice, raw milled",
+     "stated": "~0.5–1 mg",
+     "low": 0.5,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Moong dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Jaggery (cane)",
+     "stated": "~3–11 mg",
+     "low": 3.0,
+     "high": 11.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 ragi roti (~30 g flour)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 ragi mudde (~60 g flour)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "2 ragi dosas (fermented, ~50 g flour)",
+     "stated": "~2–2.5 mg, better absorbed",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bowl ragi porridge (~30 g flour)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 glass sprouted ragi malt (~25 g)",
+     "stated": "~1–1.3 mg, better absorbed",
+     "low": 1.0,
+     "high": 1.3,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "rajma",
+   "nutrient": "iron",
+   "title": "Iron in Rajma: How to Actually Absorb It",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-rajma-india",
+   "values": [
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Ragi (finger millet), raw",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Moong dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates, dried",
+     "stated": "~2–4 mg",
+     "low": 2.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori rajma masala (~50 g dry beans)",
+     "stated": "~2.5–4 mg",
+     "low": 2.5,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori rajma + 1 katori rice",
+     "stated": "~3–4.5 mg",
+     "low": 3.0,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma chawal plate at a dhaba (large)",
+     "stated": "~5–7 mg",
+     "low": 5.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori masoor dal, for comparison",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "soya chunks",
+   "nutrient": "iron",
+   "title": "Iron in Soya Chunks: Cheap, Dense and Overlooked",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-soya-chunks-india",
+   "values": [
+    {
+     "item": "Soya chunks, defatted (dry)",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Moong dal, raw",
+     "stated": "~3.5–4.5 mg",
+     "low": 3.5,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Paneer",
+     "stated": "~0.3–0.6 mg",
+     "low": 0.3,
+     "high": 0.6,
+     "unit": "mg"
+    },
+    {
+     "item": "30 g dry soya chunks (1 katori cooked)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "50 g dry (a generous curry portion)",
+     "stated": "~4–5 mg",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunk pulao, 1 plate (~25 g dry)",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori paneer, for comparison",
+     "stated": "~0.3–0.5 mg",
+     "low": 0.3,
+     "high": 0.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Adult women, 19–50",
+     "stated": "29 mg/day",
+     "low": 29.0,
+     "high": null,
+     "unit": "mg"
+    }
+   ]
+  },
+  {
+   "food": "til",
+   "nutrient": "iron",
+   "title": "Iron in Til: Small Seed, Serious Numbers",
+   "source_url": "https://kabo.co.in/blogs/news/iron-in-til-india",
+   "values": [
+    {
+     "item": "Til (sesame), white",
+     "stated": "~9–15 mg",
+     "low": 9.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Til (sesame), black",
+     "stated": "~10–15 mg",
+     "low": 10.0,
+     "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Bajra (pearl millet), raw",
+     "stated": "~6–8 mg",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Masoor dal, raw",
+     "stated": "~6–7 mg",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Jaggery (cane)",
+     "stated": "~3–11 mg",
+     "low": 3.0,
+     "high": 11.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates, dried",
+     "stated": "~2–4 mg",
+     "low": 2.0,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 tbsp til (~10 g)",
+     "stated": "~1–1.5 mg",
+     "low": 1.0,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 til-gur laddoo (~25 g, half til)",
+     "stated": "~1.5–2.5 mg",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "2 tbsp til chutney (~15 g til)",
+     "stated": "~1.5–2.2 mg",
+     "low": 1.5,
+     "high": 2.2,
+     "unit": "mg"
+    },
+    {
+     "item": "1 tbsp tahini (~15 g)",
+     "stated": "~1.3–2.2 mg",
+     "low": 1.3,
+     "high": 2.2,
      "unit": "mg"
     }
    ]
@@ -3483,6 +5477,11 @@
    "url": "https://kabo.co.in/blogs/news/afternoon-energy-crash-india"
   },
   {
+   "handle": "ai-personalised-nutrition-india-2027",
+   "title": "AI Nutrition Advice in 2027: What It Can and Cannot Do",
+   "url": "https://kabo.co.in/blogs/news/ai-personalised-nutrition-india-2027"
+  },
+  {
    "handle": "air-fryer-cooking-nutrition-india",
    "title": "Air Fryers: What They Change Nutritionally",
    "url": "https://kabo.co.in/blogs/news/air-fryer-cooking-nutrition-india"
@@ -4978,6 +6977,56 @@
    "url": "https://kabo.co.in/blogs/news/fibre-benefits-sources-india"
   },
   {
+   "handle": "fibre-in-bajra-india",
+   "title": "Fibre in Bajra: The Winter Roti That Out-Fibres Wheat",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-bajra-india"
+  },
+  {
+   "handle": "fibre-in-brown-rice-india",
+   "title": "Fibre in Brown Rice: Honest Numbers Against White Rice and Millets",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-brown-rice-india"
+  },
+  {
+   "handle": "fibre-in-chana-india",
+   "title": "Fibre in Chana: Kala vs Kabuli vs Dal, Compared Properly",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-chana-india"
+  },
+  {
+   "handle": "fibre-in-flaxseed-india",
+   "title": "Fibre in Flaxseed: Why Grinding Changes Everything",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-flaxseed-india"
+  },
+  {
+   "handle": "fibre-in-guava-india",
+   "title": "Fibre in Guava: The Cheapest High-Fibre Fruit in the Country",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-guava-india"
+  },
+  {
+   "handle": "fibre-in-isabgol-india",
+   "title": "Fibre in Isabgol: What a Spoonful Does, and When Food Is Better",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-isabgol-india"
+  },
+  {
+   "handle": "fibre-in-moong-dal-india",
+   "title": "Fibre in Moong Dal: The Gentle Dal, and Its One Weakness",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-moong-dal-india"
+  },
+  {
+   "handle": "fibre-in-oats-india",
+   "title": "Fibre in Oats: What a Bowl Gives You, and How to Get More",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-oats-india"
+  },
+  {
+   "handle": "fibre-in-ragi-india",
+   "title": "Fibre in Ragi: Per Mudde, Per Roti, and Why It Keeps You Full",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-ragi-india"
+  },
+  {
+   "handle": "fibre-in-rajma-india",
+   "title": "Fibre in Rajma: Why One Katori Does So Much Work",
+   "url": "https://kabo.co.in/blogs/news/fibre-in-rajma-india"
+  },
+  {
    "handle": "fibre-intake-calculator",
    "title": "Fibre Intake Calculator: How Much Dietary Fibre Do You Need Per Day?",
    "url": "https://kabo.co.in/blogs/news/fibre-intake-calculator"
@@ -5826,6 +7875,56 @@
    "handle": "iron-for-vegetarians-india",
    "title": "Iron for Vegetarians in India: Deficiency, Sources &amp; Tips",
    "url": "https://kabo.co.in/blogs/news/iron-for-vegetarians-india"
+  },
+  {
+   "handle": "iron-in-bajra-india",
+   "title": "Iron in Bajra: A Winter Roti Worth Switching To",
+   "url": "https://kabo.co.in/blogs/news/iron-in-bajra-india"
+  },
+  {
+   "handle": "iron-in-chana-india",
+   "title": "Iron in Chana: Kala, Kabuli and Which Does More",
+   "url": "https://kabo.co.in/blogs/news/iron-in-chana-india"
+  },
+  {
+   "handle": "iron-in-dates-india",
+   "title": "Iron in Dates: Fresh, Dried and What a Handful Gives",
+   "url": "https://kabo.co.in/blogs/news/iron-in-dates-india"
+  },
+  {
+   "handle": "iron-in-jaggery-india",
+   "title": "Iron in Jaggery: The Honest Maths Per Spoon",
+   "url": "https://kabo.co.in/blogs/news/iron-in-jaggery-india"
+  },
+  {
+   "handle": "iron-in-moong-dal-india",
+   "title": "Iron in Moong Dal: Sprouting, Soaking and the Difference",
+   "url": "https://kabo.co.in/blogs/news/iron-in-moong-dal-india"
+  },
+  {
+   "handle": "iron-in-palak-india",
+   "title": "Iron in Palak: Why Spinach Is Not the Fix You Think",
+   "url": "https://kabo.co.in/blogs/news/iron-in-palak-india"
+  },
+  {
+   "handle": "iron-in-ragi-india",
+   "title": "Iron in Ragi: Making the Millet Count",
+   "url": "https://kabo.co.in/blogs/news/iron-in-ragi-india"
+  },
+  {
+   "handle": "iron-in-rajma-india",
+   "title": "Iron in Rajma: How to Actually Absorb It",
+   "url": "https://kabo.co.in/blogs/news/iron-in-rajma-india"
+  },
+  {
+   "handle": "iron-in-soya-chunks-india",
+   "title": "Iron in Soya Chunks: Cheap, Dense and Overlooked",
+   "url": "https://kabo.co.in/blogs/news/iron-in-soya-chunks-india"
+  },
+  {
+   "handle": "iron-in-til-india",
+   "title": "Iron in Til: Small Seed, Serious Numbers",
+   "url": "https://kabo.co.in/blogs/news/iron-in-til-india"
   },
   {
    "handle": "iron-rich-indian-foods-for-women",
@@ -6778,6 +8877,11 @@
    "url": "https://kabo.co.in/blogs/news/nutrition-myths-india"
   },
   {
+   "handle": "nutrition-reset-january-2027-india",
+   "title": "The January 2027 Reset That Survives February",
+   "url": "https://kabo.co.in/blogs/news/nutrition-reset-january-2027-india"
+  },
+  {
    "handle": "nutrition-shake-for-energy-boost",
    "title": "Nutrition Shakes for an All-Day Energy Boost",
    "url": "https://kabo.co.in/blogs/news/nutrition-shake-for-energy-boost"
@@ -6833,6 +8937,11 @@
    "url": "https://kabo.co.in/blogs/news/nutrition-shakes-for-students-india"
   },
   {
+   "handle": "nutrition-trends-india-2027",
+   "title": "Nutrition in India, 2027: Five Trends and Five Fads",
+   "url": "https://kabo.co.in/blogs/news/nutrition-trends-india-2027"
+  },
+  {
    "handle": "office-parties-work-events-eating-india",
    "title": "Office Parties, Client Dinners and Conferences: How to Eat Well Without Being Awkward",
    "url": "https://kabo.co.in/blogs/news/office-parties-work-events-eating-india"
@@ -6866,6 +8975,11 @@
    "handle": "one-shake-nutrition-busy-gen-z-india",
    "title": "One-Shake Nutrition for the Always-Busy Gen Z",
    "url": "https://kabo.co.in/blogs/news/one-shake-nutrition-busy-gen-z-india"
+  },
+  {
+   "handle": "one-shake-or-ten-pills-2027-india",
+   "title": "One Shake or Ten Pills? The 2027 Case, Costed",
+   "url": "https://kabo.co.in/blogs/news/one-shake-or-ten-pills-2027-india"
   },
   {
    "handle": "ors-vs-sports-drinks-india",
@@ -7146,6 +9260,11 @@
    "handle": "post-workout-protein-shake-recipe",
    "title": "Best Post-Workout Protein Shake Recipe",
    "url": "https://kabo.co.in/blogs/news/post-workout-protein-shake-recipe"
+  },
+  {
+   "handle": "postbiotics-gut-health-2027-india",
+   "title": "Postbiotics: Gut Health's Next Chapter, Explained",
+   "url": "https://kabo.co.in/blogs/news/postbiotics-gut-health-2027-india"
   },
   {
    "handle": "postpartum-diet-india",
@@ -7793,6 +9912,11 @@
    "url": "https://kabo.co.in/blogs/news/protein-powder-for-people-who-hate-shakes-india"
   },
   {
+   "handle": "protein-powder-india-2027-what-changes",
+   "title": "Choosing Protein in 2027: The New Checklist for Buyers",
+   "url": "https://kabo.co.in/blogs/news/protein-powder-india-2027-what-changes"
+  },
+  {
    "handle": "protein-powder-price-in-india",
    "title": "Protein Powder Price in India: What You Should Pay",
    "url": "https://kabo.co.in/blogs/news/protein-powder-price-in-india"
@@ -8298,6 +10422,11 @@
    "url": "https://kabo.co.in/blogs/news/superfoods-vs-supplements-india"
   },
   {
+   "handle": "supplement-stack-by-age-2027-india",
+   "title": "A 2027 Supplement Stack for Every Decade of Adult Life",
+   "url": "https://kabo.co.in/blogs/news/supplement-stack-by-age-2027-india"
+  },
+  {
    "handle": "supplement-stack-india-what-you-need",
    "title": "The Indian Supplement Stack: What You Actually Need, Ranked",
    "url": "https://kabo.co.in/blogs/news/supplement-stack-india-what-you-need"
@@ -8306,6 +10435,16 @@
    "handle": "supplements-for-vegetarians-india-checklist",
    "title": "Supplements for Vegetarians in India: What You Actually Need, and What You Don't",
    "url": "https://kabo.co.in/blogs/news/supplements-for-vegetarians-india-checklist"
+  },
+  {
+   "handle": "supplements-waste-of-money-2027-india",
+   "title": "Supplements to Stop Buying Before 2027",
+   "url": "https://kabo.co.in/blogs/news/supplements-waste-of-money-2027-india"
+  },
+  {
+   "handle": "supplements-worth-taking-in-2027-india",
+   "title": "The 2027 Supplement Shortlist for Indian Adults",
+   "url": "https://kabo.co.in/blogs/news/supplements-worth-taking-in-2027-india"
   },
   {
    "handle": "supplements-you-re-wasting-money-on-science-backed-india-2026",

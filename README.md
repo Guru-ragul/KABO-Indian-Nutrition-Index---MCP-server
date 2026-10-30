@@ -18,9 +18,9 @@ rewriting content.
 | `compare_foods(foods[], nutrient?)` | 2–8 foods side by side on one nutrient (default protein) |
 | `protein_target(weight_kg, age)` | Daily protein target in grams, plus the per-meal threshold |
 | `protein_cost(budget_inr)` | Cost per 10 g of protein, ranked cheapest first |
-| `search_guides(query, limit)` | Searches 1,095 nutrition guides, returns titles and URLs |
+| `search_guides(query, limit)` | Searches 1,124 nutrition guides, returns titles and URLs |
 
-Data: **52 foods, 412 nutrition values, 1,095 guides**, from ICMR-NIN
+Data: **59 foods, 674 nutrition values, 1,124 guides** (protein, fibre, iron, calcium), from ICMR-NIN
 composition tables and the PROT-AGE/ESPEN protein recommendations.
 
 ## Running it
