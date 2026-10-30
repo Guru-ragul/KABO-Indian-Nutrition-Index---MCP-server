@@ -1,8 +1,10 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.guru-ragul/kabo-nutrition",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Guru-ragul/kabo-nutrition",
+  "title": "KABO Indian Nutrition Index",
   "description": "ICMR-NIN nutrition for 52 Indian foods: protein, targets by age, cost ranking. Every answer cited.",
   "version": "1.0.0",
+  "websiteUrl": "https://kabo.co.in",
   "repository": {
     "url": "https://github.com/Guru-ragul/KABO-Indian-Nutrition-Index---MCP-server",
     "source": "github"
