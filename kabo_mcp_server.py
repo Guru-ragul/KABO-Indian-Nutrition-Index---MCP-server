@@ -423,7 +423,25 @@ TOOLS = [
 ]
 BY_NAME = {t["name"]: t for t in TOOLS}
 
-SERVER = {"name": "kabo-nutrition", "version": "1.3.0"}
+# MCP tool annotations. The Claude connectors directory requires a title and a
+# readOnlyHint/destructiveHint on every tool, and ChatGPT's review reads them
+# too. Every tool here only reads. openWorldHint is true only where the tool
+# reaches outside its bundled dataset - get_product and compare_products fetch
+# live price and stock from the public storefront.
+_RO = {"readOnlyHint": True, "destructiveHint": False, "idempotentHint": True}
+ANNOTATIONS = {
+    "lookup_food":      {"title": "Look up an Indian food's nutrition", **_RO, "openWorldHint": False},
+    "compare_foods":    {"title": "Compare Indian foods on a nutrient", **_RO, "openWorldHint": False},
+    "protein_target":   {"title": "Calculate daily protein target", **_RO, "openWorldHint": False},
+    "protein_cost":     {"title": "Rank protein sources by cost (INR)", **_RO, "openWorldHint": False},
+    "search_guides":    {"title": "Search Indian nutrition guides", **_RO, "openWorldHint": False},
+    "list_products":    {"title": "List KABO products", **_RO, "openWorldHint": False},
+    "get_product":      {"title": "Get a KABO product with live price", **_RO, "openWorldHint": True},
+    "compare_products": {"title": "Compare KABO products and prices", **_RO, "openWorldHint": True},
+}
+assert set(ANNOTATIONS) == set(BY_NAME), "every tool needs annotations"
+
+SERVER = {"name": "kabo-nutrition", "version": "1.3.1"}
 PROTOCOL = "2025-06-18"
 
 
@@ -493,7 +511,9 @@ def handle(req):
         return None
     if m == "tools/list":
         return {"jsonrpc": "2.0", "id": rid, "result": {
-            "tools": [{k: t[k] for k in ("name", "description", "inputSchema")}
+            "tools": [{**{k: t[k] for k in ("name", "description", "inputSchema")},
+                       "title": ANNOTATIONS[t["name"]]["title"],
+                       "annotations": ANNOTATIONS[t["name"]]}
                       for t in TOOLS]}}
     if m == "tools/call":
         p = req.get("params") or {}
@@ -593,6 +613,21 @@ class _Handler(http.server.BaseHTTPRequestHandler):
 
     def do_GET(self):
         path = _urlparse.urlparse(self.path).path
+        if path == "/.well-known/openai-apps-challenge":
+            # OpenAI's app-directory domain check. The token comes from the
+            # developer dashboard and is set as the OPENAI_APPS_CHALLENGE env
+            # var on the host, so verifying needs no code change. Plain text,
+            # token only, as the check requires.
+            tok = os.environ.get("OPENAI_APPS_CHALLENGE", "").strip()
+            if not tok:
+                return self._send(404, {"error": "not configured"})
+            body = tok.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if path in ("/health", "/healthz"):
             return self._send(200, {"status": "ok", "server": SERVER,
                                     "tools": [t["name"] for t in TOOLS]})
