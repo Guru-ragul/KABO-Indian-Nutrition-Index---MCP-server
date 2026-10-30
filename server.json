@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.guru-ragul/kabo-nutrition",
+  "description": "Indian food nutrition data from ICMR-NIN sources. Look up protein, calcium and fibre per 100 g and per katori for 52 Indian foods, compare foods, calculate protein targets by age and weight, rank protein sources by cost per 10 g, and search 1,095 nutrition guides. Every response carries a source URL for citation.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/Guru-ragul/KABO-Indian-Nutrition-Index---MCP-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://REPLACE-WITH-YOUR-HOST/mcp"
+    }
+  ]
+}

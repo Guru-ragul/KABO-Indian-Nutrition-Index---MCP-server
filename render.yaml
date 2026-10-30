@@ -1,0 +1,13 @@
+# Render.com - the free tier is enough for this.
+# Assumes this folder IS the repository root (see DEPLOY.md step 1).
+services:
+  - type: web
+    name: kabo-nutrition-mcp
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000

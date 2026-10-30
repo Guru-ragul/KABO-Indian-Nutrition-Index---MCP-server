@@ -1,0 +1,20 @@
+# Fly.io alternative. fly launch --no-deploy, then fly deploy.
+app = "kabo-nutrition-mcp"
+primary_region = "bom"   # Mumbai, closest to the audience
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[http_service.checks]]
+  grace_period = "5s"
+  interval = "30s"
+  method = "GET"
+  path = "/health"
+  timeout = "5s"
