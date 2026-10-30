@@ -138,7 +138,7 @@ public MCP registries. `Dockerfile`, `render.yaml`, `fly.toml` and
 
 ## Licence and caveats
 
-Dataset is **CC BY 4.0** — free to use with attribution to kabo.co.in.
+Code is **MIT** (see `LICENSE`). Dataset is **CC BY 4.0** — free to use with attribution to kabo.co.in.
 
 Values are approximate and vary by variety, preparation and brand. This is
 nutrition information, not medical advice.
