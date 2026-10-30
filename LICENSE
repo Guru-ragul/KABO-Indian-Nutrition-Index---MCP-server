@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-
-DATASET LICENCE
-
-The data file kabo_food_data.json (the KABO Indian Nutrition Index) is licensed
-separately under the Creative Commons Attribution 4.0 International licence
-(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
-
-You may share and adapt the data for any purpose, including commercially, as
-long as you give attribution to "KABO Indian Nutrition Index, kabo.co.in".
-Primary nutrition values derive from ICMR-NIN publications, cited per entry.
