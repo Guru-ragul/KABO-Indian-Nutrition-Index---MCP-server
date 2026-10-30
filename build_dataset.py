@@ -87,6 +87,31 @@ def fetch_articles():
     return arts
 
 
+TH_CELL = re.compile(r"<th[^>]*>(.*?)</th>", re.S)
+NUTRIENT_WORD = {"protein": "protein", "calcium": "calcium", "fibre": "fib", "iron": "iron"}
+# Physically impossible per-100 g values: a hit means the parser grabbed the
+# wrong column (a serving weight such as "100 g") - drop the row.
+CEILING = {("protein", "g"): 60, ("fibre", "g"): 90, ("iron", "mg"): 120,
+           ("calcium", "mg"): 2000}
+
+
+def value_column(tr_header, nutrient):
+    """Index of the column whose header names the nutrient, else None.
+
+    Tables come in two shapes. Comparison tables put the nutrient in column 1
+    ("Food | Protein per 100 g"). Serving tables do not ("Serving | Amount |
+    Protein"), and reading column 1 there stored the serving WEIGHT as the
+    protein value - paneer came out as 100 g protein per 100 g. The header
+    decides now, and a table with no nutrient column is skipped.
+    """
+    heads = [clean(x).lower() for x in TH_CELL.findall(tr_header)]
+    word = NUTRIENT_WORD[nutrient]
+    for i, hd in enumerate(heads):
+        if i > 0 and word in hd:
+            return i
+    return None
+
+
 def extract_foods(arts):
     foods = []
     for h, (title, body) in sorted(arts.items()):
@@ -94,15 +119,22 @@ def extract_foods(arts):
         if not m:
             continue
         nutrient, food = m.group(1), m.group(2).replace("-", " ")
+        stem = lambda w: w[:-1] if w.endswith("s") and len(w) > 4 else w
+        food_words = {stem(w) for w in food.split() if len(w) > 2}
         vals = []
         for tb in TABLE.findall(body):
-            for tr in TR.findall(tb):
+            rows = TR.findall(tb)
+            head = next((tr for tr in rows if TH.search(tr)), None)
+            col = value_column(head, nutrient) if head else 1
+            if col is None:
+                continue
+            for tr in rows:
                 if TH.search(tr):          # header row - names columns, not data
                     continue
                 c = [clean(x) for x in TD.findall(tr)]
-                if len(c) < 2:
+                if len(c) <= col:
                     continue
-                label, val = c[0], c[1]
+                label, val = c[0], c[col]
                 if len(label) < 2:
                     continue
                 if not (re.search(r"\d", val) and re.search(r"\bg\b|gram|mg|kcal", val)):
@@ -110,10 +142,16 @@ def extract_foods(arts):
                 mm = NUM.search(val)
                 if not mm:
                     continue
-                vals.append({"item": label[:70], "stated": val[:40],
-                             "low": float(mm.group(1)),
+                unit = mm.group(3).lower()
+                low = float(mm.group(1))
+                if low > CEILING.get((nutrient, unit), float("inf")):
+                    continue
+                vals.append({"item": label[:70], "stated": val[:40], "low": low,
                              "high": float(mm.group(2)) if mm.group(2) else None,
-                             "unit": mm.group(3).lower()})
+                             "unit": unit})
+        # Rows naming the page's own food first, so the headline value for
+        # "almonds" is almonds and not the peanut row at the top of a table.
+        vals.sort(key=lambda v: 0 if food_words & {stem(w) for w in re.findall(r"[a-z]+", v["item"].lower())} else 1)
         if vals:
             foods.append({"food": food, "nutrient": nutrient, "title": title,
                           "source_url": f"https://kabo.co.in/blogs/news/{h}",

@@ -1,6 +1,6 @@
 {
  "dataset": "KABO Indian Nutrition Index",
- "version": "2026-10-30",
+ "version": "2026-10-31",
  "licence": "CC BY 4.0 - free to use with attribution to kabo.co.in",
  "primary_sources": [
   "ICMR-NIN Indian Food Composition Tables",
@@ -245,6 +245,41 @@
      "unit": "g"
     },
     {
+     "item": "1 bajra roti (~30 g flour)",
+     "stated": "~3.5 g",
+     "low": 3.5,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 bajra rotis",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 bowl bajra khichdi (~40 g bajra)",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass bajra raab (~20 g flour)",
+     "stated": "~2–2.5 g",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "g"
+    },
+    {
+     "item": "1 bajra thepla (~25 g flour)",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
      "item": "Ragi (finger millet) flour",
      "stated": "~11–12 g",
      "low": 11.0,
@@ -292,41 +327,6 @@
      "low": 2.0,
      "high": 3.0,
      "unit": "g"
-    },
-    {
-     "item": "1 bajra roti (~30 g flour)",
-     "stated": "~3.5 g",
-     "low": 3.5,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "2 bajra rotis",
-     "stated": "~7 g",
-     "low": 7.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "1 bowl bajra khichdi (~40 g bajra)",
-     "stated": "~4–5 g",
-     "low": 4.0,
-     "high": 5.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 glass bajra raab (~20 g flour)",
-     "stated": "~2–2.5 g",
-     "low": 2.0,
-     "high": 2.5,
-     "unit": "g"
-    },
-    {
-     "item": "1 bajra thepla (~25 g flour)",
-     "stated": "~3 g",
-     "low": 3.0,
-     "high": null,
-     "unit": "g"
     }
    ]
   },
@@ -365,6 +365,27 @@
      "unit": "g"
     },
     {
+     "item": "1 katori cooked brown rice (~40 g raw)",
+     "stated": "~1.5 g",
+     "low": 1.5,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked white rice (~40 g raw)",
+     "stated": "~1 g",
+     "low": 1.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 katori cooked red rice (~40 g raw)",
+     "stated": "~1.5–2 g",
+     "low": 1.5,
+     "high": 2.0,
+     "unit": "g"
+    },
+    {
      "item": "Ragi flour",
      "stated": "~11–12 g",
      "low": 11.0,
@@ -390,27 +411,6 @@
      "stated": "~10–11 g",
      "low": 10.0,
      "high": 11.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 katori cooked brown rice (~40 g raw)",
-     "stated": "~1.5 g",
-     "low": 1.5,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "1 katori cooked white rice (~40 g raw)",
-     "stated": "~1 g",
-     "low": 1.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "1 katori cooked red rice (~40 g raw)",
-     "stated": "~1.5–2 g",
-     "low": 1.5,
-     "high": 2.0,
      "unit": "g"
     },
     {
@@ -464,34 +464,6 @@
      "unit": "g"
     },
     {
-     "item": "Besan (gram flour)",
-     "stated": "~9–11 g",
-     "low": 9.0,
-     "high": 11.0,
-     "unit": "g"
-    },
-    {
-     "item": "Rajma (kidney beans), raw",
-     "stated": "~14–16 g",
-     "low": 14.0,
-     "high": 16.0,
-     "unit": "g"
-    },
-    {
-     "item": "Moong dal (split), raw",
-     "stated": "~8–9 g",
-     "low": 8.0,
-     "high": 9.0,
-     "unit": "g"
-    },
-    {
-     "item": "Green peas, fresh",
-     "stated": "~5–6 g",
-     "low": 5.0,
-     "high": 6.0,
-     "unit": "g"
-    },
-    {
      "item": "1 katori cooked kala chana (~30 g raw)",
      "stated": "~5 g",
      "low": 5.0,
@@ -520,6 +492,34 @@
      "unit": "g"
     },
     {
+     "item": "Besan (gram flour)",
+     "stated": "~9–11 g",
+     "low": 9.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "Moong dal (split), raw",
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Green peas, fresh",
+     "stated": "~5–6 g",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "g"
+    },
+    {
      "item": "2 besan cheelas (~50 g besan)",
      "stated": "~5 g",
      "low": 5.0,
@@ -539,6 +539,20 @@
      "stated": "~25–27 g",
      "low": 25.0,
      "high": 27.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 tablespoon ground flaxseed (~10 g)",
+     "stated": "~2.5–3 g",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "2 tablespoons ground flaxseed (~20 g)",
+     "stated": "~5–5.5 g",
+     "low": 5.0,
+     "high": 5.5,
      "unit": "g"
     },
     {
@@ -591,20 +605,6 @@
      "unit": "g"
     },
     {
-     "item": "1 tablespoon ground flaxseed (~10 g)",
-     "stated": "~2.5–3 g",
-     "low": 2.5,
-     "high": 3.0,
-     "unit": "g"
-    },
-    {
-     "item": "2 tablespoons ground flaxseed (~20 g)",
-     "stated": "~5–5.5 g",
-     "low": 5.0,
-     "high": 5.5,
-     "unit": "g"
-    },
-    {
      "item": "1 tablespoon alsi chutney (~10 g)",
      "stated": "~2–2.5 g",
      "low": 2.0,
@@ -624,6 +624,34 @@
      "stated": "~5–8 g",
      "low": 5.0,
      "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 medium guava, whole (~150 g)",
+     "stated": "~8–10 g",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 medium guava, peeled and deseeded",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 cup guava slices (~120 g)",
+     "stated": "~6–8 g",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass guava juice, strained",
+     "stated": "under 1 g",
+     "low": 1.0,
+     "high": null,
      "unit": "g"
     },
     {
@@ -673,34 +701,6 @@
      "stated": "~5–6 g",
      "low": 5.0,
      "high": 6.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 medium guava, whole (~150 g)",
-     "stated": "~8–10 g",
-     "low": 8.0,
-     "high": 10.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 medium guava, peeled and deseeded",
-     "stated": "~3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 cup guava slices (~120 g)",
-     "stated": "~6–8 g",
-     "low": 6.0,
-     "high": 8.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 glass guava juice, strained",
-     "stated": "under 1 g",
-     "low": 1.0,
-     "high": null,
      "unit": "g"
     }
    ]
@@ -846,13 +846,6 @@
      "unit": "g"
     },
     {
-     "item": "Rajma, raw",
-     "stated": "~14–16 g",
-     "low": 14.0,
-     "high": 16.0,
-     "unit": "g"
-    },
-    {
      "item": "1 katori cooked yellow moong dal (~30 g raw)",
      "stated": "~2.5–3 g",
      "low": 2.5,
@@ -886,6 +879,13 @@
      "low": 3.0,
      "high": null,
      "unit": "g"
+    },
+    {
+     "item": "Rajma, raw",
+     "stated": "~14–16 g",
+     "low": 14.0,
+     "high": 16.0,
+     "unit": "g"
     }
    ]
   },
@@ -907,6 +907,13 @@
      "stated": "~9–10 g",
      "low": 9.0,
      "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Masala oats sachet, 40 g",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
      "unit": "g"
     },
     {
@@ -971,13 +978,6 @@
      "low": 8.0,
      "high": null,
      "unit": "g"
-    },
-    {
-     "item": "Masala oats sachet, 40 g",
-     "stated": "~3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
     }
    ]
   },
@@ -992,6 +992,41 @@
      "stated": "~11–12 g",
      "low": 11.0,
      "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 ragi mudde (~60 g flour)",
+     "stated": "~7 g",
+     "low": 7.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "1 ragi roti (~30 g flour)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 bowl ragi porridge (~30 g flour)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "1 glass ragi malt (~25 g flour)",
+     "stated": "~3 g",
+     "low": 3.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "2 ragi dosas",
+     "stated": "~4–5 g",
+     "low": 4.0,
+     "high": 5.0,
      "unit": "g"
     },
     {
@@ -1042,41 +1077,6 @@
      "low": 2.0,
      "high": 3.0,
      "unit": "g"
-    },
-    {
-     "item": "1 ragi mudde (~60 g flour)",
-     "stated": "~7 g",
-     "low": 7.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "1 ragi roti (~30 g flour)",
-     "stated": "~3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 bowl ragi porridge (~30 g flour)",
-     "stated": "~3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
-     "item": "1 glass ragi malt (~25 g flour)",
-     "stated": "~3 g",
-     "low": 3.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "2 ragi dosas",
-     "stated": "~4–5 g",
-     "low": 4.0,
-     "high": 5.0,
-     "unit": "g"
     }
    ]
   },
@@ -1091,6 +1091,20 @@
      "stated": "~14–16 g",
      "low": 14.0,
      "high": 16.0,
+     "unit": "g"
+    },
+    {
+     "item": "A generous rajma chawal plate (~50 g raw)",
+     "stated": "~7–8 g",
+     "low": 7.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rajma salad, 1 cup boiled",
+     "stated": "~9–11 g",
+     "low": 9.0,
+     "high": 11.0,
      "unit": "g"
     },
     {
@@ -1148,20 +1162,6 @@
      "low": 4.0,
      "high": 5.0,
      "unit": "g"
-    },
-    {
-     "item": "A generous rajma chawal plate (~50 g raw)",
-     "stated": "~7–8 g",
-     "low": 7.0,
-     "high": 8.0,
-     "unit": "g"
-    },
-    {
-     "item": "Rajma salad, 1 cup boiled",
-     "stated": "~9–11 g",
-     "low": 9.0,
-     "high": 11.0,
-     "unit": "g"
     }
    ]
   },
@@ -1176,6 +1176,34 @@
      "stated": "~6–8 mg",
      "low": 6.0,
      "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bajra roti (~35 g flour)",
+     "stated": "~2–2.8 mg",
+     "low": 2.0,
+     "high": 2.8,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bowl bajra khichdi (~40 g bajra)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 glass bajra rab (fermented, ~25 g)",
+     "stated": "~1.5–2 mg, better absorbed",
+     "low": 1.5,
+     "high": 2.0,
+     "unit": "mg"
+    },
+    {
+     "item": "2 bajra rotis with sabzi",
+     "stated": "~4–5.5 mg, about a fifth of a woman's RD",
+     "low": 4.0,
+     "high": 5.5,
      "unit": "mg"
     },
     {
@@ -1235,38 +1263,10 @@
      "unit": "mg"
     },
     {
-     "item": "1 bajra roti (~35 g flour)",
-     "stated": "~2–2.8 mg",
-     "low": 2.0,
-     "high": 2.8,
-     "unit": "mg"
-    },
-    {
      "item": "1 wheat roti (~30 g atta)",
      "stated": "~1–1.3 mg",
      "low": 1.0,
      "high": 1.3,
-     "unit": "mg"
-    },
-    {
-     "item": "1 bowl bajra khichdi (~40 g bajra)",
-     "stated": "~2.5–3 mg",
-     "low": 2.5,
-     "high": 3.0,
-     "unit": "mg"
-    },
-    {
-     "item": "1 glass bajra rab (fermented, ~25 g)",
-     "stated": "~1.5–2 mg, better absorbed",
-     "low": 1.5,
-     "high": 2.0,
-     "unit": "mg"
-    },
-    {
-     "item": "2 bajra rotis with sabzi",
-     "stated": "~4–5.5 mg, about a fifth of a woman's RD",
-     "low": 4.0,
-     "high": 5.5,
      "unit": "mg"
     }
    ]
@@ -1306,6 +1306,34 @@
      "unit": "mg"
     },
     {
+     "item": "1 katori kala chana curry (~40 g dry)",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori chana dal (~30 g dry)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori sprouted chana (~50 g)",
+     "stated": "~2–2.5 mg, better absorbed",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Handful of roasted chana (~30 g)",
+     "stated": "~1.5–1.8 mg",
+     "low": 1.5,
+     "high": 1.8,
+     "unit": "mg"
+    },
+    {
      "item": "Rajma (kidney beans), raw",
      "stated": "~5–8 mg",
      "low": 5.0,
@@ -1341,34 +1369,6 @@
      "unit": "mg"
     },
     {
-     "item": "1 katori kala chana curry (~40 g dry)",
-     "stated": "~2–2.5 mg",
-     "low": 2.0,
-     "high": 2.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 katori chana dal (~30 g dry)",
-     "stated": "~1.2–1.5 mg",
-     "low": 1.2,
-     "high": 1.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 katori sprouted chana (~50 g)",
-     "stated": "~2–2.5 mg, better absorbed",
-     "low": 2.0,
-     "high": 2.5,
-     "unit": "mg"
-    },
-    {
-     "item": "Handful of roasted chana (~30 g)",
-     "stated": "~1.5–1.8 mg",
-     "low": 1.5,
-     "high": 1.8,
-     "unit": "mg"
-    },
-    {
      "item": "1 plate chole (~60 g dry kabuli)",
      "stated": "~2.5–3.5 mg",
      "low": 2.5,
@@ -1395,6 +1395,34 @@
      "stated": "~0.8–1.2 mg",
      "low": 0.8,
      "high": 1.2,
+     "unit": "mg"
+    },
+    {
+     "item": "3 dried dates (~25 g)",
+     "stated": "~0.5–1 mg",
+     "low": 0.5,
+     "high": 1.0,
+     "unit": "mg"
+    },
+    {
+     "item": "3 fresh dates (~25 g)",
+     "stated": "~0.2–0.3 mg",
+     "low": 0.2,
+     "high": 0.3,
+     "unit": "mg"
+    },
+    {
+     "item": "Date and nut laddoo (~30 g)",
+     "stated": "~0.8–1.5 mg, partly from the nuts",
+     "low": 0.8,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Dates with 1 tbsp til (~35 g)",
+     "stated": "~1.5–2.5 mg, mostly from the til",
+     "low": 1.5,
+     "high": 2.5,
      "unit": "mg"
     },
     {
@@ -1447,34 +1475,6 @@
      "unit": "mg"
     },
     {
-     "item": "3 dried dates (~25 g)",
-     "stated": "~0.5–1 mg",
-     "low": 0.5,
-     "high": 1.0,
-     "unit": "mg"
-    },
-    {
-     "item": "3 fresh dates (~25 g)",
-     "stated": "~0.2–0.3 mg",
-     "low": 0.2,
-     "high": 0.3,
-     "unit": "mg"
-    },
-    {
-     "item": "Date and nut laddoo (~30 g)",
-     "stated": "~0.8–1.5 mg, partly from the nuts",
-     "low": 0.8,
-     "high": 1.5,
-     "unit": "mg"
-    },
-    {
-     "item": "Dates with 1 tbsp til (~35 g)",
-     "stated": "~1.5–2.5 mg, mostly from the til",
-     "low": 1.5,
-     "high": 2.5,
-     "unit": "mg"
-    },
-    {
      "item": "Adult women, 19–50",
      "stated": "29 mg/day",
      "low": 29.0,
@@ -1494,6 +1494,13 @@
      "stated": "~3–11 mg",
      "low": 3.0,
      "high": 11.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 teaspoon jaggery (~5 g)",
+     "stated": "~0.15–0.5 mg",
+     "low": 0.15,
+     "high": 0.5,
      "unit": "mg"
     },
     {
@@ -1560,13 +1567,6 @@
      "unit": "mg"
     },
     {
-     "item": "1 teaspoon jaggery (~5 g)",
-     "stated": "~0.15–0.5 mg",
-     "low": 0.15,
-     "high": 0.5,
-     "unit": "mg"
-    },
-    {
      "item": "1 small piece after a meal (~10 g)",
      "stated": "~0.3–1 mg",
      "low": 0.3,
@@ -1617,20 +1617,6 @@
      "unit": "mg"
     },
     {
-     "item": "Rajma (kidney beans), raw",
-     "stated": "~5–8 mg",
-     "low": 5.0,
-     "high": 8.0,
-     "unit": "mg"
-    },
-    {
-     "item": "Kala chana, raw",
-     "stated": "~5–6 mg",
-     "low": 5.0,
-     "high": 6.0,
-     "unit": "mg"
-    },
-    {
      "item": "Toor (arhar) dal, raw",
      "stated": "~2.5–3.5 mg",
      "low": 2.5,
@@ -1642,20 +1628,6 @@
      "stated": "~3.5–4.5 mg",
      "low": 3.5,
      "high": 4.5,
-     "unit": "mg"
-    },
-    {
-     "item": "Soya chunks, defatted",
-     "stated": "~8–10 mg",
-     "low": 8.0,
-     "high": 10.0,
-     "unit": "mg"
-    },
-    {
-     "item": "Palak (spinach), raw",
-     "stated": "~2.5–3 mg",
-     "low": 2.5,
-     "high": 3.0,
      "unit": "mg"
     },
     {
@@ -1691,6 +1663,34 @@
      "stated": "~2–2.5 mg",
      "low": 2.0,
      "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma (kidney beans), raw",
+     "stated": "~5–8 mg",
+     "low": 5.0,
+     "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Kala chana, raw",
+     "stated": "~5–6 mg",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunks, defatted",
+     "stated": "~8–10 mg",
+     "low": 8.0,
+     "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Palak (spinach), raw",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
      "unit": "mg"
     }
    ]
@@ -1815,6 +1815,41 @@
      "unit": "mg"
     },
     {
+     "item": "1 ragi roti (~30 g flour)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 ragi mudde (~60 g flour)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "2 ragi dosas (fermented, ~50 g flour)",
+     "stated": "~2–2.5 mg, better absorbed",
+     "low": 2.0,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 bowl ragi porridge (~30 g flour)",
+     "stated": "~1.2–1.5 mg",
+     "low": 1.2,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 glass sprouted ragi malt (~25 g)",
+     "stated": "~1–1.3 mg, better absorbed",
+     "low": 1.0,
+     "high": 1.3,
+     "unit": "mg"
+    },
+    {
      "item": "Bajra (pearl millet), raw",
      "stated": "~6–8 mg",
      "low": 6.0,
@@ -1869,41 +1904,6 @@
      "low": 3.0,
      "high": 11.0,
      "unit": "mg"
-    },
-    {
-     "item": "1 ragi roti (~30 g flour)",
-     "stated": "~1.2–1.5 mg",
-     "low": 1.2,
-     "high": 1.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 ragi mudde (~60 g flour)",
-     "stated": "~2.5–3 mg",
-     "low": 2.5,
-     "high": 3.0,
-     "unit": "mg"
-    },
-    {
-     "item": "2 ragi dosas (fermented, ~50 g flour)",
-     "stated": "~2–2.5 mg, better absorbed",
-     "low": 2.0,
-     "high": 2.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 bowl ragi porridge (~30 g flour)",
-     "stated": "~1.2–1.5 mg",
-     "low": 1.2,
-     "high": 1.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 glass sprouted ragi malt (~25 g)",
-     "stated": "~1–1.3 mg, better absorbed",
-     "low": 1.0,
-     "high": 1.3,
-     "unit": "mg"
     }
    ]
   },
@@ -1918,6 +1918,27 @@
      "stated": "~5–8 mg",
      "low": 5.0,
      "high": 8.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori rajma masala (~50 g dry beans)",
+     "stated": "~2.5–4 mg",
+     "low": 2.5,
+     "high": 4.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 katori rajma + 1 katori rice",
+     "stated": "~3–4.5 mg",
+     "low": 3.0,
+     "high": 4.5,
+     "unit": "mg"
+    },
+    {
+     "item": "Rajma chawal plate at a dhaba (large)",
+     "stated": "~5–7 mg",
+     "low": 5.0,
+     "high": 7.0,
      "unit": "mg"
     },
     {
@@ -1984,27 +2005,6 @@
      "unit": "mg"
     },
     {
-     "item": "1 katori rajma masala (~50 g dry beans)",
-     "stated": "~2.5–4 mg",
-     "low": 2.5,
-     "high": 4.0,
-     "unit": "mg"
-    },
-    {
-     "item": "1 katori rajma + 1 katori rice",
-     "stated": "~3–4.5 mg",
-     "low": 3.0,
-     "high": 4.5,
-     "unit": "mg"
-    },
-    {
-     "item": "Rajma chawal plate at a dhaba (large)",
-     "stated": "~5–7 mg",
-     "low": 5.0,
-     "high": 7.0,
-     "unit": "mg"
-    },
-    {
      "item": "1 katori masoor dal, for comparison",
      "stated": "~2–2.5 mg",
      "low": 2.0,
@@ -2024,6 +2024,20 @@
      "stated": "~8–10 mg",
      "low": 8.0,
      "high": 10.0,
+     "unit": "mg"
+    },
+    {
+     "item": "30 g dry soya chunks (1 katori cooked)",
+     "stated": "~2.5–3 mg",
+     "low": 2.5,
+     "high": 3.0,
+     "unit": "mg"
+    },
+    {
+     "item": "Soya chunk pulao, 1 plate (~25 g dry)",
+     "stated": "~2–2.5 mg",
+     "low": 2.0,
+     "high": 2.5,
      "unit": "mg"
     },
     {
@@ -2083,24 +2097,10 @@
      "unit": "mg"
     },
     {
-     "item": "30 g dry soya chunks (1 katori cooked)",
-     "stated": "~2.5–3 mg",
-     "low": 2.5,
-     "high": 3.0,
-     "unit": "mg"
-    },
-    {
      "item": "50 g dry (a generous curry portion)",
      "stated": "~4–5 mg",
      "low": 4.0,
      "high": 5.0,
-     "unit": "mg"
-    },
-    {
-     "item": "Soya chunk pulao, 1 plate (~25 g dry)",
-     "stated": "~2–2.5 mg",
-     "low": 2.0,
-     "high": 2.5,
      "unit": "mg"
     },
     {
@@ -2137,6 +2137,27 @@
      "stated": "~10–15 mg",
      "low": 10.0,
      "high": 15.0,
+     "unit": "mg"
+    },
+    {
+     "item": "1 tbsp til (~10 g)",
+     "stated": "~1–1.5 mg",
+     "low": 1.0,
+     "high": 1.5,
+     "unit": "mg"
+    },
+    {
+     "item": "1 til-gur laddoo (~25 g, half til)",
+     "stated": "~1.5–2.5 mg",
+     "low": 1.5,
+     "high": 2.5,
+     "unit": "mg"
+    },
+    {
+     "item": "2 tbsp til chutney (~15 g til)",
+     "stated": "~1.5–2.2 mg",
+     "low": 1.5,
+     "high": 2.2,
      "unit": "mg"
     },
     {
@@ -2196,27 +2217,6 @@
      "unit": "mg"
     },
     {
-     "item": "1 tbsp til (~10 g)",
-     "stated": "~1–1.5 mg",
-     "low": 1.0,
-     "high": 1.5,
-     "unit": "mg"
-    },
-    {
-     "item": "1 til-gur laddoo (~25 g, half til)",
-     "stated": "~1.5–2.5 mg",
-     "low": 1.5,
-     "high": 2.5,
-     "unit": "mg"
-    },
-    {
-     "item": "2 tbsp til chutney (~15 g til)",
-     "stated": "~1.5–2.2 mg",
-     "low": 1.5,
-     "high": 2.2,
-     "unit": "mg"
-    },
-    {
      "item": "1 tbsp tahini (~15 g)",
      "stated": "~1.3–2.2 mg",
      "low": 1.3,
@@ -2232,16 +2232,16 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-almonds",
    "values": [
     {
-     "item": "Peanut (moongphali)",
-     "stated": "~25 g",
-     "low": 25.0,
+     "item": "Almond (badam)",
+     "stated": "~21 g",
+     "low": 21.0,
      "high": null,
      "unit": "g"
     },
     {
-     "item": "Almond (badam)",
-     "stated": "~21 g",
-     "low": 21.0,
+     "item": "Peanut (moongphali)",
+     "stated": "~25 g",
+     "low": 25.0,
      "high": null,
      "unit": "g"
     },
@@ -2433,11 +2433,68 @@
    ]
   },
   {
+   "food": "buttermilk chaas",
+   "nutrient": "protein",
+   "title": "Protein in Buttermilk (Chaas) and Lassi",
+   "source_url": "https://kabo.co.in/blogs/news/protein-in-buttermilk-chaas-india",
+   "values": [
+    {
+     "item": "Thin restaurant chaas, 200 ml",
+     "stated": "about 1–1.5 g",
+     "low": 1.0,
+     "high": 1.5,
+     "unit": "g"
+    },
+    {
+     "item": "Home chaas, 200 ml",
+     "stated": "about 2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Thick chaas / matha",
+     "stated": "about 4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "Salted lassi, 250 ml",
+     "stated": "about 5–7 g",
+     "low": 5.0,
+     "high": 7.0,
+     "unit": "g"
+    },
+    {
+     "item": "Sweet lassi, 250 ml",
+     "stated": "about 6–8 g",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "Plain curd, one katori",
+     "stated": "about 5–6 g",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "g"
+    }
+   ]
+  },
+  {
    "food": "cashews",
    "nutrient": "protein",
    "title": "Protein in Cashews (Kaju): Per 100 g and Per Handful",
    "source_url": "https://kabo.co.in/blogs/news/protein-in-cashews-india",
    "values": [
+    {
+     "item": "Cashews",
+     "stated": "about 18 g",
+     "low": 18.0,
+     "high": null,
+     "unit": "g"
+    },
     {
      "item": "Peanuts",
      "stated": "about 25 g",
@@ -2449,13 +2506,6 @@
      "item": "Almonds",
      "stated": "about 21 g",
      "low": 21.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Cashews",
-     "stated": "about 18 g",
-     "low": 18.0,
      "high": null,
      "unit": "g"
     },
@@ -2503,17 +2553,17 @@
      "unit": "g"
     },
     {
-     "item": "Besan (chickpea flour)",
-     "stated": "~20–22 g",
-     "low": 20.0,
-     "high": 22.0,
-     "unit": "g"
-    },
-    {
      "item": "Sprouted chana",
      "stated": "~18–20 g (dry basis)",
      "low": 18.0,
      "high": 20.0,
+     "unit": "g"
+    },
+    {
+     "item": "Besan (chickpea flour)",
+     "stated": "~20–22 g",
+     "low": 20.0,
+     "high": 22.0,
      "unit": "g"
     },
     {
@@ -2539,13 +2589,6 @@
      "unit": "g"
     },
     {
-     "item": "Cooked, one katori (about 150 g)",
-     "stated": "about 7–9 g",
-     "low": 7.0,
-     "high": 9.0,
-     "unit": "g"
-    },
-    {
      "item": "A thick dal, one katori",
      "stated": "towards 9–10 g",
      "low": 9.0,
@@ -2560,52 +2603,17 @@
      "unit": "g"
     },
     {
+     "item": "Cooked, one katori (about 150 g)",
+     "stated": "about 7–9 g",
+     "low": 7.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
      "item": "Besan (gram flour), 100 g",
      "stated": "about 20–22 g",
      "low": 20.0,
      "high": 22.0,
-     "unit": "g"
-    },
-    {
-     "item": "Chana dal",
-     "stated": "20–22 g",
-     "low": 20.0,
-     "high": 22.0,
-     "unit": "g"
-    },
-    {
-     "item": "Moong dal",
-     "stated": "about 24 g",
-     "low": 24.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Masoor dal",
-     "stated": "about 25 g",
-     "low": 25.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Toor dal",
-     "stated": "about 22 g",
-     "low": 22.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Urad dal",
-     "stated": "about 24 g",
-     "low": 24.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Rajma (whole)",
-     "stated": "about 23 g",
-     "low": 23.0,
-     "high": null,
      "unit": "g"
     }
    ]
@@ -2638,17 +2646,17 @@
      "unit": "g"
     },
     {
-     "item": "Curd / dahi (whole milk)",
-     "stated": "~3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
      "item": "Tofu (soya paneer)",
      "stated": "~8–12 g",
      "low": 8.0,
      "high": 12.0,
+     "unit": "g"
+    },
+    {
+     "item": "Curd / dahi (whole milk)",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
      "unit": "g"
     },
     {
@@ -2752,6 +2760,13 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-corn-india",
    "values": [
     {
+     "item": "Makki ka atta (corn flour)",
+     "stated": "about 9–11 g",
+     "low": 9.0,
+     "high": 11.0,
+     "unit": "g"
+    },
+    {
      "item": "Sweetcorn kernels, boiled",
      "stated": "about 3.3 g",
      "low": 3.3,
@@ -2763,13 +2778,6 @@
      "stated": "about 3–4 g",
      "low": 3.0,
      "high": 4.0,
-     "unit": "g"
-    },
-    {
-     "item": "Makki ka atta (corn flour)",
-     "stated": "about 9–11 g",
-     "low": 9.0,
-     "high": 11.0,
      "unit": "g"
     },
     {
@@ -2895,6 +2903,48 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-dhokla-india",
    "values": [
     {
+     "item": "Khaman dhokla",
+     "stated": "about 6–7 g",
+     "low": 6.0,
+     "high": 7.0,
+     "unit": "g"
+    },
+    {
+     "item": "Khatta / white dhokla",
+     "stated": "about 4–5 g",
+     "low": 4.0,
+     "high": 5.0,
+     "unit": "g"
+    },
+    {
+     "item": "Rava dhokla",
+     "stated": "about 3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Moong dal dhokla",
+     "stated": "about 7–9 g",
+     "low": 7.0,
+     "high": 9.0,
+     "unit": "g"
+    },
+    {
+     "item": "Dhokla",
+     "stated": "about 5–6 g",
+     "low": 5.0,
+     "high": 6.0,
+     "unit": "g"
+    },
+    {
+     "item": "A plate, 4–5 pieces (about 120 g)",
+     "stated": "about 6–8 g",
+     "low": 6.0,
+     "high": 8.0,
+     "unit": "g"
+    },
+    {
      "item": "Roasted chana",
      "stated": "about 20 g",
      "low": 20.0,
@@ -2906,13 +2956,6 @@
      "stated": "about 7–9 g",
      "low": 7.0,
      "high": 9.0,
-     "unit": "g"
-    },
-    {
-     "item": "Dhokla",
-     "stated": "about 5–6 g",
-     "low": 5.0,
-     "high": 6.0,
      "unit": "g"
     },
     {
@@ -2980,13 +3023,6 @@
      "unit": "g"
     },
     {
-     "item": "One katori sambar",
-     "stated": "about 3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
      "item": "Two plain dosas with sambar",
      "stated": "about 9–10 g",
      "low": 9.0,
@@ -2998,6 +3034,13 @@
      "stated": "about 9–10 g",
      "low": 9.0,
      "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "One katori sambar",
+     "stated": "about 3–4 g",
+     "low": 3.0,
+     "high": 4.0,
      "unit": "g"
     },
     {
@@ -3065,6 +3108,20 @@
      "unit": "g"
     },
     {
+     "item": "Boiled egg",
+     "stated": "about 6 g",
+     "low": 6.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "Egg curry, two eggs",
+     "stated": "about 12 g",
+     "low": 12.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
      "item": "Two whole eggs",
      "stated": "about 12 g",
      "low": 12.0,
@@ -3075,13 +3132,6 @@
      "item": "Three whole eggs",
      "stated": "about 18 g",
      "low": 18.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Boiled egg",
-     "stated": "about 6 g",
-     "low": 6.0,
      "high": null,
      "unit": "g"
     },
@@ -3101,13 +3151,6 @@
     },
     {
      "item": "Bhurji, two eggs",
-     "stated": "about 12 g",
-     "low": 12.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Egg curry, two eggs",
      "stated": "about 12 g",
      "low": 12.0,
      "high": null,
@@ -3306,24 +3349,10 @@
      "unit": "g"
     },
     {
-     "item": "One katori sambar",
-     "stated": "about 3–4 g",
-     "low": 3.0,
-     "high": 4.0,
-     "unit": "g"
-    },
-    {
      "item": "Three idlis with one katori sambar",
      "stated": "about 9–10 g",
      "low": 9.0,
      "high": 10.0,
-     "unit": "g"
-    },
-    {
-     "item": "Coconut chutney, two tablespoons",
-     "stated": "under 1 g",
-     "low": 1.0,
-     "high": null,
      "unit": "g"
     },
     {
@@ -3338,6 +3367,20 @@
      "stated": "about 9–10 g",
      "low": 9.0,
      "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "One katori sambar",
+     "stated": "about 3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Coconut chutney, two tablespoons",
+     "stated": "under 1 g",
+     "low": 1.0,
+     "high": null,
      "unit": "g"
     },
     {
@@ -3398,13 +3441,6 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-indian-beans",
    "values": [
     {
-     "item": "Rongi / Lobia (black-eyed pea, cowpea)",
-     "stated": "~24 g",
-     "low": 24.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
      "item": "Moth bean (matki / dew gram)",
      "stated": "~23 g",
      "low": 23.0,
@@ -3415,6 +3451,20 @@
      "item": "Rajma (kidney beans)",
      "stated": "~23 g",
      "low": 23.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "Val / Field bean (whole)",
+     "stated": "~24 g",
+     "low": 24.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "Rongi / Lobia (black-eyed pea, cowpea)",
+     "stated": "~24 g",
+     "low": 24.0,
      "high": null,
      "unit": "g"
     },
@@ -3437,13 +3487,6 @@
      "stated": "~18–20 g",
      "low": 18.0,
      "high": 20.0,
-     "unit": "g"
-    },
-    {
-     "item": "Val / Field bean (whole)",
-     "stated": "~24 g",
-     "low": 24.0,
-     "high": null,
      "unit": "g"
     }
    ]
@@ -3825,6 +3868,13 @@
      "unit": "g"
     },
     {
+     "item": "Matki (moth bean)",
+     "stated": "about 22–23 g",
+     "low": 22.0,
+     "high": 23.0,
+     "unit": "g"
+    },
+    {
      "item": "Soaked",
      "stated": "about 9–11 g",
      "low": 9.0,
@@ -3857,13 +3907,6 @@
      "stated": "about 52 g",
      "low": 52.0,
      "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Matki (moth bean)",
-     "stated": "about 22–23 g",
-     "low": 22.0,
-     "high": 23.0,
      "unit": "g"
     },
     {
@@ -3960,13 +4003,6 @@
      "unit": "g"
     },
     {
-     "item": "Jowar (sorghum)",
-     "stated": "9–10 g",
-     "low": 9.0,
-     "high": 10.0,
-     "unit": "g"
-    },
-    {
      "item": "Ragi (finger millet)",
      "stated": "7–8 g",
      "low": 7.0,
@@ -3982,6 +4018,13 @@
     },
     {
      "item": "Little millet (kutki)",
+     "stated": "9–10 g",
+     "low": 9.0,
+     "high": 10.0,
+     "unit": "g"
+    },
+    {
+     "item": "Jowar (sorghum)",
      "stated": "9–10 g",
      "low": 9.0,
      "high": 10.0,
@@ -4145,38 +4188,45 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-paneer",
    "values": [
     {
+     "item": "Low-fat paneer",
+     "stated": "~20–22 g",
+     "low": 20.0,
+     "high": 22.0,
+     "unit": "g"
+    },
+    {
+     "item": "Paneer (full-fat)",
+     "stated": "~18–20 g",
+     "low": 18.0,
+     "high": 20.0,
+     "unit": "g"
+    },
+    {
      "item": "Per 100 g (full-fat)",
-     "stated": "100 g",
-     "low": 100.0,
-     "high": null,
+     "stated": "~18–20 g",
+     "low": 18.0,
+     "high": 20.0,
      "unit": "g"
     },
     {
      "item": "Small katori (sabzi)",
-     "stated": "~50 g paneer",
-     "low": 50.0,
-     "high": null,
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
      "unit": "g"
     },
     {
      "item": "2–3 tikka cubes",
-     "stated": "~60–70 g",
-     "low": 60.0,
-     "high": 70.0,
+     "stated": "~11–14 g",
+     "low": 11.0,
+     "high": 14.0,
      "unit": "g"
     },
     {
      "item": "Generous serving",
-     "stated": "~80–100 g",
-     "low": 80.0,
-     "high": 100.0,
-     "unit": "g"
-    },
-    {
-     "item": "Low-fat paneer",
-     "stated": "100 g",
-     "low": 100.0,
-     "high": null,
+     "stated": "~15–20 g",
+     "low": 15.0,
+     "high": 20.0,
      "unit": "g"
     },
     {
@@ -4198,13 +4248,6 @@
      "stated": "~24 g",
      "low": 24.0,
      "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Paneer (full-fat)",
-     "stated": "~18–20 g",
-     "low": 18.0,
-     "high": 20.0,
      "unit": "g"
     },
     {
@@ -4429,6 +4472,13 @@
      "unit": "g"
     },
     {
+     "item": "Sesame seeds (til)",
+     "stated": "~18-20 g",
+     "low": 18.0,
+     "high": 20.0,
+     "unit": "g"
+    },
+    {
      "item": "Peanuts / groundnut (moongphali)",
      "stated": "~25-26 g",
      "low": 25.0,
@@ -4444,13 +4494,6 @@
     },
     {
      "item": "Flaxseeds (alsi)",
-     "stated": "~18-20 g",
-     "low": 18.0,
-     "high": 20.0,
-     "unit": "g"
-    },
-    {
-     "item": "Sesame seeds (til)",
      "stated": "~18-20 g",
      "low": 18.0,
      "high": 20.0,
@@ -4493,13 +4536,6 @@
      "unit": "g"
     },
     {
-     "item": "Jowar (sorghum)",
-     "stated": "~9–10 g",
-     "low": 9.0,
-     "high": 10.0,
-     "unit": "g"
-    },
-    {
      "item": "Little millet (kutki)",
      "stated": "~9–10 g",
      "low": 9.0,
@@ -4511,6 +4547,13 @@
      "stated": "~7–8 g",
      "low": 7.0,
      "high": 8.0,
+     "unit": "g"
+    },
+    {
+     "item": "Jowar (sorghum)",
+     "stated": "~9–10 g",
+     "low": 9.0,
+     "high": 10.0,
      "unit": "g"
     },
     {
@@ -4707,20 +4750,6 @@
      "unit": "g"
     },
     {
-     "item": "One katori cooked, about 150 g",
-     "stated": "about 4 g",
-     "low": 4.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "One large plate, about 250 g",
-     "stated": "about 6 g",
-     "low": 6.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
      "item": "Raw brown rice, 100 g",
      "stated": "about 7.5 g",
      "low": 7.5,
@@ -4731,6 +4760,20 @@
      "item": "Rice",
      "stated": "about 4 g",
      "low": 4.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "One katori cooked, about 150 g",
+     "stated": "about 4 g",
+     "low": 4.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "One large plate, about 250 g",
+     "stated": "about 6 g",
+     "low": 6.0,
      "high": null,
      "unit": "g"
     },
@@ -4778,6 +4821,13 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-roti",
    "values": [
     {
+     "item": "Besan (Bengal gram) missi roti add-in",
+     "stated": "~20–22 g",
+     "low": 20.0,
+     "high": 22.0,
+     "unit": "g"
+    },
+    {
      "item": "Wheat atta (whole, chakki)",
      "stated": "~11–12 g",
      "low": 11.0,
@@ -4810,13 +4860,6 @@
      "stated": "~10–11 g",
      "low": 10.0,
      "high": 11.0,
-     "unit": "g"
-    },
-    {
-     "item": "Besan (Bengal gram) missi roti add-in",
-     "stated": "~20–22 g",
-     "low": 20.0,
-     "high": 22.0,
      "unit": "g"
     }
    ]
@@ -5076,13 +5119,6 @@
      "unit": "g"
     },
     {
-     "item": "Tofu (firm)",
-     "stated": "~8–12 g",
-     "low": 8.0,
-     "high": 12.0,
-     "unit": "g"
-    },
-    {
      "item": "Soya paneer (soft/homemade)",
      "stated": "~14–18 g",
      "low": 14.0,
@@ -5101,6 +5137,13 @@
      "stated": "~35–40 g",
      "low": 35.0,
      "high": 40.0,
+     "unit": "g"
+    },
+    {
+     "item": "Tofu (firm)",
+     "stated": "~8–12 g",
+     "low": 8.0,
+     "high": 12.0,
      "unit": "g"
     },
     {
@@ -5348,44 +5391,23 @@
    "values": [
     {
      "item": "Urad dal (raw, dry)",
-     "stated": "100 g dry",
-     "low": 100.0,
-     "high": null,
+     "stated": "~24–25 g",
+     "low": 24.0,
+     "high": 25.0,
      "unit": "g"
     },
     {
      "item": "Urad dal (plain, cooked)",
-     "stated": "1 katori (~150 g)",
-     "low": 150.0,
-     "high": null,
+     "stated": "~8–9 g",
+     "low": 8.0,
+     "high": 9.0,
      "unit": "g"
     },
     {
      "item": "Dal makhani",
-     "stated": "1 katori (~150 g)",
-     "low": 150.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Idli",
-     "stated": "1 medium idli (~40 g)",
-     "low": 40.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Plain dosa",
-     "stated": "1 dosa (~80–90 g)",
-     "low": 80.0,
-     "high": 90.0,
-     "unit": "g"
-    },
-    {
-     "item": "Medu vada",
-     "stated": "1 vada (~50 g)",
-     "low": 50.0,
-     "high": null,
+     "stated": "~7–9 g",
+     "low": 7.0,
+     "high": 9.0,
      "unit": "g"
     },
     {
@@ -5400,6 +5422,27 @@
      "stated": "~24 g",
      "low": 24.0,
      "high": null,
+     "unit": "g"
+    },
+    {
+     "item": "Idli",
+     "stated": "~2–3 g",
+     "low": 2.0,
+     "high": 3.0,
+     "unit": "g"
+    },
+    {
+     "item": "Plain dosa",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
+     "unit": "g"
+    },
+    {
+     "item": "Medu vada",
+     "stated": "~3–4 g",
+     "low": 3.0,
+     "high": 4.0,
      "unit": "g"
     },
     {
@@ -5446,6 +5489,13 @@
    "source_url": "https://kabo.co.in/blogs/news/protein-in-walnuts-india",
    "values": [
     {
+     "item": "Walnuts",
+     "stated": "about 15 g",
+     "low": 15.0,
+     "high": null,
+     "unit": "g"
+    },
+    {
      "item": "Peanuts",
      "stated": "about 25 g",
      "low": 25.0,
@@ -5470,13 +5520,6 @@
      "item": "Cashews",
      "stated": "about 18 g",
      "low": 18.0,
-     "high": null,
-     "unit": "g"
-    },
-    {
-     "item": "Walnuts",
-     "stated": "about 15 g",
-     "low": 15.0,
      "high": null,
      "unit": "g"
     },
@@ -6623,6 +6666,16 @@
    "url": "https://kabo.co.in/blogs/news/can-grey-hair-be-reversed-india"
   },
   {
+   "handle": "can-i-drink-protein-shake-before-bed-india",
+   "title": "Protein Shake Before Bed: Helpful or Harmful at Night?",
+   "url": "https://kabo.co.in/blogs/news/can-i-drink-protein-shake-before-bed-india"
+  },
+  {
+   "handle": "can-i-eat-curd-at-night-india",
+   "title": "Curd at Night: Does Dahi After Dinner Cause Colds?",
+   "url": "https://kabo.co.in/blogs/news/can-i-eat-curd-at-night-india"
+  },
+  {
    "handle": "can-you-have-too-much-protein",
    "title": "Can You Have Too Much Protein? Safe Limits &amp; Side Effects Explained",
    "url": "https://kabo.co.in/blogs/news/can-you-have-too-much-protein"
@@ -6631,6 +6684,11 @@
    "handle": "can-you-take-yeast-protein-with-milk-india",
    "title": "Can Yeast Protein Be Mixed With Milk?",
    "url": "https://kabo.co.in/blogs/news/can-you-take-yeast-protein-with-milk-india"
+  },
+  {
+   "handle": "carb-and-protein-snack-pairs-india",
+   "title": "Carb and Protein Snack Pairs: 12 Easy Indian Combinations",
+   "url": "https://kabo.co.in/blogs/news/carb-and-protein-snack-pairs-india"
   },
   {
    "handle": "cardiovascular-champion-a-heart-healthy-duo",
@@ -6971,6 +7029,11 @@
    "handle": "do-plant-proteins-have-all-essential-amino-acids",
    "title": "Do Plant Proteins Have All the Essential Amino Acids?",
    "url": "https://kabo.co.in/blogs/news/do-plant-proteins-have-all-essential-amino-acids"
+  },
+  {
+   "handle": "do-protein-shakes-make-you-fat-india",
+   "title": "Will Protein Shakes Cause Weight Gain?",
+   "url": "https://kabo.co.in/blogs/news/do-protein-shakes-make-you-fat-india"
   },
   {
    "handle": "do-you-need-a-detox-india",
@@ -7798,6 +7861,11 @@
    "url": "https://kabo.co.in/blogs/news/how-kabo-is-made-sourcing-india"
   },
   {
+   "handle": "how-long-for-protein-to-show-results-india",
+   "title": "How Long Does Protein Take to Show Results?",
+   "url": "https://kabo.co.in/blogs/news/how-long-for-protein-to-show-results-india"
+  },
+  {
    "handle": "how-long-hair-growth-takes-india",
    "title": "How Long Hair Growth Really Takes",
    "url": "https://kabo.co.in/blogs/news/how-long-hair-growth-takes-india"
@@ -7816,6 +7884,11 @@
    "handle": "how-many-calories-per-day-india",
    "title": "How Many Calories Do You Need Per Day? (Indian Guide)",
    "url": "https://kabo.co.in/blogs/news/how-many-calories-per-day-india"
+  },
+  {
+   "handle": "how-many-eggs-equal-one-scoop-protein-india",
+   "title": "How Many Eggs Give You 25 Grams of Protein?",
+   "url": "https://kabo.co.in/blogs/news/how-many-eggs-equal-one-scoop-protein-india"
   },
   {
    "handle": "how-many-goji-berries-a-day-india",
@@ -7871,6 +7944,11 @@
    "handle": "how-much-protein-vegetarians-need-india",
    "title": "How Much Protein Do Indian Vegetarians Really Need?",
    "url": "https://kabo.co.in/blogs/news/how-much-protein-vegetarians-need-india"
+  },
+  {
+   "handle": "how-much-water-high-protein-diet-india",
+   "title": "Drinking Enough Water When You Eat Extra Protein",
+   "url": "https://kabo.co.in/blogs/news/how-much-water-high-protein-diet-india"
   },
   {
    "handle": "how-protein-affects-skin-health",
@@ -8218,6 +8296,11 @@
    "url": "https://kabo.co.in/blogs/news/is-kabo-worth-it-honest-review-india"
   },
   {
+   "handle": "is-milk-and-cereal-a-good-breakfast-india",
+   "title": "Is Milk and Cereal a Good Breakfast? The Protein Check",
+   "url": "https://kabo.co.in/blogs/news/is-milk-and-cereal-a-good-breakfast-india"
+  },
+  {
    "handle": "is-msg-bad-for-you-india",
    "title": "Is MSG Bad for You? What the Evidence Says",
    "url": "https://kabo.co.in/blogs/news/is-msg-bad-for-you-india"
@@ -8281,6 +8364,11 @@
    "handle": "is-protein-powder-safe-india",
    "title": "Is Protein Powder Safe? FSSAI &amp; India Explained",
    "url": "https://kabo.co.in/blogs/news/is-protein-powder-safe-india"
+  },
+  {
+   "handle": "is-protein-powder-veg-or-non-veg-india",
+   "title": "Veg or Non-Veg? Checking Any Supplement Powder",
+   "url": "https://kabo.co.in/blogs/news/is-protein-powder-veg-or-non-veg-india"
   },
   {
    "handle": "is-soya-protein-good-or-bad-india",
@@ -8516,6 +8604,11 @@
    "handle": "low-appetite-cant-eat-much-india",
    "title": "Can't Finish Your Plate? A Practical Guide to Eating Well With a Small Appetite",
    "url": "https://kabo.co.in/blogs/news/low-appetite-cant-eat-much-india"
+  },
+  {
+   "handle": "low-calorie-protein-shakes-india",
+   "title": "Low-Calorie Protein Shakes: What Counts as Low, and Why",
+   "url": "https://kabo.co.in/blogs/news/low-calorie-protein-shakes-india"
   },
   {
    "handle": "low-energy-at-work-india",
@@ -8761,6 +8854,11 @@
    "handle": "north-indian-diet-plan-muscle-gain",
    "title": "North Indian Diet Plan for Muscle Gain: 7-Day High-Protein Menu",
    "url": "https://kabo.co.in/blogs/news/north-indian-diet-plan-muscle-gain"
+  },
+  {
+   "handle": "nut-free-dairy-free-snacks-india",
+   "title": "Allergy Labels on Indian Biscuits and Snacks: Nuts and Milk",
+   "url": "https://kabo.co.in/blogs/news/nut-free-dairy-free-snacks-india"
   },
   {
    "handle": "nutrient-absorption-india",
@@ -9503,6 +9601,11 @@
    "url": "https://kabo.co.in/blogs/news/plant-protein-with-vitamins-india"
   },
   {
+   "handle": "plant-sources-of-minerals-india",
+   "title": "Plant Sources of Minerals in India: Iron, Calcium, Zinc",
+   "url": "https://kabo.co.in/blogs/news/plant-sources-of-minerals-india"
+  },
+  {
    "handle": "plix-vs-muscleblaze-india",
    "title": "Plix vs MuscleBlaze Plant Protein, Compared",
    "url": "https://kabo.co.in/blogs/news/plix-vs-muscleblaze-india"
@@ -10178,6 +10281,11 @@
    "url": "https://kabo.co.in/blogs/news/protein-pancakes-recipe-india"
   },
   {
+   "handle": "protein-per-calorie-indian-foods",
+   "title": "Protein Density Ranked: Grams per 100 kcal in Indian Food",
+   "url": "https://kabo.co.in/blogs/news/protein-per-calorie-indian-foods"
+  },
+  {
    "handle": "protein-per-katori-table-india",
    "title": "Protein Per Katori: 30 Everyday Indian Foods in One Table",
    "url": "https://kabo.co.in/blogs/news/protein-per-katori-table-india"
@@ -10273,6 +10381,11 @@
    "url": "https://kabo.co.in/blogs/news/protein-sachet-vs-tub-india"
   },
   {
+   "handle": "protein-shake-during-periods-india",
+   "title": "Protein Shakes on Period Days: Safe or Not?",
+   "url": "https://kabo.co.in/blogs/news/protein-shake-during-periods-india"
+  },
+  {
    "handle": "protein-shake-for-energy-india",
    "title": "Protein Shake for Energy India: Boost Your Day with KABO",
    "url": "https://kabo.co.in/blogs/news/protein-shake-for-energy-india"
@@ -10296,6 +10409,11 @@
    "handle": "protein-shake-india-complete-guide-to-whole-body-nutrition",
    "title": "Protein Shake India: KABO's Complete Guide",
    "url": "https://kabo.co.in/blogs/news/protein-shake-india-complete-guide-to-whole-body-nutrition"
+  },
+  {
+   "handle": "protein-shake-on-empty-stomach-india",
+   "title": "Can I Have a Protein Shake on an Empty Stomach?",
+   "url": "https://kabo.co.in/blogs/news/protein-shake-on-empty-stomach-india"
   },
   {
    "handle": "protein-shake-recipes-weight-loss",
@@ -10421,6 +10539,11 @@
    "handle": "reading-protein-label-gen-z-india",
    "title": "Reading a Protein Label: A Gen Z Cheat Sheet (India)",
    "url": "https://kabo.co.in/blogs/news/reading-protein-label-gen-z-india"
+  },
+  {
+   "handle": "ready-to-drink-vs-powder-protein-cost-india",
+   "title": "Ready-to-Drink Shake or Powder? The Cost per 10 g Compared",
+   "url": "https://kabo.co.in/blogs/news/ready-to-drink-vs-powder-protein-cost-india"
   },
   {
    "handle": "red-carpet-glow-india",
@@ -10878,6 +11001,11 @@
    "url": "https://kabo.co.in/blogs/news/turmeric-benefits-curcumin-explained"
   },
   {
+   "handle": "types-of-protein-supplements-india",
+   "title": "Protein Supplements Explained: The Types and Who Needs One",
+   "url": "https://kabo.co.in/blogs/news/types-of-protein-supplements-india"
+  },
+  {
    "handle": "ultra-processed-food-india",
    "title": "Ultra-Processed Food in India: What It Is and Why It Matters",
    "url": "https://kabo.co.in/blogs/news/ultra-processed-food-india"
@@ -11098,6 +11226,11 @@
    "url": "https://kabo.co.in/blogs/news/weekly-diet-plan-busy-professionals-india"
   },
   {
+   "handle": "weight-gain-powder-women-what-to-check-india",
+   "title": "Weight Gain Powder for Women: What to Check Before Buying",
+   "url": "https://kabo.co.in/blogs/news/weight-gain-powder-women-what-to-check-india"
+  },
+  {
    "handle": "weight-loss-plateau-india",
    "title": "Why Weight Loss Stalls: The Plateau, Explained Properly",
    "url": "https://kabo.co.in/blogs/news/weight-loss-plateau-india"
@@ -11181,6 +11314,16 @@
    "handle": "what-makes-protein-all-in-one-india",
    "title": "What Makes a Protein 'All-in-One'? (India)",
    "url": "https://kabo.co.in/blogs/news/what-makes-protein-all-in-one-india"
+  },
+  {
+   "handle": "what-nutritionally-complete-means-india",
+   "title": "What Nutritionally Complete Means on a Drink Label",
+   "url": "https://kabo.co.in/blogs/news/what-nutritionally-complete-means-india"
+  },
+  {
+   "handle": "what-to-eat-after-gym-vegetarian-india",
+   "title": "What Should a Vegetarian Eat After the Gym?",
+   "url": "https://kabo.co.in/blogs/news/what-to-eat-after-gym-vegetarian-india"
   },
   {
    "handle": "what-to-eat-after-workout-india",
