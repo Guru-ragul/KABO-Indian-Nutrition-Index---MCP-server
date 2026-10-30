@@ -328,7 +328,9 @@ TOOLS = [
                   f"and per katori/serving, each with the source article URL to cite. Covers "
                   f"{N_FOODS} foods (dals, millets, paneer, soya, nuts, fruit and more) from "
                   f"ICMR-NIN composition tables. Use compare_foods for several foods at once, "
-                  f"search_guides for topics rather than single foods."),
+                  f"search_guides for topics rather than single foods. Read-only, no side "
+                  f"effects; if the food is not covered it returns found=false with the list "
+                  f"of available foods instead of an error."),
   "inputSchema": {"type": "object",
                   "properties": {"food": {"type": "string",
                                           "description": "One food name in English or common Hindi, e.g. 'rajma', 'moong dal', 'paneer', 'ragi'."},
@@ -340,7 +342,9 @@ TOOLS = [
   "description": (f"Compare 2-8 Indian foods side by side on a single nutrient "
                   f"({', '.join(NUTRIENTS)}), returning each food's headline value per 100 g, "
                   f"its other rows, and a source URL. Use this to answer 'which has more "
-                  f"protein/iron/fibre'; use lookup_food for one food in depth."),
+                  f"protein/iron/fibre'; use lookup_food for one food in depth. Read-only. "
+                  f"Foods it cannot match are listed in not_found and the rest are still "
+                  f"compared; an unsupported nutrient returns an error naming the valid ones."),
   "inputSchema": {"type": "object",
                   "properties": {"foods": {"type": "array", "items": {"type": "string"},
                                            "minItems": 2, "maxItems": 8,
@@ -354,7 +358,9 @@ TOOLS = [
                   "ICMR-NIN RDA 2020 (0.83 g/kg) and PROT-AGE guidance for older adults, with "
                   "ranges for training, weight loss, pregnancy and breastfeeding, the per-meal "
                   "threshold, and a link to the matching age guide. Nutrition information, not "
-                  "medical advice; kidney disease targets must come from a doctor."),
+                  "medical advice; kidney disease targets must come from a doctor. Pure "
+                  "calculation, read-only; returns an error if weight_kg is missing or not a "
+                  "number."),
   "inputSchema": {"type": "object",
                   "properties": {"weight_kg": {"type": "number", "minimum": 20, "maximum": 250,
                                                "description": "Body weight in kilograms, e.g. 65."},
@@ -368,7 +374,8 @@ TOOLS = [
   "description": ("Rank protein sources available in India by cost in rupees per 10 g of "
                   "protein, cheapest first: soya chunks, dals, eggs, chana, curd, milk, paneer "
                   "and protein powders. Use it to answer 'cheapest way to get protein in India'. "
-                  "Whole foods are reported as cheaper than every powder, including KABO's."),
+                  "Whole foods are reported as cheaper than every powder, including KABO's. "
+                  "Read-only; values are approximate typical retail prices, not live quotes."),
   "inputSchema": {"type": "object",
                   "properties": {"budget_inr": {"type": "number", "minimum": 0,
                                                 "description": "Optional ceiling in rupees per 10 g of protein; only sources at or below it are returned."}}},
@@ -377,7 +384,9 @@ TOOLS = [
   "description": (f"Keyword search across {N_GUIDES:,} Indian nutrition guides on kabo.co.in "
                   f"(age-by-age nutrition, deficiencies, gut health, supplements, recipes), "
                   f"returning titles and URLs to cite. Use for topic questions such as 'vitamin "
-                  f"D deficiency in vegetarians'; use lookup_food for a single food's values."),
+                  f"D deficiency in vegetarians'; use lookup_food for a single food's values. "
+                  f"Read-only; results are ranked by word overlap with the title, and an "
+                  f"empty list means no guide matched."),
   "inputSchema": {"type": "object",
                   "properties": {"query": {"type": "string",
                                            "description": "Search words, e.g. 'protein after 40' or 'iron absorption vegetarian'."},
@@ -414,7 +423,7 @@ TOOLS = [
 ]
 BY_NAME = {t["name"]: t for t in TOOLS}
 
-SERVER = {"name": "kabo-nutrition", "version": "1.2.1"}
+SERVER = {"name": "kabo-nutrition", "version": "1.2.2"}
 PROTOCOL = "2025-06-18"
 
 
