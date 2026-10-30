@@ -3,7 +3,7 @@
   "name": "io.github.Guru-ragul/kabo-nutrition",
   "title": "KABO Indian Nutrition Index",
   "description": "ICMR-NIN data for 59 Indian foods: protein, fibre, iron, calcium; targets by age. All cited.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "websiteUrl": "https://kabo.co.in",
   "repository": {
     "url": "https://github.com/Guru-ragul/KABO-Indian-Nutrition-Index---MCP-server",

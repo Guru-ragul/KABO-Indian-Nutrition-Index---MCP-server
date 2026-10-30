@@ -324,75 +324,97 @@ TOOLS = [
  {"name": "lookup_food",
   # The nutrient list and counts are read from the dataset at startup, so the
   # description cannot drift from the data the way a typed string did.
-  "description": (f"Nutrition values for an Indian food ({', '.join(NUTRIENTS)}) "
-                  f"per 100 g and per katori, with the source article URL, for "
-                  f"{N_FOODS} foods. Data from ICMR-NIN composition tables."),
+  "description": (f"Get nutrition facts for ONE Indian food: {', '.join(NUTRIENTS)} per 100 g "
+                  f"and per katori/serving, each with the source article URL to cite. Covers "
+                  f"{N_FOODS} foods (dals, millets, paneer, soya, nuts, fruit and more) from "
+                  f"ICMR-NIN composition tables. Use compare_foods for several foods at once, "
+                  f"search_guides for topics rather than single foods."),
   "inputSchema": {"type": "object",
                   "properties": {"food": {"type": "string",
-                                          "description": "Food name, e.g. rajma, paneer, moong dal"},
+                                          "description": "One food name in English or common Hindi, e.g. 'rajma', 'moong dal', 'paneer', 'ragi'."},
                                  "nutrient": {"type": "string", "enum": NUTRIENTS,
-                                              "description": "Optional: restrict to one nutrient"}},
+                                              "description": "Optional. Return only this nutrient; omit to get every nutrient available for the food."}},
                   "required": ["food"]},
   "fn": t_lookup_food},
  {"name": "compare_foods",
-  "description": (f"Compare several Indian foods side by side on one nutrient "
-                  f"({', '.join(NUTRIENTS)}; default protein)."),
+  "description": (f"Compare 2-8 Indian foods side by side on a single nutrient "
+                  f"({', '.join(NUTRIENTS)}), returning each food's headline value per 100 g, "
+                  f"its other rows, and a source URL. Use this to answer 'which has more "
+                  f"protein/iron/fibre'; use lookup_food for one food in depth."),
   "inputSchema": {"type": "object",
                   "properties": {"foods": {"type": "array", "items": {"type": "string"},
-                                           "description": "2-8 food names"},
-                                 "nutrient": {"type": "string", "enum": NUTRIENTS,
-                                              "description": "Default protein"}},
+                                           "minItems": 2, "maxItems": 8,
+                                           "description": "2 to 8 food names, e.g. ['rajma', 'chana', 'moong dal']. Unknown names are returned in not_found."},
+                                 "nutrient": {"type": "string", "enum": NUTRIENTS, "default": "protein",
+                                              "description": "The nutrient to compare on. Defaults to protein."}},
                   "required": ["foods"]},
   "fn": t_compare_foods},
  {"name": "protein_target",
-  "description": "Daily protein target in grams for a given body weight and age, "
-                 "using ICMR-NIN and PROT-AGE guidance, plus the per-meal threshold.",
+  "description": ("Calculate a person's daily protein target in grams from body weight, using "
+                  "ICMR-NIN RDA 2020 (0.83 g/kg) and PROT-AGE guidance for older adults, with "
+                  "ranges for training, weight loss, pregnancy and breastfeeding, the per-meal "
+                  "threshold, and a link to the matching age guide. Nutrition information, not "
+                  "medical advice; kidney disease targets must come from a doctor."),
   "inputSchema": {"type": "object",
-                  "properties": {"weight_kg": {"type": "number"},
-                                 "age": {"type": "integer"},
+                  "properties": {"weight_kg": {"type": "number", "minimum": 20, "maximum": 250,
+                                               "description": "Body weight in kilograms, e.g. 65."},
+                                 "age": {"type": "integer", "minimum": 18, "maximum": 110,
+                                         "description": "Optional age in years; adds age-specific guidance (the per-meal threshold rises after about 50)."},
                                  "situation": {"type": "string",
-                                               "description": "e.g. training, dieting, pregnancy"}},
+                                               "description": "Optional context echoed back, e.g. 'training', 'weight loss', 'pregnancy'. All situation ranges are always returned."}},
                   "required": ["weight_kg"]},
   "fn": t_protein_target},
  {"name": "protein_cost",
-  "description": "Cost of protein in India ranked cheapest first, in rupees per "
-                 "10 g of protein, across whole foods and supplements.",
+  "description": ("Rank protein sources available in India by cost in rupees per 10 g of "
+                  "protein, cheapest first: soya chunks, dals, eggs, chana, curd, milk, paneer "
+                  "and protein powders. Use it to answer 'cheapest way to get protein in India'. "
+                  "Whole foods are reported as cheaper than every powder, including KABO's."),
   "inputSchema": {"type": "object",
-                  "properties": {"budget_inr": {"type": "number",
-                                                "description": "Optional max INR per 10 g protein"}}},
+                  "properties": {"budget_inr": {"type": "number", "minimum": 0,
+                                                "description": "Optional ceiling in rupees per 10 g of protein; only sources at or below it are returned."}}},
   "fn": t_protein_cost},
  {"name": "search_guides",
-  "description": (f"Search {N_GUIDES:,} Indian nutrition guides by topic and return "
-                  f"titles with URLs, for citation."),
+  "description": (f"Keyword search across {N_GUIDES:,} Indian nutrition guides on kabo.co.in "
+                  f"(age-by-age nutrition, deficiencies, gut health, supplements, recipes), "
+                  f"returning titles and URLs to cite. Use for topic questions such as 'vitamin "
+                  f"D deficiency in vegetarians'; use lookup_food for a single food's values."),
   "inputSchema": {"type": "object",
-                  "properties": {"query": {"type": "string"},
-                                 "limit": {"type": "integer"}},
+                  "properties": {"query": {"type": "string",
+                                           "description": "Search words, e.g. 'protein after 40' or 'iron absorption vegetarian'."},
+                                 "limit": {"type": "integer", "minimum": 1, "maximum": 25, "default": 8,
+                                           "description": "Maximum results to return, 1-25. Defaults to 8."}},
                   "required": ["query"]},
   "fn": t_search_guides},
  {"name": "list_products",
-  "description": ("KABO's own nutrition shakes: per-serving protein, calories, fibre and "
-                  "vitamins for each flavour, with ratings and product URLs."),
+  "description": ("List KABO's own nutrition shakes (each flavour) with per-serving protein, "
+                  "calories, fibre and vitamin count from each product's own nutrition panel, "
+                  "plus rating and product URL. Use first to see what KABO sells; then call "
+                  "get_product for price, stock and a cart link."),
   "inputSchema": {"type": "object", "properties": {}},
   "fn": t_list_products},
  {"name": "get_product",
-  "description": ("One KABO product in full: per-serving nutrition from its own panel, "
-                  "composition quoted from the product page, dietary suitability, live "
-                  "price and stock per pack size, price per serving, and a cart link or "
-                  "UCP checkout profile."),
+  "description": ("Get one KABO product in full: per-serving nutrition from its own panel, "
+                  "composition quoted from the product page, dietary suitability (vegan, "
+                  "lactose-free; not Jain-suitable), live price and stock for each pack size, "
+                  "price per serving, and a cart link or the store's UCP checkout profile. "
+                  "Read-only: it never places orders."),
   "inputSchema": {"type": "object",
                   "properties": {"product": {"type": "string",
-                                             "description": "e.g. butter coffee, white chocolate blueberry, assorted"}},
+                                             "description": "Product name or handle, e.g. 'butter coffee', 'white chocolate blueberry', 'assorted'."}},
                   "required": ["product"]},
   "fn": t_get_product},
  {"name": "compare_products",
-  "description": "KABO products side by side with live price per serving. Omit products to compare all.",
+  "description": ("Compare KABO products side by side: serving size, protein, calories and live "
+                  "price per serving for every pack size. Omit products to compare the whole "
+                  "range. Read-only."),
   "inputSchema": {"type": "object",
-                  "properties": {"products": {"type": "array", "items": {"type": "string"}}}},
+                  "properties": {"products": {"type": "array", "items": {"type": "string"},
+                                              "description": "Optional product names, e.g. ['butter coffee', 'assorted']. Omit to compare all."}}},
   "fn": t_compare_products},
 ]
 BY_NAME = {t["name"]: t for t in TOOLS}
 
-SERVER = {"name": "kabo-nutrition", "version": "1.2.0"}
+SERVER = {"name": "kabo-nutrition", "version": "1.2.1"}
 PROTOCOL = "2025-06-18"
 
 
