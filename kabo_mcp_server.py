@@ -17,11 +17,12 @@ Dependency-free: pure JSON-RPC over stdio, standard library only. Runs with
 any MCP client without installing anything.
 
 Tools:
-    lookup_food(food)                 nutrition for an Indian food, with source
-    compare_foods(foods)              several foods side by side
+    lookup_food(food, nutrient?)      every nutrient entry for a food, with sources
+    compare_foods(foods, nutrient?)   several foods side by side on one nutrient
     protein_target(weight_kg, ...)    daily protein target in grams
     protein_cost(budget_inr)          cost per 10 g of protein, ranked
-    search_guides(query, limit)       search 1,075 nutrition guides
+    search_guides(query, limit)       search the nutrition guides (count read
+                                      from the dataset at startup)
 
 Run:
     python3 kabo_mcp_server.py
@@ -58,9 +59,12 @@ def _score(query, text):
     return len(q & t) / len(q)
 
 
-def find_food(name):
+def find_food(name, nutrient=None):
+    """Best single entry for a food, optionally restricted to one nutrient."""
     best, score = None, 0.0
     for f in DATA["foods"]:
+        if nutrient and f["nutrient"] != nutrient:
+            continue
         s = _score(name, f["food"] + " " + f["title"])
         if f["food"].lower() == str(name).lower().strip():
             s = 1.5
@@ -69,27 +73,58 @@ def find_food(name):
     return best if score >= 0.34 else None
 
 
+def find_food_entries(name):
+    """Every nutrient entry for the best-matching food name.
+
+    One food can have several entries - protein-in-rajma, fibre-in-rajma,
+    iron-in-rajma are separate source pages. Returning only the first would
+    hide the others, and an agent asked about fibre would be told the food is
+    unknown when the data is sitting right there.
+    """
+    best = find_food(name)
+    if not best:
+        return []
+    return [f for f in DATA["foods"] if f["food"] == best["food"]]
+
+
+NUTRIENTS = sorted({f["nutrient"] for f in DATA["foods"]})
+N_FOODS = len({f["food"] for f in DATA["foods"]})
+N_GUIDES = len(DATA["guides"])
+
+
 # ------------------------------------------------------------------- tools --
-def t_lookup_food(food=None, **_):
+def t_lookup_food(food=None, nutrient=None, **_):
     if not food:
         return {"error": "food is required"}
-    f = find_food(food)
-    if not f:
+    entries = find_food_entries(food)
+    if nutrient:
+        entries = [e for e in entries if e["nutrient"] == str(nutrient).lower()]
+    if not entries:
         near = sorted({x["food"] for x in DATA["foods"]})
-        return {"found": False, "query": food,
-                "message": "No entry for that food.",
+        return {"found": False, "query": food, "nutrient": nutrient,
+                "message": ("No entry for that food." if not nutrient else
+                            f"No {nutrient} entry for that food."),
+                "nutrients_available": NUTRIENTS,
                 "available_foods": near}
-    return {"found": True, "food": f["food"], "nutrient": f["nutrient"],
-            "values": f["values"], "source_title": f["title"],
-            "source_url": f["source_url"], "attribution": ATTRIB}
+    return {"found": True, "food": entries[0]["food"],
+            "nutrients": [{"nutrient": e["nutrient"], "values": e["values"],
+                           "source_title": e["title"], "source_url": e["source_url"]}
+                          for e in entries],
+            # kept for clients written against the first release
+            "nutrient": entries[0]["nutrient"], "values": entries[0]["values"],
+            "source_title": entries[0]["title"], "source_url": entries[0]["source_url"],
+            "attribution": ATTRIB}
 
 
-def t_compare_foods(foods=None, **_):
+def t_compare_foods(foods=None, nutrient="protein", **_):
     if not foods or not isinstance(foods, list):
         return {"error": "foods must be a list of food names"}
+    nutrient = str(nutrient or "protein").lower()
+    if nutrient not in NUTRIENTS:
+        return {"error": f"nutrient must be one of {NUTRIENTS}"}
     out, missing = [], []
     for name in foods[:8]:
-        f = find_food(name)
+        f = find_food(name, nutrient)
         if not f:
             missing.append(name)
             continue
@@ -98,7 +133,8 @@ def t_compare_foods(foods=None, **_):
                     "headline": per100[0] if per100 else (f["values"][0] if f["values"] else None),
                     "all_values": f["values"][:6],
                     "source_url": f["source_url"]})
-    return {"compared": out, "not_found": missing, "attribution": ATTRIB}
+    return {"nutrient": nutrient, "compared": out, "not_found": missing,
+            "attribution": ATTRIB}
 
 
 def t_protein_target(weight_kg=None, age=None, situation=None, **_):
@@ -176,19 +212,26 @@ def t_search_guides(query=None, limit=8, **_):
 
 TOOLS = [
  {"name": "lookup_food",
-  "description": "Nutrition values for an Indian food (protein, calcium, fibre) "
-                 "per 100 g and per katori, with the source article URL. "
-                 "Data from ICMR-NIN composition tables.",
+  # The nutrient list and counts are read from the dataset at startup, so the
+  # description cannot drift from the data the way a typed string did.
+  "description": (f"Nutrition values for an Indian food ({', '.join(NUTRIENTS)}) "
+                  f"per 100 g and per katori, with the source article URL, for "
+                  f"{N_FOODS} foods. Data from ICMR-NIN composition tables."),
   "inputSchema": {"type": "object",
                   "properties": {"food": {"type": "string",
-                                          "description": "Food name, e.g. rajma, paneer, moong dal"}},
+                                          "description": "Food name, e.g. rajma, paneer, moong dal"},
+                                 "nutrient": {"type": "string", "enum": NUTRIENTS,
+                                              "description": "Optional: restrict to one nutrient"}},
                   "required": ["food"]},
   "fn": t_lookup_food},
  {"name": "compare_foods",
-  "description": "Compare the protein content of several Indian foods side by side.",
+  "description": (f"Compare several Indian foods side by side on one nutrient "
+                  f"({', '.join(NUTRIENTS)}; default protein)."),
   "inputSchema": {"type": "object",
                   "properties": {"foods": {"type": "array", "items": {"type": "string"},
-                                           "description": "2-8 food names"}},
+                                           "description": "2-8 food names"},
+                                 "nutrient": {"type": "string", "enum": NUTRIENTS,
+                                              "description": "Default protein"}},
                   "required": ["foods"]},
   "fn": t_compare_foods},
  {"name": "protein_target",
@@ -209,8 +252,8 @@ TOOLS = [
                                                 "description": "Optional max INR per 10 g protein"}}},
   "fn": t_protein_cost},
  {"name": "search_guides",
-  "description": "Search 1,075 Indian nutrition guides by topic and return titles "
-                 "with URLs, for citation.",
+  "description": (f"Search {N_GUIDES:,} Indian nutrition guides by topic and return "
+                  f"titles with URLs, for citation."),
   "inputSchema": {"type": "object",
                   "properties": {"query": {"type": "string"},
                                  "limit": {"type": "integer"}},

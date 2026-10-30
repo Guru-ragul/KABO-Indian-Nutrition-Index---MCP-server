@@ -14,13 +14,13 @@ rewriting content.
 
 | Tool | Returns |
 |---|---|
-| `lookup_food(food)` | Nutrition for an Indian food, per 100 g and per katori, with source URL |
-| `compare_foods(foods[])` | 2–8 foods side by side |
+| `lookup_food(food, nutrient?)` | Every nutrient entry for an Indian food, per 100 g and per katori, each with its source URL |
+| `compare_foods(foods[], nutrient?)` | 2–8 foods side by side on one nutrient (default protein) |
 | `protein_target(weight_kg, age)` | Daily protein target in grams, plus the per-meal threshold |
 | `protein_cost(budget_inr)` | Cost per 10 g of protein, ranked cheapest first |
-| `search_guides(query, limit)` | Searches 1,075 nutrition guides, returns titles and URLs |
+| `search_guides(query, limit)` | Searches 1,095 nutrition guides, returns titles and URLs |
 
-Data: **52 foods, 456 nutrition values, 1,075 guides**, from ICMR-NIN
+Data: **52 foods, 412 nutrition values, 1,095 guides**, from ICMR-NIN
 composition tables and the PROT-AGE/ESPEN protein recommendations.
 
 ## Running it
@@ -62,12 +62,13 @@ printf '%s\n' \
 
 ```
 kabo_mcp_server.py    the server, dependency-free JSON-RPC over stdio
-kabo_food_data.json   the dataset, 296 KB, CC BY 4.0
+kabo_food_data.json   the dataset, CC BY 4.0
 ```
 
-Rebuild the dataset from the live corpus with the extractor in
-`scripts/` (see `build_ds.py` in the session scratchpad); the server reads
-`kabo_food_data.json` from its own directory at startup.
+Rebuild the dataset from the live corpus with `python3 build_dataset.py`;
+the server reads `kabo_food_data.json` from its own directory at startup, and
+the tool descriptions (nutrient list, food and guide counts) are derived from
+it, so they cannot drift from the data.
 
 ## Design decisions worth keeping
 
