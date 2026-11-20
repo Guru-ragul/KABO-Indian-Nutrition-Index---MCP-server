@@ -631,6 +631,9 @@ class _Handler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
             return
+        if path == "/push/health":
+            import kabo_push
+            return self._send(200, {"configured": kabo_push.configured()})
         if path in ("/health", "/healthz"):
             return self._send(200, {"status": "ok", "server": SERVER,
                                     "tools": [t["name"] for t in TOOLS]})
@@ -686,6 +689,15 @@ class _Handler(http.server.BaseHTTPRequestHandler):
 
     def do_POST(self):
         path = _urlparse.urlparse(self.path).path
+        if path.startswith("/push/"):
+            # KABO web push subscriber store (kabo_push.py) - kabo.co.in browsers only
+            import kabo_push
+            try:
+                n = min(int(self.headers.get("Content-Length") or 0), 8192)
+            except ValueError:
+                n = 0
+            code, out = kabo_push.handle_post(path, self.headers.get("Origin", ""), self.rfile.read(n) if n else b"")
+            return self._send(code, out)
         if path not in ("/", "/mcp"):
             return self._send(404, {"error": "not found"})
         # HTTP is stateless across threads, so the initialize call's clientInfo
